@@ -1,0 +1,17 @@
+---
+title: "Chronic Kidney Disease (CKD) Surveillance System"
+description: "The CKD Surveillance Project was designed and implemented to document the burden of CKD and its risk factors in the U.S. population over time, and track the progress of our efforts to prevent, detect, and manage CKD and its complications."
+image: ""
+url: “https://nccd.cdc.gov/CKD/default.aspx"
+output: html_document
+---
+
+The Chronic Kidney Disease (CKD) Surveillance System is overseen by the CDC
+to track kidney diseases in the US. The Surveillance System offers numerous 
+resources, including:
+
+* **[CKD Risk Calculators](https://nccd.cdc.gov/CKD/Calculators.aspx)** Interactive
+tool to estimate individual risk for CKD based on multiple factors.
+
+* **[Prevalence and Incididence Data](https://nccd.cdc.gov/CKD/detail.aspx?Qnum=Q8#refreshPosition)** Aggregate
+data on prevalence and incidence by CKD Stage.

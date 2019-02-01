@@ -1,8 +1,19 @@
 ---
 title: "United States Renal Data System (USRDS)"
-description: "The United States Renal Data System (USRDS), funded by the National Institutes of Health, National Institute of Diabetes and Digestive and Kidney Diseases, is the national data registry that collects, analyzes, and distributes information on the end-stage renal disease (ESRD) population in the U.S., including treatments and outcomes. The USRDS Coordinating Center is operated by the University of Michigan Kidney Epidemiology and Cost Center (UM-KECC) in partnership with Arbor Research Collaborative for Health, both located in Ann Arbor, Michigan, USA"
+description: "The United States Renal Data System (USRDS), funded by the National Institutes of Health, National Institute of Diabetes and Digestive and Kidney Diseases, is the national data registry that collects, analyzes, and distributes information on the end-stage renal disease (ESRD) population in the U.S., including treatments and outcomes. "
 image: ""
 url: “https://www.usrds.org/"
 output: html_document
 ---
 
+The USRDS Coordinating Center is operated by the University of Michigan Kidney 
+Epidemiology and Cost Center (UM-KECC) in partnership with Arbor Research 
+Collaborative for Health, both located in Ann Arbor, Michigan, USA. The site
+provides access to the following key resources:
+
+* **[Annual Data Report](https://www.usrds.org/adr.aspx)** The state of ESRD care
+in the US.
+
+* **[RenDER](https://www.usrds.org/render/xrender_home.asp)** Online data 
+querying application accessible through the USRDS web site, allowing access 
+to a wealth of information regarding End Stage Renal Disease (ESRD) in the US. 
