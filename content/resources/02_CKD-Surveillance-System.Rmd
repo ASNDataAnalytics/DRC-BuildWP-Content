@@ -13,5 +13,5 @@ resources, including:
 * **[CKD Risk Calculators](https://nccd.cdc.gov/CKD/Calculators.aspx)** Interactive
 tool to estimate individual risk for CKD based on multiple factors.
 
-* **[Prevalence and Incididence Data](https://nccd.cdc.gov/CKD/detail.aspx?Qnum=Q8#refreshPosition)** Aggregate
+* **[Prevalence and Incidence Data](https://nccd.cdc.gov/CKD/detail.aspx?Qnum=Q8#refreshPosition)** Aggregate
 data on prevalence and incidence by CKD Stage.
