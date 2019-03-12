@@ -9,13 +9,14 @@ output: word_document
 
 require(knitr)
 knitr::opts_chunk$set(echo = TRUE)
-require(tidyverse)
 library(readxl)
 require(extrafont)
 require(rmarkdown)
 loadfonts(quiet = TRUE)
 require(ggrepel)
 require(RColorBrewer)
+require(gt)
+require(tidyverse)
   
 ```
 
@@ -34,17 +35,7 @@ match <- read_excel(
 tidymatch <- match %>%
   gather(key = "Year", value = "Value", `AY-2009`:`AY-2019`)
 
-match_sparkline_data <- tidymatch %>%
-  group_by(Variable) %>%
-  summarize(
-    TrendSparkline = spk_chr(
-      Value,
-      type = "line",
-      chartRangeMin = 0, chartRangeMax = max(Value)
-    )
-  )
 
-match <- left_join(match, match_sparkline_data)
 
 ## Match Data for Visualizations
 
@@ -114,14 +105,14 @@ _**Key Points**_
 
   ## Edu Status
   eras <- read_excel(here::here("01_data", 
-                                "2018-08-06_ERAS_Legacy-Data_AY-2014_AY-2019.xlsx"), 
+                                "2018-11-26_ERAS_Legacy-Data_AY-2014_AY-2019.xlsx"), 
                      sheet = "By Edu Status")
 
   eras <- eras %>% mutate(month = lubridate::month(month_year))
   
   ## Historical Totals
   eras_hist <- read_excel(here::here("01_data", 
-                                     "2018-08-06_ERAS_Legacy-Data_AY-2014_AY-2019.xlsx"), 
+                                     "2018-11-26_ERAS_Legacy-Data_AY-2014_AY-2019.xlsx"), 
                           sheet = "Historical Totals")
 
   eras_hist <- eras_hist %>% mutate(month = lubridate::month(`Month/Year`))
@@ -188,7 +179,8 @@ candidates in July is slowly reversing, building on last year's increase.
            panel.background = element_rect(fill = "#fffff3", color = "#fffff3"),
           plot.title = element_text(hjust = 0.5, family = "Roboto Medium"),
           plot.background = element_rect(fill = "#fffff3", color = "#fffff3")) +
-    ylab("% Change Candidates") +
+  labs(y = "% Change Candidates",
+      x = "ERAS Year") +
     theme(legend.position = "none") +
     geom_text(aes(label = scales::percent(Pct_Change), 
                   y = (Pct_Change + 0.007 * sign(Pct_Change))), family = "Roboto") +
@@ -215,7 +207,9 @@ Total applications in July have rebounded from an apparent nadir in 2017.
           plot.title = element_text(hjust = 0.5, family = "Roboto Medium"),
           plot.background = element_rect(fill = "#fffff3", color = "#fffff3")) +
     scale_x_continuous(breaks = 2014:2019, labels = as.character(2014:2019)) +
-    ylab("No. of Applications") +
+    labs(
+      y = "No. of Applications",
+      x = "ERAS Year") +
     ggtitle("Total Nephrology Applications in July by ERAS Year")
 
   
