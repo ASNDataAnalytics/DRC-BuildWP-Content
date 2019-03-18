@@ -1,15 +1,14 @@
 ---
-title: "AY 2019 Nephrology Match"
-author: ""
-date: ""
-output:
-  html_document:
-    includes:
-        in_header: "favicon.html"
-    css: style.css
-  pdf_document: default
+title: "August/September ERAS Applications"
+subtitle: "ASN Data Brief"
+author: "Kurtis Pivert, ASN Data Science Officer"
+description: "August and September ERAS application data for the appointment year (AY) 2019 nephrology Match exhibited diverging trends."  
+image: ""
+word: "/files/02_august-ERAS_Word.docx"
+excel: ""
+pdf: "/files/02_august-ERAS_Word.pdf"
+output: html_document
 ---
-
 
 ## ASN _Data Brief_
 **Kurtis Pivert** *ASN Data Science Officer*
