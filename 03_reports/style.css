@@ -1,0 +1,27 @@
+/* Whole document: */
+body{
+  font-family: Roboto;
+  font-size: 16pt;
+  background-color: #fffff3;
+}
+/* Headers */
+h2,h3,h4,h6{
+  font-size: 24pt;
+  font-family: Roboto;
+}
+
+h1{
+  font-size: 30pt;
+  font-family: Roboto Black;
+  color: #3366cc;
+}
+
+h5{
+  font-size: 12pt;
+  font-family: Roboto Light;
+}
+/* Background */
+
+
+/* Background */
+

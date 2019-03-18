@@ -1,8 +1,10 @@
 ---
 title: "AY 2019 Nephrology Match---Preliminary Results"
-author: "Kurtis Pivert"
+author: ""
 date: ""
-output: word_document
+output: 
+  word_document:
+    reference_docx: template.docx
 ---
 
 ```{r setup, include=FALSE}
@@ -15,7 +17,7 @@ require(rmarkdown)
 loadfonts(quiet = TRUE)
 require(ggrepel)
 require(RColorBrewer)
-require(gt)
+require(pander)
 require(tidyverse)
   
 ```
@@ -89,7 +91,7 @@ gme <- gme %>%
 
 
 ## **ASN _Data Brief_** November 28, 2018
-### [**Kurtis Pivert** *ASN Data Science Officer*](mailto:kpivert@asn-online.org)
+### **Kurtis Pivert** *ASN Data Science Officer*
 
 ### Contents
 ### I. Moving in Two Directions
@@ -153,6 +155,7 @@ the first time since the specialty rejoined the Match.)
           plot.title = element_text(hjust = 0.5, family = "Roboto Medium"),
           plot.background = element_rect(fill = "#fffff3", color = "#fffff3")) +
     ylab("No. of Candidates") +
+    xlab("ERAS Year") +
     scale_x_continuous(breaks = 2014:2019, labels = as.character(2014:2019)) +
     ggtitle("Total Nephrology Candidates in July by ERAS Year")
   
