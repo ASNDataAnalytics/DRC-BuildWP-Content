@@ -4,9 +4,9 @@ subtitle: "ASN Data Brief"
 author: "Kurtis Pivert, ASN Data Science Officer"
 description: "July 2018 ERAS application data for the appointment year (AY) 2019 nephrology Match show an uptick in total candidates and applications over the same time point in previous recruitment cycles"  
 image: ""
-word: "/files/00_July-Data-Brief_Word.docx"
+word: "/files/01_July-Data-Brief_Word.docx"
 excel: ""
-pdf: "/files/00_July-Data-Brief_Word.pdf"
+pdf: "/files/01_July-Data-Brief_Word.pdf"
 output: html_document
 ---
 

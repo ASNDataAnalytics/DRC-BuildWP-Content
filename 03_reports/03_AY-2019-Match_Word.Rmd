@@ -1,28 +1,24 @@
 ---
 title: "AY 2019 Nephrology Match---Preliminary Results"
-subtitle: "ASN Data Brief"
-author: "Kurtis Pivert, ASN Data Science Officer"
-description: "While numbers of applicants and matched candidates increased over previous application cycles, USMGs matching in nephrology declined again in the AY 2019 Match."  
-image: ""
-word: ""
-excel: ""
-pdf: ""
-output: html_document
+author: ""
+date: ""
+output: 
+  word_document:
+    reference_docx: template.docx
 ---
+
 
 ```{r setup, include=FALSE}
 
 require(knitr)
 knitr::opts_chunk$set(echo = TRUE)
 require(here)
-library(DT)
-library(rio)
-library(sparkline)
 library(readxl)
 require(extrafont)
 require(rmarkdown)
 loadfonts(quiet = TRUE)
 require(ggrepel)
+require(pander)
 require(RColorBrewer)
 require(tidyverse)
 
@@ -39,22 +35,6 @@ match <- read_excel(
                     "2018-11-28_AY-2019_Match-Results_Table.xlsx"),
   sheet = 3,
   col_names = TRUE)
-
-
-tidymatch <- match %>%
-  gather(key = "Year", value = "Value", `AY-2009`:`AY-2019`)
-
-match_sparkline_data <- tidymatch %>%
-  group_by(Variable) %>%
-  summarize(
-    TrendSparkline = spk_chr(
-      Value,
-      type = "line",
-      chartRangeMin = 0, chartRangeMax = max(Value)
-    )
-  )
-
-match <- left_join(match, match_sparkline_data)
 
 ## Match Data for Visualizations
 
@@ -149,7 +129,7 @@ geriatrics (72.4%).
 ### Unfilled training tracks...  
 
 
-```{r Unfilled Tracks, echo=FALSE, message=FALSE, warning=FALSE}
+```{r Unfilled Tracks, echo=FALSE, message=FALSE, warning=FALSE, fig.width=6, dpi= 300}
 
 cols_2019 <- c(rep("#cccccc", 10), "#3366cc")
 
@@ -207,7 +187,7 @@ match2 %>%
     size = 4) +
   scale_y_continuous(
     breaks = seq(20, 100, 20),
-    labels = as.character(seq(20, 100, 20))) 
+    labels = paste0(seq(20, 100, 20), "%")) 
 
 
 ```
@@ -215,7 +195,7 @@ match2 %>%
 
 ### ...and unfilled positions edged down in the AY 2019 Match.
 
-```{r Unfilled Positions, echo=FALSE, message=FALSE, warning=FALSE}
+```{r Unfilled Positions, echo=FALSE, message=FALSE, warning=FALSE, fig.width=6, dpi= 300}
 
 match2 %>% 
   mutate(
@@ -271,7 +251,7 @@ match2 %>%
     size = 4) +
   scale_y_continuous(
     breaks = seq(20, 100, 20),
-    labels = as.character(seq(20, 100, 20))) 
+    labels = paste0(seq(20, 100, 20), "%")) 
 
 ```
 
@@ -280,7 +260,7 @@ match2 %>%
 ### Yet the gap in offered and filled positions...
 
 
-```{r Offered vs. Filled Positions, echo=FALSE, message=FALSE, warning=FALSE}
+```{r Offered vs. Filled Positions, echo=FALSE, message=FALSE, warning=FALSE, fig.width=6, dpi= 300}
 
 match2 %>% 
   ggplot(
@@ -359,7 +339,7 @@ match2 %>%
 ### ... and training tracks, while narrowing, remains wide. 
 
 
-```{r Offered vs. Filled Tracks, echo=FALSE, message=FALSE, warning=FALSE}
+```{r Offered vs. Filled Tracks, echo=FALSE, message=FALSE, warning=FALSE, fig.width=6, dpi= 300}
 
 match2 %>% 
   ggplot(
@@ -438,7 +418,7 @@ match2 %>%
 ### An increasing number of US-IMGs and DOs are entering nephrology...
 
 
-```{r Matched Fellows by Educational Status, echo=FALSE, message=FALSE, warning=FALSE}
+```{r Matched Fellows by Educational Status, echo=FALSE, message=FALSE, warning=FALSE, fig.width=6, dpi= 300}
 
 match2_Label <- match2 %>% 
   select(
@@ -522,7 +502,7 @@ match2 %>%
 
 
 
-```{r Figure Percent Pref Neph Matched, echo=FALSE}
+```{r Figure Percent Pref Neph Matched, echo=FALSE, fig.width=6, dpi= 300}
 
 match2 %>%
   mutate(`Percent Applicants Matched` = round(
@@ -573,7 +553,10 @@ match2 %>%
     show.legend = F, 
     color = "black", 
     vjust = -2, 
-    size = 4)
+    size = 4) +
+  expand_limits(
+    y = 110
+  )
 
 
 ```
@@ -587,17 +570,15 @@ _Search_ function and filters.
 
 ```{r Match Data Table, echo=FALSE}
 
-datatable(match, escape = FALSE, filter = 'top', 
-          options = list(paging = FALSE, fnDrawCallback = htmlwidgets::JS(
-  '
-function(){
-  HTMLWidgets.staticRender();
-}
-'
+panderOptions(
+  'table.alignment.default', 
+  function(df) 
+    if_else(
+      is.numeric(df) == TRUE, 'right', 'left'
+    )
 )
-)) %>%
-  spk_add_deps()  
 
+pander::pander(match)
 
 ```
 
@@ -613,7 +594,7 @@ trending higher than the past 3 application cycles (AY 2016--AY 2018), foreshado
 today's slightly higher numbers. Reviewing candidates by educational status 
 shows the proportions closely mirror that of the final Match results.  
 
-```{r YOY Candidates, echo=FALSE, message=FALSE, warning=FALSE}
+```{r YOY Candidates, echo=FALSE, message=FALSE, warning=FALSE, fig.width=6, dpi= 300}
   
 # Candidates YOY
 eras_hist %>% 
@@ -664,7 +645,7 @@ eras_hist %>%
 ```
 
 
-```{r YOY Applications, echo=FALSE, message=FALSE, warning=FALSE}
+```{r YOY Applications, echo=FALSE, message=FALSE, warning=FALSE, fig.width=6, dpi= 300}
 ## Applications YOY
 eras_hist %>% 
   filter(
@@ -712,7 +693,7 @@ eras_hist %>%
        x = "ERAS Year")
 ```
 
-```{r Figure 9, echo=FALSE, message=FALSE, warning=FALSE}
+```{r Figure 9, echo=FALSE, message=FALSE, warning=FALSE, fig.width=6, dpi= 300}
 
 ## Cumulative candidates 
 
@@ -772,7 +753,7 @@ eras_hist %>%
 
 
 
-```{r slopegraph, echo=FALSE}
+```{r slopegraph, echo=FALSE, fig.width=6, dpi= 300}
 
 eras_slope <- eras %>% 
   filter(
@@ -895,7 +876,7 @@ the overall number of 1st-year nephrology fellows in training have remained
 steady, slightly declining over the past 3 years. In the current academic year,
 nearly 30% (128) of fellows in training filled in the scramble. 
 
-```{r Nephrology GME Census, echo=FALSE, message=FALSE, warning=FALSE}
+```{r Nephrology GME Census, echo=FALSE, message=FALSE, warning=FALSE, fig.width=6, dpi= 300}
 
 ggplot(
   gme,
