@@ -1,0 +1,12 @@
+name: MH-Revenue
+title: MH-Revenue
+username:
+account: asndataanalytics
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 941487
+bundleId: 2099606
+url: https://asndataanalytics.shinyapps.io/MH-Revenue/
+when: 1558466060.82955
+asMultiple: FALSE
+asStatic: FALSE

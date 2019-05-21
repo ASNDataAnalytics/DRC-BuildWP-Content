@@ -1,0 +1,17 @@
+base
+knitr
+readxl
+extrafont
+rmarkdown
+ggplot2
+ggrepel
+RColorBrewer
+pander
+tidyverse
+tibble
+tidyr
+readr
+purrr
+dplyr
+stringr
+forcats

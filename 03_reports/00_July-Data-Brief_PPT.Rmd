@@ -1,0 +1,271 @@
+---
+title: "AY 2019---Turning of the Tide?"
+author: "Kurtis Pivert, **ASN Data Science Officer**"
+date: "August 2018"
+output:
+  powerpoint_presentation
+---
+
+```{r setup, include=FALSE}
+
+require(knitr)
+knitr::opts_chunk$set(echo = TRUE)
+library(readxl)
+require(extrafont)
+require(rmarkdown)
+loadfonts(quiet = TRUE)
+require(ggrepel)
+require(RColorBrewer)
+require(pander)
+require(tidyverse)
+  
+```
+
+
+
+```{r Load Data, message=FALSE, warning=FALSE, cache=TRUE, include=FALSE}
+
+  ## Edu Status
+  eras <- read_excel(here::here("01_data", 
+                                "2018-11-26_ERAS_Legacy-Data_AY-2014_AY-2019.xlsx"), 
+                     sheet = "By Edu Status")
+
+  eras <- eras %>% mutate(month = lubridate::month(month_year))
+  
+  ## Historical Totals
+  eras_hist <- read_excel(here::here("01_data", 
+                                     "2018-11-26_ERAS_Legacy-Data_AY-2014_AY-2019.xlsx"), 
+                          sheet = "Historical Totals")
+
+  eras_hist <- eras_hist %>% mutate(month = lubridate::month(`Month/Year`))
+  
+  
+```
+
+
+# Total candidates in July are up ...
+
+
+```{r Figure 1, echo=FALSE, message=FALSE, warning=FALSE, cache=TRUE, fig.width=6, dpi= 300}
+
+  eras_colors <- c("2014" = "#cccccc", "2015" = "#cccccc",  "2016" = "#cccccc", 
+                    "2017" = "#cccccc",  "2018" = "#cccccc","2019" = "#3366cc")
+  
+  eras_hist %>% filter(month == 7) %>% 
+    ggplot(aes(x = `ERAS Year`, y = `# of Applicants`)) +
+    #geom_line(color = "#cc3366", lwd = 1.5) +
+    geom_bar(stat = "identity", fill = c("#cccccc", "#cccccc", "#cccccc", 
+                                         "#cccccc", "#cccccc","#3366cc"),
+             width = .7) +
+    theme_minimal(base_size = 14, base_family = "Roboto") +
+    theme(panel.grid.minor = element_blank(),
+           panel.background = element_rect(fill = "#fffff3", color = "#fffff3"),
+          plot.title = element_text(hjust = 0.5, family = "Roboto Medium"),
+          plot.background = element_rect(fill = "#fffff3", color = "#fffff3")) +
+    ylab("No. of Candidates") +
+    xlab("ERAS Year") +
+    scale_x_continuous(breaks = 2014:2019, labels = as.character(2014:2019)) +
+    labs(title = "Total Nephrology Candidates in July by ERAS Year",
+         caption = "Source: ERAS, 2014\u20132018")
+  
+```
+
+
+# ... and candidate trends are reversing.
+
+Starting with last year's application cycle, the year-over-year trend of declining 
+
+```{r Figure 2, echo=FALSE,  message=FALSE, warning=FALSE, cache=TRUE, fig.width=7, dpi= 300}
+  eras_hist %>% filter(month == 7) %>% mutate(lagged = lag(`# of Applicants`)) %>% 
+    mutate(Pct_Change = ((`# of Applicants` - lagged) / lagged)) %>% 
+    filter(`ERAS Year` != 2014) %>% 
+    ggplot(aes(x = `ERAS Year`, y = Pct_Change, fill = sign(Pct_Change))) +
+    geom_bar(stat = "identity", width = .7) +
+    theme_minimal(base_size = 14, base_family = "Roboto") +
+    theme(panel.grid.minor = element_blank(),
+           panel.background = element_rect(fill = "#fffff3", color = "#fffff3"),
+          plot.title = element_text(hjust = 0.5, family = "Roboto Medium"),
+          plot.background = element_rect(fill = "#fffff3", color = "#fffff3")) +
+  labs(y = "% Change Candidates",
+      x = "ERAS Year") +
+    theme(legend.position = "none") +
+    geom_text(aes(label = scales::percent(Pct_Change), 
+                  y = (Pct_Change + 0.007 * sign(Pct_Change))), family = "Roboto") +
+    scale_y_continuous(labels = scales::percent) +
+    labs(title = "Percent Change Year over Year\u2014Candidates in July",
+            caption = "Source: ERAS, 2014\u20132018")
+   
+```
+
+
+# Applications to nephrology fellowships are up slightly ...   
+
+
+```{r Figure 3, echo=FALSE, message=FALSE, warning=FALSE, cache=TRUE, fig.width=7, dpi= 300}
+  eras_hist %>% filter(month == 7) %>% 
+    ggplot(aes(x = `ERAS Year`, y = `# of Applications`)) +
+    geom_bar(stat = 'identity', fill = c("#cccccc", "#cccccc", "#cccccc", 
+                                         "#cccccc", "#cccccc","#3366cc"),
+             width = 0.7) +
+    theme_minimal(base_size = 14, base_family = "Roboto") +
+    theme(panel.grid.minor = element_blank(),
+           panel.background = element_rect(fill = "#fffff3", color = "#fffff3"),
+          plot.title = element_text(hjust = 0.5, family = "Roboto Medium"),
+          plot.background = element_rect(fill = "#fffff3", color = "#fffff3")) +
+    scale_x_continuous(breaks = 2014:2019, labels = as.character(2014:2019)) +
+    labs(
+      y = "No. of Applications",
+      x = "ERAS Year") +
+    labs(title = "Total Nephrology Applications in July by ERAS Year",
+         caption = "Source: ERAS, 2014\u20132018")
+
+  
+```
+
+
+# ... and growing slowly year over year.
+
+
+```{r Figure 4, echo=FALSE, message=FALSE, warning=FALSE, cache=TRUE, fig.width=7, dpi= 300}
+  eras_hist %>% filter(month == 7) %>% mutate(lagged = lag(`# of Applications`)) %>% 
+    mutate(Pct_Change = ((`# of Applications` - lagged) / lagged)) %>% 
+    filter(`ERAS Year` != 2014) %>% 
+    ggplot(aes(x = `ERAS Year`, y = Pct_Change, fill = sign(Pct_Change))) +
+    geom_bar(stat = "identity", width = .7) +
+    theme_minimal(base_size = 14, base_family = "Roboto") +
+    theme(panel.grid.minor = element_blank(),
+           panel.background = element_rect(fill = "#fffff3", color = "#fffff3"),
+          plot.title = element_text(family = "Roboto Medium", hjust = 0.5),
+          plot.background = element_rect(fill = "#fffff3", color = "#fffff3")) +
+    ylab("% Change Applications") +
+    theme(legend.position = "none") +
+    geom_text(aes(label = scales::percent(Pct_Change), 
+                  y = (Pct_Change + 0.007 * sign(Pct_Change))), family = "Roboto") +
+    scale_y_continuous(labels = scales::percent) +
+    labs(title = "Percent Change Year over Year\u2014Applications in July",
+         caption = "Source: ERAS, 2014\u20132018")
+   
+```
+
+
+# IMG candidates are back ...
+
+
+```{r Figure 5, echo=FALSE, message=FALSE, warning=FALSE, cache=TRUE, fig.width=6, dpi= 300}
+
+  
+        eras <-  eras %>% mutate(Label = paste0(edu_status, " ", 
+                                                as.character(num_candidate)))  
+        
+        eras %>% filter(month == 7) %>% ggplot() +
+          geom_line(aes(x = as.factor(ERAS), y = num_candidate, group = edu_status, 
+                                      color = edu_status), lwd = 1.2) + 
+          geom_point(aes(x = as.factor(ERAS), y = num_candidate, color = edu_status), 
+                     size = 2) +
+          theme_minimal(base_size = 14, base_family = "Roboto") +
+          scale_color_brewer(palette = "Set1") +
+          xlab("") +
+          ylab("No. of Candidates") +
+          geom_text(data = subset(eras, ERAS == 2018 & month == 7), 
+                    aes(x = as.factor(ERAS), y = num_candidate, color = edu_status, 
+                        label = Label), 
+                          size = 4, hjust = 1.1, family = "Roboto") +
+          geom_text(data = subset(eras, ERAS == 2019 & month == 7), 
+                    aes(x = as.factor(ERAS), y = num_candidate, color = edu_status, 
+                        label = Label), 
+                          size = 4, hjust = -.15, family = "Roboto")+
+          theme(legend.position = "none", axis.text = element_text(family = "Roboto"),
+                panel.background = element_rect(fill = "#fffff3", 
+                                                color = "#fffff3"),
+                plot.background = element_rect(fill = "#fffff3", color = "#fffff3"),
+                plot.title = element_text(family = "Roboto Medium", hjust = 0.5)) +
+          labs(title = "July AY 2019 Candidates by Educational Status",
+               caption = "Source: ERAS, 2014\u20132018") 
+          
+        
+        
+```
+
+
+# ...but total candidates ...   
+
+
+```{r Figure 6, echo=FALSE, message=FALSE, warning=FALSE, cache=TRUE, fig.width=6, dpi= 300}
+
+  eras_colors <- c("2014" = "#cccccc", "2015" = "#cccccc",  "2016" = "#cccccc", 
+                    "2017" = "#cccccc",  "2018" = "#cccccc","2019" = "#3366cc") 
+  
+  Avg <- eras_hist %>% filter(!`ERAS Year` == 2019) %>% group_by(`ERAS Year`) %>% 
+  summarize(Total = sum(`# of Applicants`)) %>% summarize(Avg = mean(Total))
+               
+
+  eras_hist %>% group_by(`ERAS Year`) %>% 
+    summarise(Total = sum(`# of Applicants`)) %>% 
+    ggplot(aes(x = `ERAS Year`, y = Total)) +
+    geom_bar(stat = "identity", fill = c("#cccccc", "#cccccc", "#cccccc", 
+                                         "#cccccc", "#cccccc","#3366cc"),
+             width = 0.7) +
+    theme_minimal(base_family = "Roboto") +
+    theme(panel.grid.minor = element_blank(),
+           panel.background = element_rect(fill = "#fffff3", color = "#fffff3"),
+          plot.background = element_rect(fill = "#fffff3", color = "#fffff3"),
+          plot.title = element_text(hjust =0.5, family = "Roboto Medium")) +
+    scale_x_continuous(breaks = 2014:2019, labels = as.character(2014:2019)) +
+    #geom_hline(aes(yintercept = mean(Total))) + 
+    geom_hline(aes(yintercept = Avg$Avg)) + 
+    theme(legend.position = "none") +
+    geom_text(aes(label = "Mean Total Candidates", x = 2018.5, y = 500),
+              family = "Roboto", color = "#3366cc") +
+    ylab("Total Candidates per Application Cycle") +
+    labs(title = "Total Candidates by ERAS Year (AY 2019 = July Only)",
+         caption = "Source: ERAS, 2014\u20132018")
+ 
+
+```
+
+
+# ...and applications are still down compared to historic averages. 
+
+
+```{r Figure 7, echo=FALSE,  message=FALSE, warning=FALSE, cache=TRUE, fig.width=6, dpi= 300}
+
+  eras_colors <- c("2014" = "#cccccc", "2015" = "#cccccc",  "2016" = "#cccccc", 
+                    "2017" = "#cccccc",  "2018" = "#cccccc","2019" = "#3366cc") 
+                 
+  Avg_Apps <- eras_hist %>% filter(!`ERAS Year` == 2019) %>% group_by(`ERAS Year`) %>% 
+  summarize(Total = sum(`# of Applications`)) %>% summarize(Avg = mean(Total))                   
+
+  eras_hist %>% group_by(`ERAS Year`) %>% 
+    summarise(Total = sum(`# of Applications`)) %>% 
+    ggplot(aes(x = `ERAS Year`, y = Total)) +
+    geom_bar(stat = "identity", 
+             fill = c("#cccccc", "#cccccc", "#cccccc", "#cccccc", "#cccccc",
+                                 "#3366cc"),
+             width = 0.7) +
+    theme_minimal(base_family = "Roboto") +
+    theme(panel.grid.minor = element_blank(),
+           panel.background = element_rect(fill = "#fffff3", color = "#fffff3"),
+          plot.background = element_rect(fill = "#fffff3", color = "#fffff3"),
+          plot.title = element_text(hjust = 0.5, family = "Roboto Medium")) +
+    scale_x_continuous(breaks = 2014:2019, labels = as.character(2014:2019)) +
+    geom_hline(aes(yintercept = Avg_Apps$Avg)) + 
+    theme(legend.position = "none") +
+    geom_text(aes(label = "Mean Total Applications", x = 2018.5, y = 9900),
+              family = "Roboto", color = "#3366cc") +
+    ylab("Total Applications per Application Cycle") +
+    labs(title = "Total Applications by ERAS Year (AY 2019 = July Only)",
+         caption = "Source: ERAS, 2014\u20132018")
+ 
+
+```
+
+
+# Up Next
+
+Future _Data Briefs_ will report ERAS application data as it becomes available. 
+
+_**Questions? Comments?**_ 
+
+Contact ASN Data Science Officer Kurtis Pivert
+at 202-699-0238 or [kpivert@asn-online.org](mailto:kpivert@asn-online.org).
+
