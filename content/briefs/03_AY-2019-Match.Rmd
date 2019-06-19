@@ -3,10 +3,11 @@ title: "AY 2019 Nephrology Match---Preliminary Results"
 subtitle: "ASN Data Brief"
 author: "Kurtis Pivert, ASN Data Science Officer"
 description: "While numbers of applicants and matched candidates increased over previous application cycles, USMGs matching in nephrology declined again in the AY 2019 Match."  
-image: ""
+image: "/images/03_AY-2019-Match-Image.png"
 word: "/files/03_AY-2019-Match_Word.docx"
-excel: ""
+excel: "/files/03_AY-2019-Match_Excel.xlsx"
 pdf: "/files/03_AY-2019-Match_Word.pdf"
+tags: "featured"
 output: html_document
 ---  
 

@@ -3,10 +3,11 @@ title: "August/September ERAS Applications"
 subtitle: "ASN Data Brief"
 author: "Kurtis Pivert, ASN Data Science Officer"
 description: "August and September ERAS application data for the appointment year (AY) 2019 nephrology Match exhibited diverging trends."  
-image: ""
+image: "/images/01_August-ERAS-Image.png"
 word: "/files/02_august-ERAS_Word.docx"
 excel: ""
 pdf: "/files/02_august-ERAS_Word.pdf"
+tags: "featured"
 output: html_document
 ---
 

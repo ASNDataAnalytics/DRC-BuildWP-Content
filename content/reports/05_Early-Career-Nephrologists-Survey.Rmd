@@ -3,10 +3,11 @@ title: "Early Career Nephrologists: Results of a 2017 Survey"
 subtitle: "Prepared for The American Society of Nephrology"
 author: "By The George Washington University Health Workforce Institute"
 description: "Among early practice nephrologyists, practice setting—those in academic practice compared to those in a group practice—is a major factor influencing educational pathways, current practice characteristics and satisfaction."
-image: ""
+image: "/images/05_Early-Career-Nephrologists-Survey_Image.png"
 word: "/files/05_Early-Career-Nephrologists-Survey.docx"
-excel: ""
+excel: "/files/05_Early-Career-Nephrologists-Survey.xlsx"
 pdf: "/files/05_Early-Career-Nephrologists-Survey.pdf"
+tags: "featured"
 output: html_document
 ---
 ```{r setup, include=FALSE}

@@ -1,0 +1,126 @@
+---
+title: "New Report Shows Nephrology's Value to Health Systems"
+subtitle: ""
+author: "Kurtis Pivert, ASN Data Science Officer"
+description: "New survey data finds nephrology punches above its weight in generating revenue for health systems." 
+image: "/images/06_MH-Revenue_Brief_Image.png"
+word: "/files/06_MH-Revenue_Brief_WORD.docx"
+excel: "/files/06_MH-Revenue_Brief.xlsx"
+pdf: "/files/06_MH-Revenue_Brief.pdf"
+tags: "featured"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r 00_Load Packages, message=FALSE, warning=FALSE, echo=FALSE}
+
+require(extrafont)
+loadfonts(quiet = TRUE)
+require(gt)
+require(tidyverse)
+
+```
+
+```{r 01_Load_Data, message=FALSE, warning=FALSE, echo=FALSE}
+
+mh <- tbl_df(
+  read.table(
+    header = TRUE, 
+    text = "
+Specialty Average_Revenue Average_Salary
+Cardiology_(Invasive) $3,484,375 $590,000
+Cardiology/Non-Inv. $2,310,000 $427,000
+Cardiovascular_Surgery $3,697,916 $425,000
+Family_Practice $2,111,931 $241,000
+Gastroenterology $2,965,277 $487,000
+General_Surgery $2,707,317 $350,000
+Hematology/Oncology $2,855,000 $425,000
+Internal_Medicine $2,675,387 $261,000
+Nephrology $1,789,062 $272,000
+Neurology $2,052,884 $301,000
+Neurosurgery $3,437,500 $687,000
+OB/GYN $2,024,193 $324,000
+Ophthalmology $1,440,217 $300,000
+Orthopedic_Surgery $3,286,764 $533,000
+Otolaryngology $1,937,500 $405,000
+Pediatrics $1,612,500 $230,000
+Psychiatry $1,820,512 $261,000
+Pulmonology $2,361,111 $418,000
+Urology $2,161,458 $386,000
+",
+    stringsAsFactors = FALSE)
+) 
+
+df <- read_csv(
+  file = here::here("03_reports", "06_MH-Revenue-Shiny/MH-Revenue/table.csv")
+)
+
+
+# * Clean and Mutate ------------------------------------------------------
+
+
+mh <- mh %>% 
+  mutate(
+    `Mean Revenue` = parse_number(Average_Revenue),
+    `Mean Salary` = parse_number(Average_Salary)
+  ) %>% 
+  mutate(
+    ROI = (`Mean Revenue` - `Mean Salary`) / `Mean Salary` 
+  ) %>% 
+  arrange(
+    desc(ROI), 
+    `Mean Salary`
+  ) %>%
+  select(
+    Specialty,
+    `Mean Revenue`,
+    `Mean Salary`,
+    ROI
+  )
+
+
+
+```
+
+
+
+## ASN _Data Brief_---Nephrology Key Contributor to Hospital Revenue 
+
+
+Newly released survey data collected from 62 hospital CFOs found nephrology makes 
+key contributions to hospital systems gross revenue. The report from 
+[Merrit Hawkins](https://www.merritthawkins.com/news-and-insights/blog/healthcare-news-and-trends/New-Survey-Shows-Physicians-Are-Key-Revenue-Generators-for-Hospitals/)
+also found the ratio of return on investment (ROI) for nephrologists' median salary
+was higher than gastroenterology, cardiology, and pulmonology. 
+
+<br>
+
+## Interactive Visualization of Revenue by Specialty 
+
+
+<iframe width="1000" height="800" frameborder="no"src="https://asndataanalytics.shinyapps.io/MH-Revenue/"> </iframe>
+
+<br>
+
+## Ranking of Specialities by ROI
+
+```{r 01_Table, warning=FALSE, echo=FALSE, message=FALSE}
+
+mh %>% 
+  mutate(
+    ROI = round(ROI, 2)
+  ) %>% 
+  gt() %>% 
+  fmt_currency(
+    columns = vars(`Mean Revenue`, `Mean Salary`),
+    currency = "USD"
+  ) 
+  
+
+
+```
+
+

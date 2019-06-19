@@ -1,0 +1,1165 @@
+---
+title: "Early Career Nephrologists: Results of a 2017 Survey"
+author: ""
+date: ""
+output: 
+  word_document:
+    reference_docx: template.docx
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+require(here)
+```
+
+# Early Career Nephrologists: Results of a 2017 Survey
+### Prepared for The American Society of Nephrology
+### By The George Washington University Health Workforce Institute
+
+**Leo Quigley, MPH**
+_George Washington University Health Workforce Institute and School of Nursing_
+
+**Edward Salsberg, MPA, FAAN**
+_George Washington University Health Workforce Institute and School of Nursing_
+
+**Ashté Collins, MD**
+_George Washington University School of Medicine_
+
+_The views and findings in this report reflect the work of the GW Health Workforce Institute (GW-HWI) and do not necessarily reflect the views of ASN or GW University. The GW-HWI and ASN welcome comments and feedback on this report._
+
+
+**Suggested Citation:** Quigley L, Salsberg E, Collins A. _Report on a Survey of Nephrologists in Early Years of Practice._ Washington, DC: American Society of Nephrology; 2018.
+
+
+## Executive Summary
+
+Since 2014 the George Washington University Health Workforce Institute (GW-HWI) in collaboration with the American
+Society of Nephrology (ASN) has surveyed nephrology fellows, tracking their transition to practice and their experience
+in the job market. In 2017, GW-HWI surveyed recent fellowship graduates to explore the practices, satisfaction and
+view of the specialty of early career nephrologists.
+GW-HWI surveyed nephrologists who had completed their nephrology training between 2011 and 2016. There were
+270 valid responses (an 11% response rate). While this response rate is low, a comparison with ACGME data on recent
+nephrology fellows indicates that the characteristics of respondents are generally consistent with the characteristics of
+recent graduates. The responses provide a good picture of the early career nephrologist.
+
+After reviewing the results by gender, location/type of education (US medical graduates [USMGs] vs international
+medical graduates [IMGs]), length of time since graduation and practice setting, it appears that practice setting—those
+in academic practice compared to those in a group practice—is a major factor influencing educational pathways,
+current practice characteristics and satisfaction. The following are key findings related to the differences between
+nephrologists in academic practice and those in group practice.
+*An equal number of respondents were working in group practices and academic settings. Early practice
+female nephrologists are more likely to practice in academic settings than group practice settings (53.8% to
+38.7%). Early practice male nephrologists, on the other hand, are less likely to practice in academic settings
+and more likely to practice in group settings (42.4% to 52.9%).
+
+#### Exhibit A1: Setting of Primary Nephrology Job by Gender
+
+```{r exhibit-a1, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-a1.png"))
+```
+
+* Similarly, USMGs among the early practice nephrologists are more likely to practice in academic settings than
+group practice (50.8% to 43.5%) while IMG early practice nephrologists are less likely to practice in academic
+settings and more likely to practice in groups (43.8% to 50.4%).
+* Academic practitioners are far more likely to have had 3 or more years of nephrology fellowship training than
+group practice nephrologists (48.4% to 14%). Academic physicians are more likely to have had additional
+training in clinical research (37.4% vs. 16.3%); basic science research (19.8% vs. 14%); and transplant
+nephrology (31.9% vs. 20.9%). Group practice nephrologists were more likely to have had training in
+interventional nephrology (20.9% to 4.4%) and palliative care (9.3% to 4.4%).
+
+#### Exhibit A2: Setting of Primary Nephrology Job by Total Years Training Completed, Academic and Group Practice Only
+
+```{r exhibit-a2, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-a2.png"))
+```
+
+* Both academic and group practice nephrologists were generally satisfied with their education and training with
+only 3.3% of each group expressing any dissatisfaction.  
+* Not surprising, academic nephrologists were far more likely to focus on transplant than group practice
+nephrologists (21.3% to 3.3%). The majority of nephrologists practice general nephrology only: 85.2% of the
+group practice nephrologists and 65.6% of the academic nephrologists.
+* By far the most common job responsibilities were care of hospitalized patients (96.1% of respondents), care
+of patients in the clinic (93.8%) and care of patients in an outpatient dialysis unit (78.7%). Those in academic
+practices were more likely than those in group practices to have responsibility for kidney biopsies (48.4% vs.
+9.1%), dialysis catheter placement (34.4% vs. 19.8%) and clinical research (57.4% vs. 8.3%), while those in group
+practices were more likely than those in academic practices to have responsibility for care of patients in an
+outpatient dialysis unit (90.1% vs. 69.7%) or in a nursing home or rehabilitation unit (34.8% vs. 22.5%) or to hold
+a medical directorship with a dialysis provider (33.9% vs. 15.6%).
+
+#### Exhibit A3: Responsibilities in Primary Nephrology Job by Group or Academic Practice Setting
+
+```{r exhibit-a3, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-a3.png"))
+```
+
+* As would be expected, the vast majority of group practice nephrologists have a path to partnership (77%), while
+this is rare for those in academic practice (5.7%).
+* Group practice nephrologists work far more patient care hours per week than academic nephrologists:
+57.4% of group nephrologists provided 50 or more hours of patient care per week compared to 16.5% of
+academic nephrologists. Academic nephrologists provided more hours per week on research than group
+practice nephrologists.
+
+#### Exhibit A4: Time Spent in Patient Care by Group or Academic Practice Setting
+
+```{r exhibit-a4, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-a4.png"))
+```
+
+* In general, nephrologists working in group practices received more incentives to join their current practice
+compared to academic nephrologists including: sign-on bonuses (28% to 5.1%); income guarantees (33.1% to
+16.9%); relocation allowance (34.7% to 20.3%); support for MOC preparation (53.4% to 40.7%); and J-1 visa
+waivers (6.6% to 3.4%). On the other hand, academic physicians were more likely to receive support for career
+development opportunities (37.3% to 16.9%); H-1 Visa sponsorships (18.6% to 13.6%); and on-call payments
+(5.9% to 2.5%).
+* Group practice nephrologists have far more evening and weekend call responsibilities: 60.6% of group practice
+nephrologists had weekend call 13 times or more in a year while only 24.1% of academic nephrologists had
+13 or more; and 39.1% of group practice nephrologists had night call 26 or more weeks compared to 18.1% of
+academic nephrologists.
+
+#### Exhibit A5: Number of Weekends on Call Annually by Group or Academic Practice Setting
+
+```{r exhibit-a5, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-a5.png"))
+```
+
+
+#### Exhibit A6: Number of Weeks with Night Calls Annually by Group or Academic Practice Setting
+
+```{r exhibit-a6, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-a6.png"))
+```
+
+* While nephrologists generally provide a set of core services regardless of setting, there are some notable
+differences in regard to specific procedures. For example, 61.1% of academic nephrologists provided CRRT to
+5 or more patients per month, yet, only 31% of group practice nephrologists provided that level of procedures.
+Only 12.3% of group physicians performed any kidney biopsies in a typical month compared to 60.9% of
+the academic nephrologists. Only 35.7% of group nephrologists performed any temporary dialysis catheter
+placement in a month compared to 61.4% of the academic nephrologists; and academic nephrologists were
+more than 4 times as likely to perform a renal ultrasound in a month as group nephrologists (16.7% vs. 3.5%).
+
+#### Exhibit A7: Frequency Common Procedures Were Performed by Group or Academic Practice Setting
+
+```{r exhibit-a7.1, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-a7.1.png"))
+```
+
+```{r exhibit-a7.2, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-a7.2.png"))
+```
+
+* There was a significant difference in income by setting, with group practice nephrologists earning an annual
+mean income $30,000 higher than 
+academic physicians (mean incomes $207,176 vs. 
+$176,438). The difference
+was greatest for males, with male group practice nephrologists making nearly $40,000 more per year than male
+academic nephrologists ($220,479 vs. 
+$180,952). The difference for females was a little 
+more than $9,000.
+* When viewed by gender, males were making nearly $31,000 more than females 
+(mean incomes $206,043
+vs. $176,152). The difference was far greater in group 
+practice ($41,050; 
+$220,479 for males vs. 
+$179,429 for
+females) than in academic positions ($10,629; 
+$180,952 vs. 
+$170,323).
+
+#### Exhibit A8: Mean Base Salary by Sex and Setting of Primary Nephrology Job
+
+```{r exhibit-a8, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-a8.png"))
+```
+
+* IMGs in group practices reported earning $6,500 more than USMGs in group 
+practices ($210,000 vs
+$203,404). However, USMGs in academic settings make 
+nearly $20,000 more than IMGs in that setting
+($189,483 vs 
+$168,000)
+* Despite the great variation between the incomes of nephrologists in group practice and academic
+institutions, their satisfaction with their income is similar. Overall, a quarter of nephrologists were
+dissatisfied with their income.
+* Both group practice and academic nephrologists were satisfied or very satisfied with the intellectual challenges
+(92.6% and 93.3% respectively) and with their relationships with patients (91% and 94.5% respectively). These
+were clearly some of the key reasons for selecting the specialty and undoubtedly contributed to the general
+satisfaction with their current position.
+
+#### Exhibit A9: Ratings of Aspects of Nephrology
+
+```{r exhibit-a9, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-a9.png"))
+```
+
+* Overall, 11.6% were dissatisfied with the current position, with similar percentages for group and academic
+nephrologists.
+* On the other hand, work hours and ability to balance work-life needs are challenges in nephrology especially
+in group practice: 35% of group practice nephrologists had a negative opinion of hours worked compared
+to 23.5% of academic nephrologists; and 33.6% of group practice nephrologists were dissatisfied with their
+work-life balance compared to 26.1% of the academic nephrologists.
+* Many group practice nephrologists were also dissatisfied with job opportunities in nephrology (38.5%); this was
+also an issue for academic nephrologists but to a lesser extent (23.7% dissatisfied).
+* The difference in satisfaction between the group and academic nephrologists comes out in their willingness to
+recommend the specialty to medical students and residents: 81% of academic physicians would recommend
+the specialty compared to 69.7% of group practice nephrologists.
+
+#### Exhibit A10: Would Recommend Nephrology to Medical Students and Residents, by Group or Academic Practice Setting
+
+```{r exhibit-a10, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-a10.png"))
+```
+
+## Methods
+
+The target group for the survey was nephrology fellows who graduated during the period 2012–2015 and had therefore
+been in practice for at least one year. ASN provided GW-HWI with 2934 email addresses of nephrologists believed to
+have completed training in that period. GW-HWI utilized REDCap survey software for emailing a unique survey web link
+to each potential participant. The survey launched in late May 2017 and closed after five weeks with 320 valid responses
+for a response rate of 10.9%.  
+
+During data cleaning it was found that a number of respondents had completed their fellowship outside the target year
+range, including 2016 graduates. Given the relatively low response rate and noting that most 2016 graduates would
+likely have a full year’s practice experience behind them and therefore could provide useful data about post-training
+practice, it was decided to extend the year range for completing core nephrology training to 2009–2016 but to exclude
+those outside this range. Ten respondents who did not provide their year of completing training were also included, in
+the expectation that they were far more likely than not to fall within the year range of interest given the method by which
+individuals were selected for the survey.  
+
+A decision was made to exclude pediatric nephrologists; taken together with data cleaning this left a total of 270
+respondents for the analysis. Exhibit 1 lists the responses by year of completing core training.  
+
+
+#### Exhibit 1: Year of Completing Core Nephrology Training
+
+```{r exhibit-1, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-1.png"))
+```
+
+
+As the exhibit shows, respondents’ years of completing nephrology training ranged from 2009 to 2016, which is
+consistent with the target group being 2012–2015 new practitioners, some of whom were continuing with extra training
+following core nephrology training before beginning practice.  
+
+#### Exhibit 2: Responding by Total Years of Nephrology Training
+
+```{r exhibit-2, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-2.png"))
+```
+
+More than two-thirds of respondents (68.8%, Exhibit 2) completed their nephrology training in 2 years though a
+substantial minority spent 3 or more years in training.
+
+## Representativeness
+
+Comparison with ACGME data from 2013–2014 and 2015–2016 suggests that respondents to the Early Practice Survey
+had a higher proportion of females (by around 5%) and a lower proportion of IMGs (by around 10–12%) than the likely
+population of nephrologists who completed training in recent years. Proportions of Black/African Americans and
+Hispanics/Latinos were, very roughly, in line with the expected population.
+
+#### Exhibit 3: Profile of Respondents
+
+```{r exhibit-3, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-3.png"))
+```
+
+## Educational and Demographic Background
+
+#### Exhibit 4: Medical School Location
+
+```{r exhibit-4, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-4.png"))
+```
+
+
+#### Exhibit 5: Citizenship Status
+
+```{r exhibit-5, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-5.png"))
+```
+
+More than half of respondents were U.S. citizens, either native born (40.8%) or naturalized (20.2%). Around one-quarter
+were on temporary visas, either temporary worker (H, 20.2%) or exchange visitor (J, 3.4%) visas. It is unclear why any
+practicing nephrologists would be on exchange visitor visas, though it is possible these were former J visa holders
+working in HPSAs under one of the various J visa waiver schemes. (Technically, waiver holders transfer to H-1B visas,
+but it is possible some are unaware of this change in visa status. GW-HWI has agreed with ASN to conduct interviews
+during 2018 to explore this and similar questions about visa status awareness.)  
+
+IMG respondents were more likely than USMGs to be male (66.4% vs. 47.5% male respectively, Exhibit 6).
+
+#### Exhibit 6: Sex of Respondents by IMG Status
+
+```{r exhibit-6, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-6.png"))
+```
+
+## Academic Practice vs. Private Practice
+
+An analysis of the survey responses indicated that there were significant differences on numerous variables between
+nephrologists who had gone into academic practice compared to those who went into private practice. For that
+reason, this report includes numerous exhibits comparing nephrologists who are in group practice to those that are in
+academic practices.
+
+#### Exhibit 7: Setting of Primary Nephrology Job by Sex
+
+```{r exhibit-7, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-7.png"))
+```
+
+As indicated in Exhibit 7, 47.1% of the respondents went into group practice and 47.1% into academic practice. Also, as
+indicated in the exhibit, females were more likely to go into academic practice than group practice (53% to 39%), while
+males were more likely to go into group practice (53% to 42%).  
+
+As indicated in Exhibit 8, USMGs were more likely to enter academic practices than group practices (51% to 43.5%),
+while IMGs were more likely to enter group practices (50% to 44%).
+
+#### Exhibit 8: Setting of Primary Nephrology Job by Medical School Type
+
+```{r exhibit-8, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-8.png"))
+```
+
+
+It appears that as a nephrologist advances through their early career they move away from group practice and towards
+academic practice (Exhibit 9), with the percentage in group practice at 56.7% among those who completed core training
+in the past two years but only 32.6% among those who completed training in 2012 or earlier; conversely, the percentage
+in academic practices is almost double among those who completed training in 2012 or earlier compared to those
+completing training in 2015 or 2016 (67.4% vs. 34.2%). It is also possible that the 2011–2012 cohort entered practice at a
+time when there happened to be opportunities in academic practice.  
+
+#### Exhibit 9: Setting of Primary Nephrology Job by Year Core Training Completed
+
+```{r exhibit-9, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-9.png"))
+```
+
+As might be expected, those working in academic practices typically spent more years in nephrology training
+than those working in group practices (Exhibit 10). Almost twice as many of those with only two years of training
+were working in group practices as in academic practices (62.3% vs. 37.7%), with the proportions being more than
+reversed for those with three years of training; only one of the 17 with four or more years of training was working in a
+group practice.  
+
+#### Exhibit 10: Setting of Primary Nephrology Job by Total Years Training Completed, Academic and Group Practices Only
+
+```{r exhibit-10, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-10.png"))
+```
+
+## Practice and Focus Activities
+
+More than half (55.8%) of respondents indicated they had taken additional training following completion of core
+nephrology training (Exhibit 11). The most common additional trainings undertaken were clinical research (29.3% of
+respondents who answered any part of this question), transplant nephrology (27.3%), basic science research (18.0%),
+and interventional nephrology (10.0%). Among the 18 others, 2 (1.4%) cited clinical ethics training, two cited glomerular
+disease and two mentioned medical education.
+
+#### Exhibit 11: Additional Training After Completion of Core Nephrology Training
+
+```{r exhibit-11, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-11.png"))
+```
+
+There were some substantial differences in training patterns depending on practice setting in either group practice or
+academic practice, as seen in Exhibit 12. For example, more than twice as many of the respondents from academic
+practices had had training in clinical research compared to those in group practices (37.4% vs. 16.3%), and one
+and a half times as many had had training in transplant nephrology (31.9% vs. 20.9%); conversely, far more of the
+respondents from group practices had undergone training in interventional nephrology (20.9% vs. 4.4% of those from
+academic practice).
+
+#### Exhibit 12: Additional Training After Completion of Core Nephrology Training, by Group or Academic Practice Setting
+
+```{r exhibit-12, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-12.png"))
+```
+
+#### Exhibit 13: Focus of Primary Nephrology Job
+
+```{r exhibit-13, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-13.png"))
+```
+
+Almost three-quarters of respondents (72.2%) said their primary work focus was general nephrology (Exhibit 13). The
+only other notable responses were transplant nephrology (11.9%) and mixed nephrology plus another clinical specialty
+area (8.8%). USMGs were more likely than IMGs to focus on general nephrology (79.7% vs. 66.0%) but less likely than
+IMGs to work in transplant nephrology (8.1% vs. 15.0%). Only 9 (3.3%) were not primarily focused on nephrology.
+
+#### Exhibit 14: Focus of Primary Nephrology Job by Group or Academic Practice Setting
+
+```{r exhibit-14, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-14.png"))
+```
+
+Exhibit 14 shows that those whose focus was general nephrology were more likely to be in group practice than
+academic practice settings (85.2% vs. 65.6%), while those whose focus was transplant nephrology were more likely to
+be in academic than group practice settings (21.3% vs. 3.3%).  
+
+By far the most common job responsibilities were care of hospitalized patients (97.1% of respondents), care of
+patients in the clinic (94.7%) and care of patients in an outpatient dialysis unit (79.8%), as seen in Exhibit 15. Other
+responsibilities exercised by more than 10% of respondents were clinical research (32.9%), kidney biopsy (28.8%),
+dialysis catheter placement (27.2%), medical directorship with a dialysis provider (24.7%) and care of patients in a
+nursing home or rehabilitation center (18.1%).
+
+#### Exhibit 15: Responsibilities in Primary Nephrology Job by Group or Academic Practice Setting
+
+```{r exhibit-15, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-15.png"))
+```
+
+Also from Exhibit 15, those in academic practices were more likely than those in group practices to have responsibility
+for kidney biopsies (48.4% vs. 9.1%), dialysis catheter placement (34.4% vs. 19.8%) and clinical research (57.4% vs.
+8.3%), while those in group practices were more likely than those in academic practices to have responsibility for care of
+patients in an outpatient dialysis unit (90.1% vs. 69.7%) or in a nursing home or rehabilitation unit (24.8% vs. 11.5%) or to
+hold a medical directorship with a dialysis provider (33.9% vs. 15.6%).
+
+#### Exhibit 16: Partnership Opportunities
+
+```{r exhibit-16, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-16.png"))
+```
+
+Not surprisingly, the vast majority of nephrologists in group practice (77%) said their primary job offered them a path to
+partnership; only 5.7% of those in other settings said they had a path to partnership (Exhibit 16).
+
+#### Exhibit 17: Primary Job Path to Partnership by Medical School Graduation Status
+
+```{r exhibit-17, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-17.png"))
+```
+
+IMGs were more likely than USMGs to have a path to partnership (42.0% vs. 36.9%), likely because a higher proportion of
+IMGs than USMGs were in group practice.  
+
+Overall, 10.8% answered that they were already a partner (Exhibit 18).  
+
+#### Exhibit 18: Whether or Not Partner
+
+```{r exhibit-18, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-18.png"))
+```
+
+#### Exhibit 19: Time Spent in Patient Care
+
+```{r exhibit-19, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-19.png"))
+```
+
+Over 60% of respondents reported spending at least 40 hours per week in patient care, with another 17.3% spending at
+least 30 hours weekly (Exhibit 19).  
+
+#### Exhibit 20: Time Spent in Patient Care by Group or Academic Practice Setting
+
+```{r exhibit-20, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-20.png"))
+```
+
+Respondents working in group practices were spending more time in patient care than those in academic practices,
+with 47.1% of them reporting 50+ hours a week of patient care compared to 13.6% of those in academic practices
+(Exhibit 20).
+
+#### Exhibit 21: Incentives Received, by Group or Academic Practice Setting
+
+```{r exhibit-21, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-21.png"))
+```
+
+The most common incentives reported were support for maintenance of certification and continuing medical education
+(47.0%), relocation allowances (27.5%), career development opportunities (27.1%), income guarantees (25.0%), sign-on
+bonus (16.5%) and H-1 visa sponsorship (16.1%). Fewer than one in four (21.6%) reported no incentives. Of the 14
+respondents who described ‘other’ types of incentive, 5 cited some kind of performance or productivity bonus and 2
+more cited an annual bonus without saying how this was assessed.  
+
+Respondents from group practices were more likely than those from academic practices to report receiving support
+for maintenance of certification and continuing medical education (53.4% vs. 40.7%), relocation allowances (34.7% vs.
+20.3%), income guarantees (33.1% vs. 16.9%) and a sign-on bonus (28.0% vs. 5.1%). Those in academic practices were
+more likely than those in group practices to report receiving career development opportunities (37.3% vs. 16.9%) and
+H-1 visa sponsorship (18.6% vs. 13.6%).
+
+## Evening and Weekend Responsibilities
+
+#### Exhibit 22: Number of Weekends on Call Annually
+
+```{r exhibit-22, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-22.png"))
+```
+
+Only one in ten respondents (10.5%) were on call every other weekend or more, but 32.9% more were on call at least
+every fourth weekend. Most respondents (48.4%) were on call at least once every two months but less often than every
+fourth weekend. The proportion on call at least every other weekend decreased as the number of years out of training
+increased, with the proportion on call at least one weekend in two being 12.8% among those completing training in
+2015 and 2016 compared to 4.1% among those completing training in 2012 or earlier. A corresponding change in those
+on call from 6 to 12 weekends annually suggests a general trend towards a lower on-call frequency as the nephrologist
+career progresses.
+
+#### Exhibit 23: Number of Weeks with Night Calls Annually, by Year of Completing Training
+
+```{r exhibit-23, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-23.png"))
+```
+
+More respondents were on night call at least every other week than were on call every other weekend (29.7% vs. 10.5%)
+but, as with weekends on call, the largest group were on night call at least once every two months but less than every
+fourth weekend (31.7%).  
+
+As with weekends on call, a general trend is evident towards a lower frequency of weeks with night calls as the
+nephrologist career progresses, with 27.7% of those completing training in 2015 and 2016 on night call at least every
+other week compared to 14.6% of those completing training in 2012 or earlier.  
+
+How far these trends toward reduced out-of-hours responsibilities as the nephrologist’s career progresses are
+explained by the switch from group practices to academic practices is unknown, but as Exhibits 24 and 25 show, those
+in academic practices are generally on call and on night-call less often than those in group practices: only 24.1% of
+respondents in academic practices reported being on call 13 or more weekends annually compared to 63.6% of those
+in group practices, while only 41.4% of respondents in academic practices reported 13 or more weekends on night call
+annually compared to 65.2% of those in group practices.
+
+#### Exhibit 24: Number of Weekends on Call Annually by Group or Academic Practice Setting
+
+```{r exhibit-24, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-24.png"))
+```
+
+#### Exhibit 25: Number of Weeks with Night Calls Annually by Group or Academic Practice Setting
+
+```{r exhibit-25, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-25.png"))
+```
+
+## Procedural Responsibilities
+
+#### Exhibit 26: Dialysis Modalities Offered in Primary Nephrology Job
+
+```{r exhibit-26, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-26.png"))
+```
+
+The most common dialysis modalities offered were in-center conventional (99.6% of respondents), home PD (85.1%)
+and home HD (64.1%), with in-center nocturnal much less common (29.0%).
+
+#### Exhibit 27: Frequency Common Procedures Were Performed
+
+CRRT was the most frequently performed procedure and only 15% of respondents did not perform CRRT;
+temporary dialysis catheter placement was performed by 48.3% of respondents and kidney biopsy by 46.3%. Renal
+ultrasonography, tunneled catheter placement and PD catheter placement were all performed relatively infrequently.
+
+#### Exhibit 28: Frequency Common Procedures Were Performed, by Group or Academic Practice Setting
+
+```{r exhibit-28.1, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-28.1.png"))
+```
+
+
+```{r exhibit-28.2, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-28.2.png"))
+```
+
+In general, those in academic practices were more likely than those in group practices to report performing procedures
+such as CRRT, temporary dialysis catheter placement and kidney biopsy (Exhibit 28).
+
+## Salaries
+
+#### Exhibit 29: Base Salary (Mean) by Medical School Graduation Status and Sex
+
+```{r exhibit-29, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-29.png"))
+```
+
+Mean income (based on midpoints of $10,000 ranges) indicates that males were 
+earning around $30,000 more on
+average than females, while there was little overall difference between USMG and IMG average salaries (Exhibit
+29). The median salary, which is less sensitive to outliers, told a similar story, with the overall median in the range
+$180,000-
+$189,999 and male and female median salaries around 
+$20,000 apart.
+
+#### Exhibit 30: Mean Base Salary by Setting of Primary Nephrology Job
+
+
+```{r exhibit-30, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-30.png"))
+```
+
+Exhibit 30 indicates that nephrologists in group practices were earning more than those in academic practices, as
+can be seen by differences of around $25,000 in exclusively nephrology group vs. academic practices and more
+than $60,000 in multispecialty group vs. academic practices. The highest earnings were reported by those in solo
+practices ($235,000) though with only two respondents in this category this result may not be representative. Five of
+the respondents included among the ‘other’ settings reported being based in hospitals (excluding one based in a VA
+hospital), with average earnings of $221,000, roughly comparable with earnings at multispecialty group practices.
+
+#### Exhibit 31: Mean Base Salary by Sex and Setting of Primary Nephrology Job
+
+```{r exhibit-31, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-31.png"))
+```
+
+Splitting the salary data by sex and contrasting group with academic practices (Exhibit 31) reveals a pattern of males
+earning more than females in both types of setting, but with a much bigger male-female differential in group practices
+($41,000) than in academic practices 
+(around $10,500).  
+
+The pattern is less clear, but still evident, when comparing median salaries (Exhibit 32).
+
+#### Exhibit 32: Median Base Salary by Sex and Setting of Primary Nephrology Job
+
+```{r exhibit-32, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-32.png"))
+```
+
+#### Exhibit 33: Mean Base Salary by Group or Academic Practice Setting and Medical School Graduation Status
+
+```{r exhibit-33, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-33.png"))
+```
+
+IMGs reported higher salaries than USMGs in group practices (by about $5,500) but lower salaries than USMGs in
+academic practices by more than $20,000 (Exhibit 33). This presents a somewhat different story to the apparent overall
+similarity of IMG and USMG salaries reported above in Exhibit 29. The pattern is similar but less pronounced in median
+salaries (Exhibit 34).
+
+#### Exhibit 34: Median Base Salary by Group or Academic Practice Setting and Medical School
+Graduation Status
+
+```{r exhibit-34, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-34.png"))
+```
+
+#### Exhibit 35: Mean and Median Base Salary by Practice Focus
+
+```{r exhibit-35, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-35.png"))
+```
+
+Transplant nephrology and general nephrology were the highest paid branches of nephrology ($192,000 and 
+$189,699
+respectively), with general nephrology far and away the most common focus reported (73.8% of respondents who
+supplied salary information on their primary nephrology job). Nephrology-focused hospitalists and interventional
+nephrologists reported the lowest salaries though the numbers involved were small, amounting together to only 4% of
+the respondents. Median salaries told a similar story.
+
+#### Exhibit 36: Mean Base Salary by Year of Completing Core Nephrology Training
+
+```{r exhibit-36, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-36.png"))
+```
+
+Perhaps surprisingly, it was respondents who had completed core nephrology training in 2012 or earlier who reported
+the lowest salaries, more than $10,000 less on average than those who completed training later. This is most likely a
+consequence of the higher proportion in academic practices, where reported earnings are substantially less than in
+group practices.
+
+#### Exhibit 37: Distribution of Incentive Income
+
+```{r exhibit-37, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-37.png"))
+```
+
+Just over 60% of respondents reported some incentive income, though only about a third overall (34.5%) reported
+incentive income above $10,000 annually. Only one in five (20.3%) reported 
+incentive income above $25,000 but with
+about half of this group (10.2% of all respondents) reporting incentive income greater than $50,000.
+
+## Satisfaction
+
+#### Exhibit 38: Satisfaction with Nephrology Training
+
+```{r exhibit-38, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-38.png"))
+```
+
+While only a few nephrologists were dissatisfied with their nephrology training, only a bare majority of respondents
+(50.7%) were very satisfied, with USMGs a little more satisfied than IMGs (54.5% vs. 47.6% very satisfied respectively)
+and males a little more satisfied than females (53.5% vs. 47.8% very satisfied); a larger majority (62.5%) still strongly
+agreed that they were adequately prepared for nephrology practice by the end of their fellowship and only one
+respondent (0.4%) said they did not agree they were adequately prepared for practice. Differences in nephrology
+training satisfaction according to practice setting were not significant.
+
+#### Exhibit 39: Satisfaction with Overall Salary/Compensation for USMGs and IMGs
+
+```{r exhibit-39, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-39.png"))
+```
+
+USMGs were much more likely to report being very satisfied with their overall salary than IMGs (28.1% vs. 12.2%), while
+IMGs were more likely to be very dissatisfied than USMGs (10.2% vs. 6.6%).
+
+#### Exhibit 40: Satisfaction with Overall Salary/Compensation by Group or Academic Practice Setting
+
+```{r exhibit-40, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-40.png"))
+```
+
+There were no significant differences in satisfaction with overall salary/compensation between group and academic
+practice settings (Exhibit 40).
+
+#### Exhibit 41: Satisfaction with Overall Salary/Compensation
+
+```{r exhibit-41, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-41.png"))
+```
+
+Satisfaction with compensation was highest among those who completed training in 2013 and 2014, with 70.5%
+satisfied or very satisfied with compensation compared to 62.4% of those completing training in 2015 and 2016.
+Only 49% of those completing training in 2012 or earlier were satisfied with compensation, likely reflecting the higher
+proportion in academic settings where earnings are lower than in group practices.
+
+#### Exhibit 42: Ratings of Aspects of Nephrology
+
+```{r exhibit-42, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-42.png"))
+```
+
+Respondents were very positive indeed about the quality of patient relationships and intellectual challenges in
+nephrology (93.2% and 92.5% positive or very positive respectively). They were least positive about administrative
+duties (30.2%), geographical job distribution (33.2%) and job opportunities (34%).
+
+#### Exhibit 43: Ratings of Aspects of Nephrology by Group or Academic Practice Setting
+
+```{r exhibit-43.1, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-43.1.png"))
+```
+
+
+```{r exhibit-43.2, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-43.2.png"))
+```
+
+Using a satisfaction index obtained by awarding scores from -100 to +100 based on responses, respondents from
+academic practices were more satisfied than those from group practices in regard to patient relationships (satisfaction
+index of 79.3 vs. 70.1), number of hours worked (13.9 vs. 2.5), work-life balance (12.6 vs. 0.4), job opportunities (9.3 vs.
+-5.4) and geographic distribution of jobs (4.6 vs. -2.5). Satisfaction on intellectual challenge and administrative duties
+was about the same in both groups.  
+
+Respondents in academic practices were also more satisfied than those in group practices with their current position
+(41.3% very satisfied vs. 33.1%). Overall almost 80% were somewhat or very satisfied with their current positions.  
+
+#### Exhibit 44: Satisfaction with Current Position
+
+```{r exhibit-44, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-44.png"))
+```
+
+#### Exhibit 45: Would Recommend Nephrology to Medical Students and Residents, by Group or Academic Practice Setting
+
+```{r exhibit-45, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-45.png"))
+```
+
+Despite the high level of personal satisfaction with some aspects of nephrology, a quarter of respondents did not feel
+they could recommend nephrology to current medical students and residents, with respondents from academic practices
+more likely than those from group practices to recommend nephrology to medical students and residents (81% vs.
+69.7%, Exhibit 45). USMGs were more likely than IMGs to recommend nephrology (77.7% vs. 72.1%, Exhibit 46).  
+
+#### Exhibit 46: Would Recommend Nephrology to Medical Students and Residents, by Medical School Graduation Status
+
+```{r exhibit-46, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-46.png"))
+```
+
+#### Exhibit 47: Willingness to Recommend Nephrology by Year of Completing Training
+
+```{r exhibit-47, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-47.png"))
+```
+
+Respondents who completed training at least three years ago were more positive about recommending nephrology to
+medical students and residents (76.8% and 77.6% compared to 70.9%).
+
+## Reasons for Recommending
+
+Many respondents cited the challenge, intellectual stimulation and variety/interest of the field. Though some were
+concerned about low pay and poor work-life balance, the extent of concern about these issues varied depending on
+the particular position held by the respondent. Many of the respondents saw in nephrology a more traditional physician
+role with close doctor-patient relationships, the stimulation of varied practice challenges, and the vocational rewards
+attendant on improving patients’ lives.  
+
+* My love for nephrology makes it hard for me to
+understand why there is lack of interest in this field. It
+offers deep understanding of physiology, offers variety
+of paths including transplant, dialysis including home
+modalities, Glomerular diseases, stones, acute/critical
+care, Onconephrology , interventional etc. There is no
+lack of job opportunities either and life style is decent.
+* Nephrology - when practised in all its diversity, has a
+wide spectrum of problems, techniques and modalities
+to understand and use. From diseases as common
+as just HTN and diabetes all the way to complex
+autoimmune conditions, it mandates that the practitioner
+be an excellent internist, good with hands on skills and
+good with just business sense. Finally, with nephro,
+balancing your regular life out can be easier as compared
+to other fields. The remuneration is satisfactory in the
+long run.
+* Nephrology is certainly disappointing when it comes
+to compensation. However, it’s extremely interesting
+and mentally challenging medical specialty. If you like
+diagnostic and therapeutic challenges, you will enjoy the
+specialty.
+* Nephrology is the closest thing to traditional Internal
+Medicine practice. We develop relationships with
+our patients and see them in both the inpatient and
+outpatient setting. It is extremely rewarding. Nephrology
+is challenging and never dull. In academic nephrology I
+have had the opportunity to focus on what interests me
+the most and continue to improve nephrology practice
+through research.
+* Promotes critical thinking, care of the whole patient,
+challenging, rewarding, Long term patient physician
+relationships
+* There is a good mix of inpatient and outpatient care as
+well as variety to your day with rounding at the dialysis
+units. Of the inpatient consults, there is a mix of routine
+and critically ill patients. You are able to both see your
+impact over time as well as your impact within just a few
+hours once a patient’s labs or clinical status improves.
+* It remains to be a very interesting subspecialty of
+medicine and very challenging. It provides many
+opportunities to impact patients’ lives for the better
+* Interesting pathophysiology, good schedule, lots of
+teaching opportunities in academic practice, potential for
+research.
+* I enjoy long term care of patients. I like the diversity of
+disease processes that I deal with on a day to day basis.
+The changing clinical settings that negotiate in a week
+including inpatient, outpatient, dialysis units keeps me
+engaged.
+* Despite flaws in the specialty, I still find it to be very
+rewarding for the reasons I chose it as a specialty.
+I enjoy the complicated patients along with the
+investigative work it takes to determine cause of their
+kidney related diagnosis. It’s fun to think about the
+physiology and how that explains a patient’s renal or
+fluid/electrolyte/acid base abnormality. There is a lot of
+flexibility in the specialty in terms of hospital based work
+vs outpatient work. Nephrologists generally can find a
+position that fits with their interests and lifestyle.
+* An aspect medicine I find very relevant and interesting.
+A nephrologist is specialist but still somewhat involved in
+the general care/overview of the patient.
+
+## Reasons for Not Recommending
+
+The reasons respondents gave for not recommending nephrology appeared to represent a difference in weighting
+between the positive and negative aspects of the profession, with each nephrologist weighing things differently
+according to the interests, sense of personal reward, and the position they held. Although the negatives included
+high workload and low pay, many of the responses regarded these as impacted significantly by practices themselves
+and reflected on the vulnerability of new nephrologists entering the field to unfair contract terms. In addition, some
+negatives (such as having to care almost single-handedly for a critically ill patient) would be regarded as positives by
+nephrologists who valued the more traditional physician role exemplified by such a case.  
+
+* I like the pathophysiology very much and highly
+interested but I will NOT recommend them nephrology
+because private practices are NOT honest and fair to
+their juniors associates in terms of partnership track and
+incentives. There is literally no security in the practices
+that you will get the right partnership track in the end.
+Low salary to begin with poor incentives. There is a lot of
+dishonesty in this specialty in terms of honesty among
+the private practices. I heard lot of cases that after 3 or 5
+years of practices, practices do not offer the partnership
+track. Good friends of mine, who came to this specialty
+because of me, joined the hospitalist once done with
+their fellowships due to above stories. That’s the main
+reason people are leaving the nephrology and entering
+into hospitalist jobs. There is a good security and
+incentives in hospitalist job and more time to your family.
+I would like to recommend to students and residents but
+they stated me above reasons. That’s why they do not
+want to join the nephrology specialty. We need to fix this
+above main issue. The other main issue is visa for foreign
+graduates. Not many IMG, getting into residency training
+due to visa issues.
+* Lifestyle limiting in small practice, frequency of call
+and hours worked, including on call return to hospital
+requirements, moderate compensation for time requires.
+* After 3 years of private practice as an associate
+nephrologist in [state], I resigned from my first
+Nephrology job since graduation due to an unfavorable
+partnership contract. I would caution residents
+with interest in Nephrology about the hostility to
+new graduates in the [state] area with relation to its
+competitiveness and also high risk of being taken
+advantage of. Private practice Nephrology is very work
+intensive, and the [state] area is saturated. I would
+caution that the partner level salary is barely higher than
+that of Hospitalist, which is one reason why my current
+job is a Nocturnist. I may return to Nephrology in the
+future if the contract is fair or favorable.
+* Although I love practicing what I do, and that is the
+reason I have continued practice in nephrology for
+last 5 years, despite many newer job opportunities
+(e.g. hospitalist, work from home- as peer reviewer
+with insurance companies, etc.); this branch sets you
+up for very long and busy work days, lots and lots of
+commute to get to various satellite dialysis clinics and
+outpatient/ CKD clinics, very poor reimbursement ( I
+am being paid much lower than a fresh family medicine
+graduate at the same practice despite much higher
+patient volume and wRVUS!!!), no time or mentorship
+for career advancement due to many responsibilities;
+and thus, a very high rate of burnout. I would hate
+for any enthusiastic student or resident have to make
+tough decisions like the ones I am faced with, so early
+in their career.
+* Getting a good nephrology practice is difficult these
+days. Most practice never keep their promises and
+overwork newly employed nephrologist.
+* I love nephrology itself, but the job market is very
+draining on a nephrology physician and I don’t think the
+specialty is recognized as well for the care we provide. I
+do believe the nephrology community itself is responsible
+for this situation. We haven’t promoted ourselves as
+aggressively as we should have so far.
+* Not enough compensation for the workload
+transportation time and responsibilities required A
+better quality of life could be had as a hospitalist with
+an interest in nephrology. The field is misunderstood by
+Business and therefore the important and mentally time
+consuming work is undervalued and our productivity is
+undervalued based on the lack of billable procedures.
+Many become burned out by the realities of the field at
+this time and therefore while I could encourage someone
+with an interest already but at the same time I would
+encourage them to make an informed decision which
+was in fact the same advice I was offered before I went
+to fellowship.
+* Not all nephrologists compensated appropriately for the
+amount of work and involvement of our patients. Part
+time options are not really part time and people complain
+that they end up working full time for part time pay.
+* The field isn’t what I joined it for. I joined for the
+opportunity to take care of seriously ill patients with
+interesting physiology; what I got was essentially
+preventative care with CKD, non-nephrologists having
+little respect for our opinion on critically ill patients, and
+a terrible salary-to-work ratio. To top it off, we’re losing
+turf to other providers. The current fellowship crisis
+stems from people seeing how miserable our situation is.
+Despite how much I love nephrology, critical care offers
+better opportunities for the ICU-inclined, and rheum
+offers better opportunities for interesting outpatient care
+with a better salary. I likely would still choose nephrology
+for myself, but cannot in good conscience recommend
+the mess that the specialty is to others right now unless
+they have a specific kidney research bent or some other
+factor that outweighs our issues.
+
+## What ASN Can Do To Support Careers in Nephrology
+
+Responses fell into three main categories:  
+
+1. Lobbying & Advocacy, mainly around pay and reimbursement but also for immigration issues,
+for defending the role of the nephrologist  
+
+* Dramatically reduce the number of nephrology fellowship
+so the demand and supply ratio is balanced. Reduce
+regulations faced by kidney transplant programs. Reduce
+regulations faced by dialysis units so that it is easier for a
+nephrologist to own dialysis units.
+* We have a shortage of people going into Nephrology and
+a large burnout rate (especially in private practice). I think
+that improving reimbursement in Nephrology is key to
+recruitment of future Nephrologists. It is a tough job with
+a lot of call/weekend responsibilities. It is disheartening
+to see that the reimbursement for a starting Nephrologist
+is less than a hospitalist, especially given the difference
+in work hours.
+* Intensified lobbying efforts for enhanced reimbursement
+* Lobby for better compensation for the care we do,
+working to re-establish our role in nephrology care issues
+like diagnostic procedures or interventional procedures.
+* By highlighting the practices in US that are abusing
+budding nephrologist on visa
+* Do a better job of explaining to Congress the need for J1/
+H1 visas for nephrologists since a very high proportion of
+the physicians in this field are on waivers and they face a
+lot of trouble with regards to immigration. That coupled
+with a low paying job is driving a lot of IM residents to
+go for hospitalist jobs. Need to offer varied educational
+programs at ASN, geared not only to fellows (clinical
+education) but also those aimed towards people in
+practice (QI, business aspects of the field, etc.)
+* Not quite sure how ASN can be of help. More employers
+having idea about visa sponsorship needing professionals
+like me would help finding a good place to work.
+* Please save nephrology as a specialty, by maintaining
+higher standards for nephrology fellowships,
+limiting newer nephrology fellowship programs, and
+stemming the oversupply of (sometimes inadequately
+trained) nephrology applicants into a market with
+limited job opportunities.
+
+2. Education, including appreciation of educational
+opportunities provided already by ASN  
+
+* Continue great educational opportunities such as neph sap
+* Continued grant support Continued offering of CME
+materials such as NephSAP and special CJASN series
+(physiology, glomerular disease etc)
+* I appreciate the educational content and funding
+opportunities that ASN provides.
+* More opportunities to appreciate the complexity
+of medical billing and the business of medicine,
+specifically nephrology.
+
+3. Support and Mentoring in Job Search and
+Contract Negotiations, as nephrologists move into
+their first practice positions  
+
+* ASN needs to work with private practices to mandate
+them to have high base salary and have a structured
+contract for partnership track. In this way, the new
+comer feel more secure. I am wondering if we do not
+work on above then this wonderful and pivotal specialty
+will be obsolete.
+* Continue to offer resources connecting young
+nephrologists with mentors in the field. Encourage
+training programs to expand the scope of training/
+teaching; identify and enable the programs that are
+training future leaders with expanded skill sets.
+* Continue to work to support women in the field by
+continuing support networks and trying to create an
+atmosphere of full disclosure (as to fair pay to disclose
+the salary discrepancies that arise between men and
+women in the same job fields with the same experience)
+* Fellows need to learn about the business of nephrology.
+Unfortunately, there are many practices where physicians
+take advantage of the lack of knowledge of the business
+of nephrology recently graduated fellows have.
+* Find ways to guide those early in their careers to
+make the best of this profession, given the increasing
+regulations and less than ideal compensation.
+* I would have liked some guidance when I was looking for
+a job. My mentors in an academic setting couldn’t help.
+I would have liked to ask about - How many hospitals
+rounding at - How much windshield time - How does
+weekend coverage work I would have liked a better
+understanding about the loss of work life balance and
+would have liked to know what I was sacrificing when I
+took on my first job.
+* Set up some kind of network for graduating fellows to
+find jobs more easily. Right now, it’s all by word of mouth.
+* mentorship programs are important and helpful. I had
+tremendous mentors in fellowship I hope all young
+nephrologists have this opportunity
+
+4. Other  
+
+* I think it will be difficult as most of the issue is a problem
+related to the market (salary, for life style just is not there
+bottom line). ASN is a great academic resource though.
+* Advocate strongly for policy changes to better support
+not only research but care for renal patients. More
+nephrology training and exposure at student and
+resident level. Aggressive promotion of the importance
+of specialty. The above will lead to increased
+recognition of renal problems, of the importance of
+nephrology care, and hopefully progression to early
+intervention programs. I am aware that ASN is actively
+involved in above currently.
+
+
+## What ASN Can Do To Support Efforts To Offer The Best Quality Care
+
+1. Educational activities, often with a plea for low
+cost or nil cost materials:  
+
+* ASN is doing a great job with the educational
+resources and i hope you keep up the great work.
+getting input of fresh graduates in practice would
+provide insight as well.
+* Training on different aspects on nephrology- like
+coding, Medical directorship role and responsibilities.
+Continuing to provide online modules - if possible
+in video format for CME. Ongoing CME. Perhaps
+pod-casts/educational courses that could be taken
+online for CME. Similar to the Board Review Course
+but with modules and not just content experts but
+actual medical educators providing the content to
+ensure it’s educational.
+* Including KSAP in membership fees. :)
+
+2. Guidelines:  
+
+* Provide guidelines in heretofore ambiguous areas
+* Come up with frequent and simple patient/ office-based
+guidelines
+* Continued CME as above; endorsement/summarizing of
+clinical practice guidelines
+* Regular updates on recommendations/guidelines. Not
+being in an academic environment can be challenging
+to get the most up to date information and journals are
+not very focused on guidelines issues.
+
+3. Improved quality measures:  
+
+* Please lobby for more scientifically developed
+standards of quality assessment. Targets not set in
+strong scientific foundations hurt doctors and patients
+alike. Quality measures which have known interventions
+should be selected, otherwise there is a danger of
+forcing providers to cherry pick their patients.
+* Lobbying to include patient-centered measures in
+metrics that determine reimbursement, as a perfect
+phosphorus or putting in an AVF is not the right metric
+of the quality of my care in a physically declining 80
+year old patient who still wants to do dialysis.
+* Use ASN leadership to use their legislative and lobbying
+efforts to better assess outcomes and reward quality of
+care than to just correct numbers!
+
+4. Professional empowerment:  
+
+* Increase physician oversight in the for profit dialysis
+unit. Specifically, physician who do not have a stake in
+the profits.
+* Fighting to get rid of the many nonsensical CMS
+regulations that make it much harder for me to provide
+the right care to the right patient.
+* ASN should adopt a statement on work life balance
+and workaholism. This is our achilles heel and I worry it
+impacts recruiting.
+
+5. Patient information and education:  
+
+* Provide ‘information for patients’ portals or handouts.
+Might help keep our patients informed and save time for
+providers.
+* Work directly with patients to help them understand
+importance of adherence with therapy. Advocacy
+to government regarding issues with non-adherent
+patients and the fact we are obligated to take care of
+them when they don’t do their part and yet it affects our
+reimbursement
+* Create standardized handouts for nephrology handouts
+that are free to physicians and can be given to patients.
+Advocate for increased payments for Medicare patients.
+* More patient educational material to understand CKD
+and final stages in understanding different modalities
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

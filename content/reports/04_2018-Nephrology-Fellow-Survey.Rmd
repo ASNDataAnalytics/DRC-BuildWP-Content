@@ -3,10 +3,12 @@ title: "Report on the Survey of 2018 Nephrology Fellows"
 subtitle: "Prepared for The American Society of Nephrology"
 author: "By The George Washington University Health Workforce Institute"
 description: "The 2018 Nephrology Fellow Survey found the job market for new nephrologists has continued a trend of steady improvement and increasing salaries for US medical graduates (USMGs) and international medical graduates (IMGs)."
-image: ""
-word: ""
-excel: ""
+image: "/images/04_2018-Nephrology-Fellow-Survey_Image.png"
+word: "/files/04_2018-Nephrology-Fellow-Survey_WORD.docx"
+excel: "/files/04_2018-Nephrology-Fellow-Survey.xlsx"
+powerpoint: "/files/04_2018-Nephrology-Fellow-Survey_PPT.pptx"
 pdf: "/files/04_2018-Nephrology-Fellow-Survey.pdf"
+tags: "featured"
 output: html_document
 ---
 

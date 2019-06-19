@@ -12,25 +12,25 @@ source("src.R")
 
 # Define server logic required to draw a histogram
 shinyServer(function(input, output) {
-
-    output$roi_plot <- renderPlot({
-
-        mh %>% 
-            filter(Specialty == input$specialty) %>% 
-            ggplot(
-                aes(x = Specialty, 
-                    y = ROI
-                    )
-                ) +
-            geom_bar(
-                stat = "identity",
-                fill = "#4267b1", 
-                width = .5
-            ) + 
-            theme_minimal(
-                base_size = 12,
-                base_family = "Roboto"
-            ) +
+  
+  output$roi_plot <- renderPlot({
+    
+    mh %>% 
+      filter(Specialty == input$specialty) %>% 
+      ggplot(
+        aes(x = Specialty, 
+            y = ROI
+        )
+      ) +
+      geom_bar(
+        stat = "identity",
+        fill = "#4267b1", 
+        width = .5
+      ) + 
+      theme_minimal(
+        base_size = 12,
+        base_family = "Roboto"
+      ) +
             geom_text(
                 aes(
                     label = scales::percent(ROI),
