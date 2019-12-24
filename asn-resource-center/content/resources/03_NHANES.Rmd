@@ -1,0 +1,23 @@
+---
+title: "Chronic Kidney Disease (CKD) Surveillance System"
+description: "The National Health and Nutrition Examination Survey (NHANES) is a program of studies designed to assess the health and nutritional status of adults and children in the United States."
+image: "/images/VP4_935_NHANES.png"
+url: “https://www.cdc.gov/nchs/nhanes/index.htm"
+output: html_document
+---
+
+The NHANES program began in the early 1960s and has been conducted as a series 
+of surveys focusing on different population groups or health topics. In 1999, 
+the survey became a continuous program that has a changing focus on a variety of 
+health and nutrition measurements to meet emerging needs. The survey examines a 
+nationally representative sample of about 5,000 persons each year. These persons 
+are located in counties across the country, 15 of which are visited each year.
+
+The NHANES interview includes demographic, socioeconomic, dietary, and 
+health-related questions. The examination component consists of medical, dental, 
+and physiological measurements, as well as laboratory tests administered by 
+highly trained medical personnel.
+
+To learn more about the continuous NHANES Questionnaires and Datasets, visit the
+[National Center for Health Statistics](https://wwwn.cdc.gov/nchs/nhanes/Default.aspx)
+website. 

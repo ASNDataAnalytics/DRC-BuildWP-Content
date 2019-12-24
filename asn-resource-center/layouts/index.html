@@ -1,0 +1,60 @@
+{{ define "title"}} {{ .Site.Title}} {{end}}
+{{ define "header"}} {{ partial "header" .}} {{end}}
+{{ define "main"}}
+
+<div id="main" class="home-page">
+  <div id="hero">
+    <h1>{{.Title}}</h1>
+    <hr>
+    <p>{{.Description}}</p>
+    <hr>
+  </div>
+  <div id="featured-posts">
+    <div class="row gutters">
+      {{ range .Site.Pages }}
+      {{ if in .Params.tags "featured" }}
+       <div class="col col-4">
+         {{ if .Params.productID }}
+         
+         <li hugo-nav="{{ .RelPermalink}}" data-productid="{{.Params.productID}}">
+            <img src="{{ .Params.image }}" />
+            <h2>
+              <a href="" ng-click="onProductClick('{{.Params.productID}}')">{{ .LinkTitle }} </a>
+            </h2> <small style="color:red">Premium</small>
+            
+            {{ if (not (isset .Params "description")) | or (eq .Params.description "") }}
+              <p>{{ .Content }}</p>
+            {{ else }}
+              <p>{{ .Params.description }}</p>
+            {{ end }}
+            
+            <button ng-click="onProductClick('{{.Params.productID}}')">Buy</button>
+          </li>
+         
+         {{ else }}
+         
+         <li hugo-nav="{{ .RelPermalink}}">
+            <img src="{{ .Params.image }}" />
+            <h2><a href="{{ .Permalink }}"> {{ .LinkTitle }} </a></h2>
+            {{ if (not (isset .Params "description")) | or (eq .Params.description "") }}
+              <p>{{ .Content }}</p>
+            {{ else }}
+              <p>{{ .Params.description }}</p>
+            {{ end }}
+          </li>
+         
+         {{ end }}
+         
+          
+        </div>
+      {{ end }}
+    {{ end }}
+    </div>
+  </div>
+</div>
+
+
+
+
+{{ end }}
+{{ define "footer"}} {{ partial "footer" .}} {{end}}

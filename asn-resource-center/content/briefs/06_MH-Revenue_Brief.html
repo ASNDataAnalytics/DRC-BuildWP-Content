@@ -1,0 +1,457 @@
+---
+title: "New Report Shows Nephrology's Value to Health Systems"
+subtitle: ""
+author: "Kurtis Pivert, ASN Data Science Officer"
+description: "New survey data finds nephrology punches above its weight in generating revenue for health systems." 
+image: "/images/06_MH-Revenue_Brief_Image.png"
+word: "/files/06_MH-Revenue_Brief_WORD.docx"
+excel: "/files/06_MH-Revenue_Brief.xlsx"
+pdf: "/files/06_MH-Revenue_Brief.pdf"
+tags: "featured"
+output: html_document
+---
+
+
+
+<div id="asn-data-briefnephrology-key-contributor-to-hospital-revenue" class="section level3">
+<h3>ASN <em>Data Brief</em>—Nephrology Key Contributor to Hospital Revenue</h3>
+<p>Newly released survey data collected from 62 hospital CFOs found nephrology makes
+key contributions to hospital systems gross revenue. The report from
+<a href="https://www.merritthawkins.com/news-and-insights/blog/healthcare-news-and-trends/New-Survey-Shows-Physicians-Are-Key-Revenue-Generators-for-Hospitals/">Merrit Hawkins</a>
+also found the ratio of return on investment (ROI) for nephrologists’ median salary
+was higher than gastroenterology, cardiology, and pulmonology.</p>
+<p><br></p>
+<div id="interactive-visualization-of-revenue-by-specialty" class="section level4">
+<h4>Interactive Visualization of Revenue by Specialty</h4>
+<iframe width="1000" height="800" frameborder="no" src="https://asndataanalytics.shinyapps.io/MH-Revenue/">
+</iframe>
+<p><br></p>
+</div>
+<div id="ranking-of-specialities-by-roi" class="section level4">
+<h4>Ranking of Specialities by ROI</h4>
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+#ncysbartue .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  background-color: #FFFFFF;
+  /* table.background.color */
+  width: auto;
+  /* table.width */
+  border-top-style: solid;
+  /* table.border.top.style */
+  border-top-width: 2px;
+  /* table.border.top.width */
+  border-top-color: #A8A8A8;
+  /* table.border.top.color */
+  border-bottom-style: solid;
+  /* table.border.bottom.style */
+  border-bottom-width: 2px;
+  /* table.border.bottom.width */
+  border-bottom-color: #A8A8A8;
+  /* table.border.bottom.color */
+}
+
+#ncysbartue .gt_heading {
+  background-color: #FFFFFF;
+  /* heading.background.color */
+  border-bottom-color: #FFFFFF;
+}
+
+#ncysbartue .gt_title {
+  color: #333333;
+  font-size: 125%;
+  /* heading.title.font.size */
+  padding-top: 4px;
+  /* heading.top.padding - not yet used */
+  padding-bottom: 4px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#ncysbartue .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  /* heading.subtitle.font.size */
+  padding-top: 0;
+  padding-bottom: 4px;
+  /* heading.bottom.padding - not yet used */
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#ncysbartue .gt_bottom_border {
+  border-bottom-style: solid;
+  /* heading.border.bottom.style */
+  border-bottom-width: 2px;
+  /* heading.border.bottom.width */
+  border-bottom-color: #D3D3D3;
+  /* heading.border.bottom.color */
+}
+
+#ncysbartue .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#ncysbartue .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  /* column_labels.background.color */
+  font-size: 16px;
+  /* column_labels.font.size */
+  font-weight: initial;
+  /* column_labels.font.weight */
+  vertical-align: middle;
+  padding: 5px;
+  margin: 10px;
+  overflow-x: hidden;
+}
+
+#ncysbartue .gt_columns_top_border {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+}
+
+#ncysbartue .gt_columns_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#ncysbartue .gt_sep_right {
+  border-right: 5px solid #FFFFFF;
+}
+
+#ncysbartue .gt_group_heading {
+  padding: 8px;
+  /* row_group.padding */
+  color: #333333;
+  background-color: #FFFFFF;
+  /* row_group.background.color */
+  font-size: 16px;
+  /* row_group.font.size */
+  font-weight: initial;
+  /* row_group.font.weight */
+  border-top-style: solid;
+  /* row_group.border.top.style */
+  border-top-width: 2px;
+  /* row_group.border.top.width */
+  border-top-color: #D3D3D3;
+  /* row_group.border.top.color */
+  border-bottom-style: solid;
+  /* row_group.border.bottom.style */
+  border-bottom-width: 2px;
+  /* row_group.border.bottom.width */
+  border-bottom-color: #D3D3D3;
+  /* row_group.border.bottom.color */
+  vertical-align: middle;
+}
+
+#ncysbartue .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  /* row_group.background.color */
+  font-size: 16px;
+  /* row_group.font.size */
+  font-weight: initial;
+  /* row_group.font.weight */
+  border-top-style: solid;
+  /* row_group.border.top.style */
+  border-top-width: 2px;
+  /* row_group.border.top.width */
+  border-top-color: #D3D3D3;
+  /* row_group.border.top.color */
+  border-bottom-style: solid;
+  /* row_group.border.bottom.style */
+  border-bottom-width: 2px;
+  /* row_group.border.bottom.width */
+  border-bottom-color: #D3D3D3;
+  /* row_group.border.bottom.color */
+  vertical-align: middle;
+}
+
+#ncysbartue .gt_striped {
+  background-color: #8080800D;
+}
+
+#ncysbartue .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#ncysbartue .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#ncysbartue .gt_row {
+  padding: 8px;
+  /* row.padding */
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#ncysbartue .gt_stub {
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 12px;
+}
+
+#ncysbartue .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  /* summary_row.background.color */
+  padding: 8px;
+  /* summary_row.padding */
+  text-transform: inherit;
+  /* summary_row.text_transform */
+}
+
+#ncysbartue .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  /* grand_summary_row.background.color */
+  padding: 8px;
+  /* grand_summary_row.padding */
+  text-transform: inherit;
+  /* grand_summary_row.text_transform */
+}
+
+#ncysbartue .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+}
+
+#ncysbartue .gt_first_grand_summary_row {
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#ncysbartue .gt_table_body {
+  border-top-style: solid;
+  /* table_body.border.top.style */
+  border-top-width: 2px;
+  /* table_body.border.top.width */
+  border-top-color: #D3D3D3;
+  /* table_body.border.top.color */
+  border-bottom-style: solid;
+  /* table_body.border.bottom.style */
+  border-bottom-width: 2px;
+  /* table_body.border.bottom.width */
+  border-bottom-color: #D3D3D3;
+  /* table_body.border.bottom.color */
+}
+
+#ncysbartue .gt_footnotes {
+  border-top-style: solid;
+  /* footnotes.border.top.style */
+  border-top-width: 2px;
+  /* footnotes.border.top.width */
+  border-top-color: #D3D3D3;
+  /* footnotes.border.top.color */
+}
+
+#ncysbartue .gt_footnote {
+  font-size: 90%;
+  /* footnote.font.size */
+  margin: 0px;
+  padding: 4px;
+  /* footnote.padding */
+}
+
+#ncysbartue .gt_sourcenotes {
+  border-top-style: solid;
+  /* sourcenotes.border.top.style */
+  border-top-width: 2px;
+  /* sourcenotes.border.top.width */
+  border-top-color: #D3D3D3;
+  /* sourcenotes.border.top.color */
+}
+
+#ncysbartue .gt_sourcenote {
+  font-size: 90%;
+  /* sourcenote.font.size */
+  padding: 4px;
+  /* sourcenote.padding */
+}
+
+#ncysbartue .gt_center {
+  text-align: center;
+}
+
+#ncysbartue .gt_left {
+  text-align: left;
+}
+
+#ncysbartue .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#ncysbartue .gt_font_normal {
+  font-weight: normal;
+}
+
+#ncysbartue .gt_font_bold {
+  font-weight: bold;
+}
+
+#ncysbartue .gt_font_italic {
+  font-style: italic;
+}
+
+#ncysbartue .gt_super {
+  font-size: 65%;
+}
+
+#ncysbartue .gt_footnote_marks {
+  font-style: italic;
+  font-size: 65%;
+}
+</style>
+<div id="ncysbartue" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+  
+  <tr>
+    <th class="gt_col_heading gt_columns_bottom_border gt_columns_top_border gt_left" rowspan="1" colspan="1">Specialty</th>
+    <th class="gt_col_heading gt_columns_bottom_border gt_columns_top_border gt_center" rowspan="1" colspan="1">Mean Revenue</th>
+    <th class="gt_col_heading gt_columns_bottom_border gt_columns_top_border gt_center" rowspan="1" colspan="1">Mean Salary</th>
+    <th class="gt_col_heading gt_columns_bottom_border gt_columns_top_border gt_center" rowspan="1" colspan="1">ROI</th>
+  </tr>
+  <body class="gt_table_body">
+    <tr>
+      <td class="gt_row gt_left">Internal_Medicine</td>
+      <td class="gt_row gt_right">$2,675,387.00</td>
+      <td class="gt_row gt_right">$261,000.00</td>
+      <td class="gt_row gt_right">9.25</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left gt_striped">Family_Practice</td>
+      <td class="gt_row gt_right gt_striped">$2,111,931.00</td>
+      <td class="gt_row gt_right gt_striped">$241,000.00</td>
+      <td class="gt_row gt_right gt_striped">7.76</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left">Cardiovascular_Surgery</td>
+      <td class="gt_row gt_right">$3,697,916.00</td>
+      <td class="gt_row gt_right">$425,000.00</td>
+      <td class="gt_row gt_right">7.70</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left gt_striped">General_Surgery</td>
+      <td class="gt_row gt_right gt_striped">$2,707,317.00</td>
+      <td class="gt_row gt_right gt_striped">$350,000.00</td>
+      <td class="gt_row gt_right gt_striped">6.74</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left">Pediatrics</td>
+      <td class="gt_row gt_right">$1,612,500.00</td>
+      <td class="gt_row gt_right">$230,000.00</td>
+      <td class="gt_row gt_right">6.01</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left gt_striped">Psychiatry</td>
+      <td class="gt_row gt_right gt_striped">$1,820,512.00</td>
+      <td class="gt_row gt_right gt_striped">$261,000.00</td>
+      <td class="gt_row gt_right gt_striped">5.98</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left">Neurology</td>
+      <td class="gt_row gt_right">$2,052,884.00</td>
+      <td class="gt_row gt_right">$301,000.00</td>
+      <td class="gt_row gt_right">5.82</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left gt_striped">Hematology/Oncology</td>
+      <td class="gt_row gt_right gt_striped">$2,855,000.00</td>
+      <td class="gt_row gt_right gt_striped">$425,000.00</td>
+      <td class="gt_row gt_right gt_striped">5.72</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left">Nephrology</td>
+      <td class="gt_row gt_right">$1,789,062.00</td>
+      <td class="gt_row gt_right">$272,000.00</td>
+      <td class="gt_row gt_right">5.58</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left gt_striped">OB/GYN</td>
+      <td class="gt_row gt_right gt_striped">$2,024,193.00</td>
+      <td class="gt_row gt_right gt_striped">$324,000.00</td>
+      <td class="gt_row gt_right gt_striped">5.25</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left">Orthopedic_Surgery</td>
+      <td class="gt_row gt_right">$3,286,764.00</td>
+      <td class="gt_row gt_right">$533,000.00</td>
+      <td class="gt_row gt_right">5.17</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left gt_striped">Gastroenterology</td>
+      <td class="gt_row gt_right gt_striped">$2,965,277.00</td>
+      <td class="gt_row gt_right gt_striped">$487,000.00</td>
+      <td class="gt_row gt_right gt_striped">5.09</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left">Cardiology_(Invasive)</td>
+      <td class="gt_row gt_right">$3,484,375.00</td>
+      <td class="gt_row gt_right">$590,000.00</td>
+      <td class="gt_row gt_right">4.91</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left gt_striped">Pulmonology</td>
+      <td class="gt_row gt_right gt_striped">$2,361,111.00</td>
+      <td class="gt_row gt_right gt_striped">$418,000.00</td>
+      <td class="gt_row gt_right gt_striped">4.65</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left">Urology</td>
+      <td class="gt_row gt_right">$2,161,458.00</td>
+      <td class="gt_row gt_right">$386,000.00</td>
+      <td class="gt_row gt_right">4.60</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left gt_striped">Cardiology/Non-Inv.</td>
+      <td class="gt_row gt_right gt_striped">$2,310,000.00</td>
+      <td class="gt_row gt_right gt_striped">$427,000.00</td>
+      <td class="gt_row gt_right gt_striped">4.41</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left">Neurosurgery</td>
+      <td class="gt_row gt_right">$3,437,500.00</td>
+      <td class="gt_row gt_right">$687,000.00</td>
+      <td class="gt_row gt_right">4.00</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left gt_striped">Ophthalmology</td>
+      <td class="gt_row gt_right gt_striped">$1,440,217.00</td>
+      <td class="gt_row gt_right gt_striped">$300,000.00</td>
+      <td class="gt_row gt_right gt_striped">3.80</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left">Otolaryngology</td>
+      <td class="gt_row gt_right">$1,937,500.00</td>
+      <td class="gt_row gt_right">$405,000.00</td>
+      <td class="gt_row gt_right">3.78</td>
+    </tr>
+  </body>
+  
+  
+</table></div>
+</div>
+</div>

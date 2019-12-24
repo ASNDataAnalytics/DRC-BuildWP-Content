@@ -1,0 +1,420 @@
+---
+title: "Early Career Nephrologists: Results of a 2017 Survey"
+author: "George Washington University Health Workforce Institute"
+date: ""
+output: powerpoint_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+require(here)
+```
+
+# Early Career Nephrologists: Results of a 2017 Survey
+### Prepared for The American Society of Nephrology
+### By The George Washington University Health Workforce Institute
+
+**Leo Quigley, MPH**
+_George Washington University Health Workforce Institute and School of Nursing_
+
+**Edward Salsberg, MPA, FAAN**
+_George Washington University Health Workforce Institute and School of Nursing_
+
+**Ashté Collins, MD**
+_George Washington University School of Medicine_
+
+_The views and findings in this report reflect the work of the GW Health Workforce Institute (GW-HWI) and do not necessarily reflect the views of ASN or GW University. The GW-HWI and ASN welcome comments and feedback on this report._
+
+
+## Exhibit A1: Setting of Primary Nephrology Job by Gender
+
+```{r exhibit-a1, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-a1.png"))
+```
+
+## Exhibit A2: Setting of Primary Nephrology Job by Total Years Training Completed, Academic and Group Practice Only
+
+```{r exhibit-a2, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-a2.png"))
+```
+
+## Exhibit A3: Responsibilities in Primary Nephrology Job by Group or Academic Practice Setting
+
+```{r exhibit-a3, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-a3.png"))
+```
+
+## Exhibit A4: Time Spent in Patient Care by Group or Academic Practice Setting
+
+```{r exhibit-a4, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-a4.png"))
+```
+
+## Exhibit A5: Number of Weekends on Call Annually by Group or Academic Practice Setting
+
+```{r exhibit-a5, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-a5.png"))
+```
+
+
+## Exhibit A6: Number of Weeks with Night Calls Annually by Group or Academic Practice Setting
+
+```{r exhibit-a6, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-a6.png"))
+```
+
+## Exhibit A7: Frequency Common Procedures Were Performed by Group or Academic Practice Setting
+
+```{r exhibit-a7.1, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-a7.1.png"))
+```
+
+```{r exhibit-a7.2, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-a7.2.png"))
+```
+
+ 
+```{r exhibit-a8, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-a8.png"))
+```
+
+## Exhibit A9: Ratings of Aspects of Nephrology
+
+```{r exhibit-a9, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-a9.png"))
+```
+
+## Exhibit A10: Would Recommend Nephrology to Medical Students and Residents, by Group or Academic Practice Setting
+
+```{r exhibit-a10, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-a10.png"))
+```
+
+## Exhibit 1: Year of Completing Core Nephrology Training
+
+```{r exhibit-1, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-1.png"))
+```
+
+
+## Exhibit 2: Responding by Total Years of Nephrology Training
+
+```{r exhibit-2, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-2.png"))
+```
+
+## Exhibit 3: Profile of Respondents
+
+```{r exhibit-3, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-3.png"))
+```
+
+## Exhibit 4: Medical School Location
+
+```{r exhibit-4, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-4.png"))
+```
+
+
+## Exhibit 5: Citizenship Status
+
+```{r exhibit-5, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-5.png"))
+```
+
+## Exhibit 6: Sex of Respondents by IMG Status
+
+```{r exhibit-6, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-6.png"))
+```
+
+## Exhibit 7: Setting of Primary Nephrology Job by Sex
+
+```{r exhibit-7, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-7.png"))
+```
+
+
+## Exhibit 8: Setting of Primary Nephrology Job by Medical School Type
+
+```{r exhibit-8, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-8.png"))
+```
+
+
+
+## Exhibit 9: Setting of Primary Nephrology Job by Year Core Training Completed
+
+```{r exhibit-9, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-9.png"))
+```
+
+
+
+## Exhibit 10: Setting of Primary Nephrology Job by Total Years Training Completed, Academic and Group Practices Only
+
+```{r exhibit-10, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-10.png"))
+```
+
+
+
+## Exhibit 11: Additional Training After Completion of Core Nephrology Training
+
+```{r exhibit-11, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-11.png"))
+```
+
+
+
+## Exhibit 12: Additional Training After Completion of Core Nephrology Training, by Group or Academic Practice Setting
+
+```{r exhibit-12, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-12.png"))
+```
+
+## Exhibit 13: Focus of Primary Nephrology Job
+
+```{r exhibit-13, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-13.png"))
+```
+
+
+## Exhibit 14: Focus of Primary Nephrology Job by Group or Academic Practice Setting
+
+```{r exhibit-14, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-14.png"))
+```
+
+
+## Exhibit 15: Responsibilities in Primary Nephrology Job by Group or Academic Practice Setting
+
+```{r exhibit-15, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-15.png"))
+```
+
+
+## Exhibit 16: Partnership Opportunities
+
+```{r exhibit-16, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-16.png"))
+```
+
+
+
+## Exhibit 17: Primary Job Path to Partnership by Medical School Graduation Status
+
+```{r exhibit-17, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-17.png"))
+```
+
+
+
+## Exhibit 18: Whether or Not Partner
+
+```{r exhibit-18, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-18.png"))
+```
+
+## Exhibit 19: Time Spent in Patient Care
+
+```{r exhibit-19, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-19.png"))
+```
+
+
+## Exhibit 20: Time Spent in Patient Care by Group or Academic Practice Setting
+
+```{r exhibit-20, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-20.png"))
+```
+
+
+
+## Exhibit 21: Incentives Received, by Group or Academic Practice Setting
+
+```{r exhibit-21, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-21.png"))
+```
+
+
+## Exhibit 22: Number of Weekends on Call Annually
+
+```{r exhibit-22, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-22.png"))
+```
+
+
+
+## Exhibit 23: Number of Weeks with Night Calls Annually, by Year of Completing Training
+
+```{r exhibit-23, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-23.png"))
+```
+
+## Exhibit 24: Number of Weekends on Call Annually by Group or Academic Practice Setting
+
+```{r exhibit-24, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-24.png"))
+```
+
+## Exhibit 25: Number of Weeks with Night Calls Annually by Group or Academic Practice Setting
+
+```{r exhibit-25, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-25.png"))
+```
+
+
+## Exhibit 26: Dialysis Modalities Offered in Primary Nephrology Job
+
+```{r exhibit-26, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-26.png"))
+```
+
+
+## Exhibit 27: Frequency Common Procedures Were Performed
+```{r exhibit-27, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-27.png"))
+```
+
+## Exhibit 28: Frequency Common Procedures Were Performed, by Group or Academic Practice Setting
+
+```{r exhibit-28.1, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-28.1.png"))
+```
+
+
+```{r exhibit-28.2, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-28.2.png"))
+```
+
+
+## Exhibit 29: Base Salary (Mean) by Medical School Graduation Status and Sex
+
+```{r exhibit-29, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-29.png"))
+```
+
+## Exhibit 30: Mean Base Salary by Setting of Primary Nephrology Job
+
+
+```{r exhibit-30, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-30.png"))
+```
+
+## Exhibit 31: Mean Base Salary by Sex and Setting of Primary Nephrology Job
+
+```{r exhibit-31, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-31.png"))
+```
+
+
+## Exhibit 32: Median Base Salary by Sex and Setting of Primary Nephrology Job
+
+```{r exhibit-32, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-32.png"))
+```
+
+## Exhibit 33: Mean Base Salary by Group or Academic Practice Setting and Medical School Graduation Status
+
+```{r exhibit-33, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-33.png"))
+```
+
+
+## Exhibit 34: Median Base Salary by Group or Academic Practice Setting and Medical School
+Graduation Status
+
+```{r exhibit-34, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-34.png"))
+```
+
+## Exhibit 35: Mean and Median Base Salary by Practice Focus
+
+```{r exhibit-35, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-35.png"))
+```
+
+## Exhibit 36: Mean Base Salary by Year of Completing Core Nephrology Training
+
+```{r exhibit-36, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-36.png"))
+```
+
+## Exhibit 37: Distribution of Incentive Income
+
+```{r exhibit-37, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-37.png"))
+```
+
+## Exhibit 38: Satisfaction with Nephrology Training
+
+```{r exhibit-38, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-38.png"))
+```
+
+
+## Exhibit 39: Satisfaction with Overall Salary/Compensation for USMGs and IMGs
+
+```{r exhibit-39, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-39.png"))
+```
+
+
+## Exhibit 40: Satisfaction with Overall Salary/Compensation by Group or Academic Practice Setting
+
+```{r exhibit-40, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-40.png"))
+```
+
+
+## Exhibit 41: Satisfaction with Overall Salary/Compensation
+
+```{r exhibit-41, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-41.png"))
+```
+
+
+## Exhibit 42: Ratings of Aspects of Nephrology
+
+```{r exhibit-42, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-42.png"))
+```
+
+
+## Exhibit 43: Ratings of Aspects of Nephrology by Group or Academic Practice Setting
+
+```{r exhibit-43.1, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-43.1.png"))
+```
+
+
+```{r exhibit-43.2, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-43.2.png"))
+```
+
+
+## Exhibit 44: Satisfaction with Current Position
+
+```{r exhibit-44, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-44.png"))
+```
+
+## Exhibit 45: Would Recommend Nephrology to Medical Students and Residents, by Group or Academic Practice Setting
+
+```{r exhibit-45, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-45.png"))
+```
+
+
+## Exhibit 46: Would Recommend Nephrology to Medical Students and Residents, by Medical School Graduation Status
+
+```{r exhibit-46, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-46.png"))
+```
+
+## Exhibit 47: Willingness to Recommend Nephrology by Year of Completing Training
+
+```{r exhibit-47, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "05_Early-Career-Nephrologists-Survey-Figs/exhibit-47.png"))
+```

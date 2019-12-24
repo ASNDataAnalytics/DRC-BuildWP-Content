@@ -1,0 +1,963 @@
+---
+title: "AY 2019 Nephrology Match---Preliminary Results"
+subtitle: "ASN Data Brief"
+author: "Kurtis Pivert, ASN Data Science Officer"
+description: "While numbers of applicants and matched candidates increased over previous application cycles, USMGs matching in nephrology declined again in the AY 2019 Match."  
+image: "/images/03_AY-2019-Match-Image.png"
+word: "/files/03_AY-2019-Match_Word.docx"
+excel: "/files/03_AY-2019-Match_Excel.xlsx"
+pdf: "/files/03_AY-2019-Match_Word.pdf"
+tags: "featured"
+output:
+  html_document:
+    toc: true
+---  
+
+```{r setup, include=FALSE}
+
+require(knitr)
+knitr::opts_chunk$set(echo = TRUE)
+require(here)
+library(DT)
+library(rio)
+library(sparkline)
+library(readxl)
+require(extrafont)
+require(rmarkdown)
+loadfonts(quiet = TRUE)
+require(ggrepel)
+require(RColorBrewer)
+require(tidyverse)
+
+```
+
+
+
+```{r Match Data, include=FALSE}
+
+## Match Data for Table with Sparklines
+
+match <- read_excel(
+  path = here::here("content_data/01_data",
+                    "2018-11-28_AY-2019_Match-Results_Table.xlsx"),
+  sheet = 3,
+  col_names = TRUE)
+
+
+tidymatch <- match %>%
+  gather(key = "Year", value = "Value", `AY-2009`:`AY-2019`)
+
+match_sparkline_data <- tidymatch %>%
+  group_by(Variable) %>%
+  summarize(
+    TrendSparkline = spk_chr(
+      Value,
+      type = "line",
+      chartRangeMin = 0, chartRangeMax = max(Value)
+    )
+  )
+
+match <- left_join(match, match_sparkline_data)
+
+## Match Data for Visualizations
+
+match2 <- read_excel( 
+  path = here::here("content_data/01_data",
+                    "2018-11-28_AY-2019_Match-Results_Table.xlsx"),
+  sheet = 4,
+  col_names = TRUE)
+
+## ERAS Data
+
+## Edu Status
+
+eras <- read_excel(
+  here::here("content_data/01_data",
+             "2018-11-26_ERAS_Legacy-Data_AY-2014_AY-2019.xlsx"),
+  sheet = "By Edu Status")
+
+eras <- eras %>% 
+  mutate(month = lubridate::month(month_year))
+  
+## Historical Totals
+
+eras_hist <- read_excel(
+  path = here::here("content_data/01_data", 
+                    "2018-11-26_ERAS_Legacy-Data_AY-2014_AY-2019.xlsx"),
+  sheet = "Historical Totals",
+  col_names = TRUE)
+
+eras_hist <- eras_hist %>% 
+  mutate(month = lubridate::month(`Month/Year`))
+  
+
+## NRMP/ACMGE/ASN Nephrology GME Data
+gme <- read_excel(
+  path = here::here("content_data/01_data",
+                    "2017-04-26_ACGME-ASN-GME-NRMP_Total-Filled.xlsx")
+  ) 
+
+## Subset Data
+gme <- gme %>% 
+  select(year:acgmeFirstYear) %>% 
+  filter(year <= 2016) %>% 
+  rbind(
+    c(2017, 284, 412), 
+    c(2018, 285, 404)
+    ) %>% 
+  mutate(acgmeFirstYear = as.numeric(acgmeFirstYear))
+
+```
+
+### I. Moving in Two Directions
+
+_**Key Points**_ 
+
+* US MDs matching in nephrology declined 12% from last year's application cycle. 
+* International medical graduates (IMGs), US IMGs, and DOs matching in the specialty
+increased 6%--13% over AY 2018. 
+* Filled fellowship positions and training tracks edged up 2%, with 37.3% of slots
+and 56.4% going unfilled on Match Day. 
+
+Appointment year (AY) 2019 nephrology Match results released by the National
+Resident Matching Program [(NRMP)](http://www.nrmp.org/) captured a specialty
+seemingly moving in two directions. While total filled positions and training
+tracks edged up this year, US MDs matching in nephrology dropped 12%. International
+medical graduates (IMGs) entering fellowship ticked up 6%, but are still far
+below historic highs, accounting for just 39.2% of matriculating matched fellows. 
+
+The percentage of programs and fellowship positions completely filling on Match Day
+was up 2%. Yet---despite the closure and/or consolidation of several nephrology 
+training programs since the AY 2018 application cycle---the gap between offered
+positions and qualified candidates to fill them remains wide. For the first time, 
+the number of candidates preferring nephrology that matched into another
+subspecialty dropped to 0 (while those applicants preferring nephrology 
+who did not Match were up slightly). 
+
+Nearly every candidate preferring nephrology continued to Match into the specialty 
+(95.1% in AY 2019), pointing to a continuing lack of selectivity for nephrology. 
+NRMP data from the AY 2018 Match indicated nephrology applicants had the second highest
+rate of matching into their first-choice program (68.8%), narrowly behind
+geriatrics (72.4%). 
+
+
+#### Unfilled training tracks...  
+
+
+```{r Unfilled Tracks, echo=FALSE, message=FALSE, warning=FALSE}
+
+cols_2019 <- c(rep("#cccccc", 10), "#3366cc")
+
+match2 %>% 
+  mutate(
+    `Percent Unfilled Tracks`= round(
+      `Unfilled Tracks` / `Offered Tracks`, 3) * 100) %>%  
+  ggplot(
+    aes(
+      Year, 
+      `Percent Unfilled Tracks`,
+      fill = factor(Year))
+    ) + 
+  geom_bar(
+    stat = "identity"
+    ) +
+  scale_fill_manual(values = cols_2019) +
+  theme_minimal(
+    base_size = 14,
+    base_family = "Roboto") +
+  theme(
+    panel.grid.minor = element_blank(),
+    panel.background = element_rect(
+      fill = "#fffff3", 
+      color = "#fffff3"),
+    plot.title = element_text(hjust = 0.5, family = "Roboto Medium"),
+    plot.background = element_rect(
+      fill = "#fffff3", 
+      color = "#fffff3"),
+    axis.ticks.x = element_blank(),
+    panel.grid.major.x = element_blank(),
+    legend.position = "none"
+    ) +
+  labs(
+    y = "Percent Unfilled Tracks",
+    x = "Appointment Year",
+    title = paste(
+      "Percentage Unfilled Nephrology Tracks: \n",
+      "AY 2009 to AY 2019")
+    ) +
+  scale_x_continuous(
+    breaks = 2009:2019, 
+    labels = c("2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016",
+               "2017", "2018", "2019")
+    ) +
+  geom_text(
+    aes(
+      label = scales::percent(`Percent Unfilled Tracks` / 100), 
+      x = Year, 
+      y = `Percent Unfilled Tracks`),
+    nudge_y = 5, 
+    family= "Roboto", 
+    show.legend = F,
+    color = "black", 
+    size = 4) +
+  scale_y_continuous(
+    breaks = seq(20, 100, 20),
+    labels = as.character(seq(20, 100, 20))) 
+
+
+```
+
+
+#### ...and unfilled positions edged down in the AY 2019 Match.
+
+```{r Unfilled Positions, echo=FALSE, message=FALSE, warning=FALSE}
+
+match2 %>% 
+  mutate(
+    `Percent Unfilled Positions`= round(
+      `Unfilled Positions` / `Offered Positions`, 3) * 100) %>%  
+  ggplot(
+    aes(
+      Year, 
+      `Percent Unfilled Positions`,
+      fill = factor(Year))
+    ) + 
+  geom_bar(
+    stat = "identity"
+    ) +
+  scale_fill_manual(values = cols_2019) +
+  theme_minimal(
+    base_size = 14,
+    base_family = "Roboto") +
+  theme(
+    panel.grid.minor = element_blank(),
+    panel.background = element_rect(
+      fill = "#fffff3", 
+      color = "#fffff3"),
+    plot.title = element_text(hjust = 0.5, family = "Roboto Medium"),
+    plot.background = element_rect(
+      fill = "#fffff3", 
+      color = "#fffff3"),
+    axis.ticks.x = element_blank(),
+    panel.grid.major.x = element_blank(),
+    legend.position = "none"
+    ) +
+  labs(
+    y = "Percent Unfilled Positions",
+    x = "Appointment Year",
+    title = paste(
+      "Percentage Unfilled Nephrology Positions: \n",
+      "AY 2009 to AY 2019")
+    ) +
+  scale_x_continuous(
+    breaks = 2009:2019, 
+    labels = c("2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016",
+               "2017", "2018", "2019")
+    ) +
+  geom_text(
+    aes(
+      label = scales::percent(`Percent Unfilled Positions` / 100), 
+      x = Year, 
+      y = `Percent Unfilled Positions`),
+    nudge_y = 5, 
+    family= "Roboto", 
+    show.legend = F,
+    color = "black", 
+    size = 4) +
+  scale_y_continuous(
+    breaks = seq(20, 100, 20),
+    labels = as.character(seq(20, 100, 20))) 
+
+```
+
+
+
+#### Yet the gap in offered and filled positions...
+
+
+```{r Offered vs. Filled Positions, echo=FALSE, message=FALSE, warning=FALSE}
+
+match2 %>% 
+  ggplot(
+    aes(
+      Year,
+      `Offered Positions`
+     )
+    ) + 
+  geom_freqpoly(
+    stat = "identity",
+    lwd = 1.2, 
+    color = "#cc3466"
+    ) + 
+  geom_bar(
+    data = match2, 
+    mapping = aes(
+      Year, 
+      `Filled Positions`,
+       fill = factor(Year)
+      ), 
+    stat = "identity") +
+    scale_fill_manual(values = cols_2019) +
+  theme_minimal(
+    base_size = 14,
+    base_family = "Roboto") +
+  theme(
+    panel.grid.minor = element_blank(),
+    panel.background = element_rect(
+      fill = "#fffff3", 
+      color = "#fffff3"),
+    plot.title = element_text(hjust = 0.5, family = "Roboto Medium"),
+    plot.background = element_rect(
+      fill = "#fffff3", 
+      color = "#fffff3"),
+    axis.ticks.x = element_blank(),
+    panel.grid.major.x = element_blank(),
+    legend.position = "none"
+    ) +
+  labs(
+    y = "Positions",
+    x = "Appointment Year",
+    title = paste(
+      "Offered vs. Filled Nephrology Fellowship Positions: \n",
+      "AY 2009 to AY 2019")
+    ) +
+  scale_x_continuous(
+    breaks = 2009:2019, 
+    labels = c("2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016",
+               "2017", "2018", "2019")
+    ) +
+  geom_text(
+    aes(
+      label = "Offered Positions", 
+      x = 2014, 
+      y = 445),
+   # nudge_y = 5, 
+    family= "Roboto", 
+    show.legend = F,
+    color = "#cc3466", 
+    size = 4) +
+  geom_text(
+    aes(
+      label = "Filled Positions", 
+      x = 2017, 
+      y = 350),
+   # nudge_y = 5, 
+    family= "Roboto", 
+    show.legend = F,
+    color = "#cccccc", 
+    size = 4) 
+
+
+```
+
+
+#### ... and training tracks, while narrowing, remains wide. 
+
+
+```{r Offered vs. Filled Tracks, echo=FALSE, message=FALSE, warning=FALSE}
+
+match2 %>% 
+  ggplot(
+    aes(
+      Year,
+      `Offered Tracks`
+     )
+    ) + 
+  geom_freqpoly(
+    stat = "identity",
+    lwd = 1.2, 
+    color = "#cc3466"
+    ) + 
+  geom_bar(
+    data = match2, 
+    mapping = aes(
+      Year, 
+      `Filled Tracks`,
+       fill = factor(Year)
+      ), 
+    stat = "identity") +
+    scale_fill_manual(values = cols_2019) +
+  theme_minimal(
+    base_size = 14,
+    base_family = "Roboto") +
+  theme(
+    panel.grid.minor = element_blank(),
+    panel.background = element_rect(
+      fill = "#fffff3", 
+      color = "#fffff3"),
+    plot.title = element_text(hjust = 0.5, family = "Roboto Medium"),
+    plot.background = element_rect(
+      fill = "#fffff3", 
+      color = "#fffff3"),
+    axis.ticks.x = element_blank(),
+    panel.grid.major.x = element_blank(),
+    legend.position = "none"
+    ) +
+  labs(
+    y = "Tracks",
+    x = "Appointment Year",
+    title = paste(
+      "Offered vs. Filled Nephrology Training Tracks: \n",
+      "AY 2009 to AY 2019")
+    ) +
+  scale_x_continuous(
+    breaks = 2009:2019, 
+    labels = c("2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016",
+               "2017", "2018", "2019")
+    ) +
+  geom_text(
+    aes(
+      label = "Offered Tracks", 
+      x = 2014, 
+      y = 165),
+   # nudge_y = 5, 
+    family= "Roboto", 
+    show.legend = F,
+    color = "#cc3466", 
+    size = 4) +
+  geom_text(
+    aes(
+      label = "Filled Tracks", 
+      x = 2016, 
+      y = 85),
+   # nudge_y = 5, 
+    family= "Roboto", 
+    show.legend = F,
+    color = "#cccccc", 
+    size = 4) 
+
+
+```
+
+
+#### An increasing number of US-IMGs and DOs are entering nephrology...
+
+
+```{r Matched Fellows by Educational Status, echo=FALSE, message=FALSE, warning=FALSE}
+
+match2_Label <- match2 %>% 
+  select(
+    Year, `US MD Matched`, `DO Matched`, `US-IMG Matched`, `IMG Matched`
+    ) %>% 
+  gather(
+    key = "EduStatus", 
+    value = "Number", 
+    `US MD Matched`:`IMG Matched`
+    )
+       
+match2 %>% 
+  select(
+    Year, `US MD Matched`, `DO Matched`, `US-IMG Matched`, `IMG Matched`
+    ) %>% 
+  gather(
+    key = "EduStatus", 
+    value = "Number", 
+    `US MD Matched`:`IMG Matched`
+    ) %>% 
+  ggplot(
+    aes(
+      x=Year, 
+      y= Number, 
+      color = EduStatus)
+    ) +
+  geom_line(lwd=1.2, lineend = "round") +
+  theme_minimal(
+    base_size = 14,
+    base_family = "Roboto") +
+  theme(
+    panel.grid.minor = element_blank(),
+    panel.background = element_rect(
+      fill = "#fffff3", 
+      color = "#fffff3"),
+    plot.title = element_text(hjust = 0.5, family = "Roboto Medium"),
+    plot.background = element_rect(
+      fill = "#fffff3", 
+      color = "#fffff3"),
+    axis.ticks.x = element_blank(),
+    panel.grid.major.x = element_blank(),
+    legend.position = "none"
+    ) + 
+  scale_color_manual(
+    values = c("#9344bf",  "#cc3466", "#70bf44", "#3366cc")
+    ) +
+   # scale_color_manual(
+  #   values = c("#000000", "#cccccc","#cc9933",
+  #              "#3366cc","#66cc33","#cc3366"),
+  #   guide= guide_legend(title = "Educational \n Status",
+  #                       title.hjust = .5)
+  #   ) +
+  labs(title = "Matched Nephrology Fellows by Education Status \n AY 2009 to AY 2019",
+       x = "Appointment Year",
+       y = "Matched Fellows") +
+  scale_x_continuous(
+    breaks = seq(2009, 2019, 1),
+    labels = as.character(seq(2009, 2019, 1))) +
+   geom_text_repel(
+    data = subset(
+      match2_Label,
+      Year == 2011
+      ),
+    aes(
+      x = 2011, 
+      y = Number, 
+      color = EduStatus, 
+      label = EduStatus),
+    size = 3.5, 
+    hjust = 1.1, 
+    family = "Roboto",
+    segment.alpha = 0
+    ) 
+
+
+
+```
+
+
+#### ...and nearly all candidates preferring the specialty obtained fellowships.
+
+
+
+```{r Figure Percent Pref Neph Matched, echo=FALSE}
+
+match2 %>%
+  mutate(`Percent Applicants Matched` = round(
+    `Applicants Prefer Nephrology Matched` / `Applicants Prefer Nephrology`, 3) * 100) %>% 
+  ggplot(
+       aes(
+         Year, 
+         `Percent Applicants Matched`)
+       ) + 
+  geom_line(
+    colour ="#3366cc",
+    lwd=2, 
+    lineend = "round") +
+  theme_minimal(
+    base_size = 14,
+    base_family = "Roboto") +
+  theme(
+    panel.grid.minor = element_blank(),
+    panel.background = element_rect(
+      fill = "#fffff3", 
+      color = "#fffff3"),
+    plot.title = element_text(hjust = 0.5, family = "Roboto Medium"),
+    plot.background = element_rect(
+      fill = "#fffff3", 
+      color = "#fffff3"),
+    axis.ticks.x = element_blank(),
+    panel.grid.major.x = element_blank()
+    ) +
+  labs(
+    y = "Percent Applicants Matched",
+    x = "Appointment Year",
+    title = paste(
+      "Applicants Preferring Nephrology Matched: \n",
+      "AY 2009 to AY 2019")
+    ) + 
+  ylim(40, 100) +
+  scale_x_continuous(
+    breaks = 2009:2019, 
+    labels = c("2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016",
+               "2017", "2018", "2019")
+    ) +
+  geom_text(
+    aes(
+      label = scales::percent(`Percent Applicants Matched` / 100), 
+      x = Year, 
+      y = `Percent Applicants Matched`), 
+    family= "Roboto", 
+    show.legend = F, 
+    color = "black", 
+    vjust = -2, 
+    size = 4)
+
+
+```
+
+#### Nephrology in the Match Era---Complete Results
+
+The past 10 years of Match results can be filtered interactively using the 
+_Search_ function and filters. 
+
+#### Table 1: Nephrology Match Results
+
+```{r Match Data Table, echo=FALSE}
+
+datatable(match, escape = FALSE, filter = 'top', 
+          options = list(paging = FALSE, fnDrawCallback = htmlwidgets::JS(
+  '
+function(){
+  HTMLWidgets.staticRender();
+}
+'
+)
+)) %>%
+  spk_add_deps()  
+
+
+```
+
+_**Source**:_ National Resident Matching Program, 2009--2018. Available
+at [http://www.nrmp.org/fellowship-match-data/](http://www.nrmp.org/fellowship-match-data/).
+
+### II. ERAS Application Data: A Look at the Candidates 
+
+#### Year over Year---Candidates and Applications
+Total candidates and applications continue to trend higher over the AY 2018 application
+cycle (5% and 8.7%, respectively). As of the close of October, candidate totals were
+trending higher than the past 3 application cycles (AY 2016--AY 2018), foreshadowing
+today's slightly higher numbers. Reviewing candidates by educational status 
+shows the proportions closely mirror that of the final Match results.  
+
+```{r YOY Candidates, echo=FALSE, message=FALSE, warning=FALSE}
+  
+# Candidates YOY
+eras_hist %>% 
+  filter(
+    month, between(month, 7, 10)
+  ) %>% 
+  group_by(`ERAS Year`) %>% 
+  summarise(
+    Tot_Candidates = sum(`# of Applicants`)
+  ) %>% 
+  mutate(
+    lagged = lag(Tot_Candidates)
+  ) %>% 
+  mutate(
+    Pct_Change = ((Tot_Candidates - lagged) / lagged), 
+    Bar_Cols = if_else(Pct_Change > 0, "Up", "Down")
+  ) %>% 
+  filter(`ERAS Year` != 2014) %>% 
+  ggplot(
+    aes(x = `ERAS Year`, y = Pct_Change, fill = Bar_Cols)
+  ) +
+  geom_bar(stat = "identity", width = .5) +
+  scale_fill_manual(values = c("Up" = "#3366cc", "Down" = "#cccccc")) + 
+  theme_minimal(
+    base_size = 14, 
+    base_family = "Roboto"
+  ) +
+  theme(
+    panel.grid.minor = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.background = element_rect(fill = "#fffff3", color = "#fffff3"), 
+    plot.title = element_text(hjust = 0.5, family = "Roboto Medium"),
+    plot.background = element_rect(fill = "#fffff3", color = "#fffff3"),
+    legend.position = "none"
+  ) +
+  geom_text(
+    aes(
+      label = scales::percent(Pct_Change), 
+      y = (Pct_Change + 0.007 * sign(Pct_Change))),
+    family = "Roboto"
+  ) +
+  scale_y_continuous(labels = scales::percent) +
+  labs(title = "Percent Change Year over Year\u2014Candidates", 
+       caption = "Source: ERAS, 2014\u20132018",
+       y = "% Change Candidates",
+       x = "ERAS Year")
+
+```
+
+
+```{r YOY Applications, echo=FALSE, message=FALSE, warning=FALSE}
+## Applications YOY
+eras_hist %>% 
+  filter(
+    month, between(month, 7, 10)
+  ) %>% 
+  group_by(`ERAS Year`) %>% 
+  summarise(
+    Tot_Candidates = sum(`# of Applications`)
+  ) %>% 
+  mutate(
+    lagged = lag(Tot_Candidates)
+  ) %>% 
+  mutate(
+    Pct_Change = ((Tot_Candidates - lagged) / lagged), 
+    Bar_Cols = if_else(Pct_Change > 0, "Up", "Down")
+  ) %>% 
+  filter(`ERAS Year` != 2014) %>% 
+  ggplot(
+    aes(x = `ERAS Year`, y = Pct_Change, fill = Bar_Cols)
+  ) +
+  geom_bar(stat = "identity", width = .5) +
+  scale_fill_manual(values = c("Up" = "#4267b1", "Down" = "#cccccc")) + 
+  theme_minimal(
+    base_size = 14, 
+    base_family = "Roboto"
+  ) +
+  theme(
+    panel.grid.minor = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.background = element_rect(fill = "#fffff3", color = "#fffff3"), 
+    plot.title = element_text(hjust = 0.5, family = "Roboto Medium"),
+    plot.background = element_rect(fill = "#fffff3", color = "#fffff3"),
+    legend.position = "none"
+  ) +
+  geom_text(
+    aes(
+      label = scales::percent(Pct_Change), 
+      y = (Pct_Change + 0.007 * sign(Pct_Change))),
+    family = "Roboto"
+  ) +
+  scale_y_continuous(labels = scales::percent) +
+  labs(title = "Percent Change Year over Year\u2014Applications", 
+       caption = "Source: ERAS, 2014\u20132018",
+       y = "% Change Applications",
+       x = "ERAS Year")
+```
+
+```{r Figure 9, echo=FALSE, message=FALSE, warning=FALSE}
+
+## Cumulative candidates 
+
+eras_hist %>% 
+  filter(
+    month, 
+    between(month, 7, 11)
+  ) %>% 
+  group_by(`ERAS Year`) %>% 
+  mutate(Run_Tot = cumsum(`# of Applicants`)) %>% 
+  ungroup() %>% 
+  ggplot(aes(x = month, y = Run_Tot)) +
+  geom_line(
+    aes(color = factor(`ERAS Year`)), 
+    lwd = 1.2) + 
+  scale_color_manual(
+    values = c("2014" = "#cccccc", "2015" = "#cccccc", "2016" =  "#cccccc",
+               "2017" = "#cccccc", "2018" = "#cccccc","2019" = "#cc3466")
+  ) +
+  theme_minimal(
+    base_size = 14,
+    base_family = "Roboto") +
+  theme(
+    panel.grid.minor = element_blank(),
+    panel.background = element_rect(
+      fill = "#fffff3", 
+      color = "#fffff3"),
+    plot.background = element_rect(
+      fill = "#fffff3", 
+      color = "#fffff3"),
+    plot.title = element_text(
+      hjust =0.5, 
+      family = "Roboto Medium"),
+    legend.position = "none"
+  ) + 
+  labs(
+    title = "Year over Year Cumulative Candidates \nAY 2014\u2013AY 2019", 
+    y = "Total Cumulative Candidates", 
+    caption = "Source: ERAS, 2014\u20132018",
+    x = ""
+  ) +
+  ylim(225, 550) +
+  annotate("text", 
+           x = 9, 
+           y = 420, 
+           label = "AY 2019", 
+           family = "Roboto", 
+           color = "#010101"
+  ) +
+  scale_x_continuous(labels = month.name[7:11])
+
+
+  
+```
+
+
+
+
+
+```{r slopegraph, echo=FALSE}
+
+eras_slope <- eras %>% 
+  filter(
+    ERAS %in% c(2018, 2019)
+    ) %>% 
+  filter(
+    between(month, 7, 10)
+    ) %>% 
+  group_by(
+    ERAS, 
+    edu_status
+    ) %>% 
+  summarize(
+    Totals = sum(num_candidate)
+    ) %>% 
+  mutate(
+    Label = paste0(
+      edu_status, 
+      " ",
+      as.character(Totals))
+    ) 
+  
+eras %>% 
+  filter(
+    ERAS %in% c(2018, 2019)
+    ) %>% 
+  filter(
+    between(month, 7, 10)
+    ) %>% 
+  group_by(
+    ERAS, 
+    edu_status
+    ) %>% 
+  summarize(
+    Totals = sum(num_candidate)
+    ) %>% 
+  mutate(
+    Label = paste0(
+      edu_status, 
+      " ",
+      as.character(Totals))
+    ) %>% 
+  ggplot() +
+  geom_line(
+    aes(x = as.factor(ERAS), 
+        y = Totals, 
+        group = edu_status, 
+        color = edu_status), 
+    lwd = 1.2
+    ) + 
+  geom_point(
+    aes(x = as.factor(ERAS), 
+        y = Totals, 
+        color = edu_status),
+    size = 2
+    ) +
+  theme_minimal(
+    base_size = 14, 
+    base_family = "Roboto"
+    ) +
+  scale_color_manual(
+    values = c( "#cc3466", "#9344bf", "#70bf44", "#3366cc")
+    ) +
+  # scale_color_brewer(
+  #   palette = "Set1"
+  #   ) + 
+  labs(
+    x = "", 
+    y = "No. of Candidates",
+    title = "Candidates by Educational Status\n AY 2018 and AY 2019"
+    ) +
+  geom_text_repel(
+    data = subset(
+      eras_slope, 
+      ERAS == 2018
+      ), 
+    aes(
+      x = as.factor(ERAS), 
+      y = Totals, 
+      color = edu_status, 
+      label = Label),
+    size = 4, 
+    hjust = 1.1, 
+    family = "Roboto",
+    segment.alpha = 0) +
+  geom_text_repel(
+    data = subset(
+      eras_slope, 
+      ERAS == 2019
+      ), 
+    aes(
+      x = as.factor(ERAS), 
+      y = Totals, 
+      color = edu_status, 
+      label = Label),
+    size = 4, 
+    hjust = -.15, 
+    family = "Roboto",
+    segment.alpha = 0) +
+  theme(
+    legend.position = "none", 
+    axis.text = element_text(family = "Roboto"),
+    panel.background = element_rect(
+      fill = "#fffff3",
+      color = "#fffff3"),
+    plot.background = element_rect(
+      fill = "#fffff3", 
+      color = "#fffff3"),
+    plot.title = element_text(family = "Roboto Medium", hjust = 0.5)) +
+  ylim(20, 200)
+
+```
+
+
+### III. The Match in Context 
+
+Results from the ASN Nephrology GME Census provide some context for today's Match results. 
+Although the trend of unfilled positions on Match Day has slightly improved,
+the overall number of 1st-year nephrology fellows in training have remained 
+steady, slightly declining over the past 3 years. In the current academic year,
+nearly 30% (128) of fellows in training filled in the scramble. 
+
+```{r Nephrology GME Census, echo=FALSE, message=FALSE, warning=FALSE}
+
+ggplot(
+  gme,
+  aes(
+    x = year
+  )
+) +
+  geom_line(
+    aes(
+      y = gme$nrmpFilled
+    ),
+    colour = "#cc3366",
+    lwd = 1.2
+  ) +
+  geom_line(aes(y = gme$acgmeFirstYear),
+    colour = "#3366cc",
+    lwd = 1.2
+  ) +
+  geom_ribbon(aes(
+    ymin = gme$nrmpFilled,
+    ymax = gme$acgmeFirstYear
+  ), alpha = 0.2) +
+  theme_minimal(base_family = "Roboto", base_size = 14) +
+  xlab(label = "Year") +
+  ylab(label = "No. of Filled Positions") +
+  scale_x_continuous(
+    breaks = 2009:2018, labels =
+      as.character(2009:2018)
+  ) +
+  ylim(200, 500) +
+  scale_y_continuous(
+    breaks = seq(200, 500, 50), labels =
+      as.character(seq(200, 500, 50))
+  ) +
+  ggtitle(label = "1st-Year Fellows in the\n Nephrology Match Era") +
+  theme(plot.title = element_text(hjust = 0.5, size = 16, family = "Roboto Black")) +
+  geom_text(aes(x = 2010.5, y = 487),
+    label = "1st-Year Fellows in Training \nACGME/ASN",
+    family = "Roboto", colour = "#3366cc", size = 4
+  ) +
+  geom_text(aes(x = 2011, y = 330),
+    label = "1st-Year Fellows Matched",
+    family = "Roboto", colour = "#cc3366", size = 4
+  ) +
+  geom_segment(aes(x = 2018, xend = 2018, y = 285, yend = 404), lwd = 1.2) +
+  # geom_segment(aes(x = 2018, xend = 2018, y = 375, yend = 404), lwd = 1.2) +
+  geom_text(aes(x = 2016.75, y = 365),
+    label = "2018 Difference\n128 Fellows",
+    family = "Roboto", colour = "black", size = 4
+  ) +
+  theme(
+    panel.grid.minor = element_blank(),
+    panel.background = element_rect(
+      fill = "#fffff3",
+      color = "#fffff3"
+    ),
+    plot.background = element_rect(
+      fill = "#fffff3",
+      color = "#fffff3"
+    )
+  ) +
+  expand_limits(y = c(200, 500)) ## NICE!
+
+```
+
+
+#### _**Questions? Comments?**_ 
+
+Contact ASN Data Science Officer Kurtis Pivert
+at 202-699-0238 or [kpivert@asn-online.org](mailto:kpivert@asn-online.org).

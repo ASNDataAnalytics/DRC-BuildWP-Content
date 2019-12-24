@@ -1,0 +1,34 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "ASN Data Resource Center"
+theme = "kube"
+description = "Learn, grow, and teach with the ASN Data Resource Center provided by the American Society of Nephrology."
+Paginate = 4
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+[Params]
+  RSSLink = "/index.xml"
+  author = "American Society of Nephrology"
+  github = "https://github.com/asndataanalytics" # add your github profile name
+  twitter = "https://twitter.com/ASNKidney"
+  email = "email@asn-online.org"
+  api = "http://127.0.0.1:8080"
+
+[[menu.main]]
+    name = "Briefs"
+    weight = -100
+    url = "/briefs/"
+[[menu.main]]
+    name = "Reports"
+    weight = -90
+    url = "/reports/"
+[[menu.main]]
+    name = "Resources"
+    weight = -80
+    url = "/resources/"
+[[menu.main]]
+    name = "About Us/FAQ"
+    weight = -70
+    url = "/about/"
+[[menu.extra]]
+    name = "Log In"
+    url = "/login/"

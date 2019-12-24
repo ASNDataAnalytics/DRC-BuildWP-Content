@@ -1,0 +1,7 @@
+[submodule "themes/hugo-lithium-theme"]
+      path = themes/hugo-lithium-theme
+      url = https://github.com/jrutheiser/hugo-lithium-theme.git
+      
+[submodule "themes/kube"]
+	path = themes/kube
+	url = https://github.com/jeblister/kube.git

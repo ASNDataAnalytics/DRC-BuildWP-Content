@@ -1,0 +1,593 @@
+---
+title: "August/September ERAS Applications"
+subtitle: "ASN Data Brief"
+author: "Kurtis Pivert, ASN Data Science Officer"
+description: "August and September ERAS application data for the appointment year (AY) 2019 nephrology Match exhibited diverging trends."  
+image: ""
+word: "/files/02_august-ERAS_Word.docx"
+excel: ""
+pdf: "/files/02_august-ERAS_Word.pdf"
+output: html_document
+---
+
+## ASN _Data Brief_
+**Kurtis Pivert** *ASN Data Science Officer*
+
+
+```{r Load Packages , message=FALSE, warning=FALSE, include=FALSE}
+
+require(knitr)
+require(readxl)
+require(tidyverse)
+require(extrafont)
+require(rmarkdown)
+loadfonts(quiet = TRUE)
+require(ggrepel)
+  
+```
+
+
+```{r Load Data, message=FALSE, warning=FALSE, cache=TRUE, include=FALSE}
+
+## Edu Status
+
+eras <- read_excel(
+  here::here(
+    "content_data/01_data", "2018-10-02_ERAS_Legacy-Data_AY-2014_AY-2019.xlsx"
+    ), 
+  sheet = "By Edu Status"
+  )
+
+eras <- eras %>% 
+  mutate(
+    month = lubridate::month(month_year)
+  )
+  
+## Historical Totals
+eras_hist <- read_excel(
+  here::here(
+    "content_data/01_data", "2018-10-02_ERAS_Legacy-Data_AY-2014_AY-2019.xlsx"
+    ), 
+  sheet = "Historical Totals"
+  )
+
+eras_hist <- eras_hist %>% 
+  mutate(
+    month = lubridate::month(`Month/Year`)
+  )
+  
+  
+```
+
+
+# AY 2019 Nephrology Match Update: August/September ERAS Applications
+
+August and September [ERAS](https://www.aamc.org/data/facts/eras/) application 
+data for the appointment year (AY) 2019 nephrology Match exhibited diverging 
+trends. While applications declined in August, year-over-year totals are trending 
+above the past 3 Match cycles.  
+
+### Fall Rebound in Candidates and Applications 
+New nephrology candidates applying in August continued their recent decline, 
+but September saw a bump in new candidates (40), an 11% increase over AY 2018. 
+The uptick is expected and likely an artifact of residents changing career plans 
+mid--application cycle. Nephrology candidates have recently had the highest 
+proportion of ERAS cross-specialty registrations (excepting allied 
+subspecialties such as Pulm--CCM) and new data from the _Report 
+on the 2018 Nephrology Fellow Survey_---being released October 15, 2018---found 
+only 35.4% of respondents had considered nephrology as their only career option.   
+
+
+
+```{r Figure 1 and 2, echo=FALSE, message=FALSE, warning=FALSE, cache=TRUE}
+
+eras_colors <- c(
+  "2014" = "#cccccc", "2015" = "#cccccc", "2016" = "#cccccc", 
+  "2017" = "#cccccc",  "2018" = "#cccccc","2019" = "#4267b1"
+)
+
+## August_1
+eras_hist %>% 
+  filter(month == 8) %>% 
+  ggplot(
+    aes(x = `ERAS Year`, y = `# of Applicants`)
+  ) +
+  geom_bar(
+    stat = "identity", 
+    width = .7, 
+    fill = c(
+      "#cccccc", "#cccccc", "#cccccc",  "#cccccc", "#cccccc","#4267b1"
+    )
+  ) +
+  theme_minimal(
+    base_size = 14, 
+    base_family = "Roboto"
+  ) +
+  theme(
+    panel.grid.minor = element_blank(), 
+    panel.background = element_rect(fill = "#fffff3", color = "#fffff3"),
+    plot.title = element_text(hjust = 0.5, family = "Roboto Medium"),
+    plot.background = element_rect(fill = "#fffff3", color = "#fffff3")
+  ) +
+  scale_x_continuous(
+    breaks = 2014:2019, 
+    labels = as.character(2014:2019)
+  ) +
+  labs(title = "Total Nephrology Candidates in August by ERAS Year", 
+       y = "No. of Candidates",
+       x = "ERAS Year",
+       caption = "Source: ERAS, 2014\u20132018")
+
+## September
+eras_hist %>% 
+  filter(month == 9) %>% 
+  ggplot(
+    aes(x = `ERAS Year`, y = `# of Applicants`)
+  ) +
+  geom_bar(
+    stat = "identity", 
+    width = .7, 
+    fill = c(
+      "#cccccc", "#cccccc", "#cccccc",  "#cccccc", "#cccccc","#4267b1"
+    )
+  ) +
+  theme_minimal(
+    base_size = 14, 
+    base_family = "Roboto"
+  ) +
+  theme(
+    panel.grid.minor = element_blank(), 
+    panel.background = element_rect(fill = "#fffff3", color = "#fffff3"),
+    plot.title = element_text(hjust = 0.5, family = "Roboto Medium"),
+    plot.background = element_rect(fill = "#fffff3", color = "#fffff3")
+  ) +
+  scale_x_continuous(
+    breaks = 2014:2019, 
+    labels = as.character(2014:2019)
+  ) +
+  labs(title = "Total Nephrology Candidates in September by ERAS Year", 
+       y = "No. of Candidates",
+       caption = "Source: ERAS, 2014\u20132018")
+
+```
+
+
+New application numbers mirror those for candidates, but September totals increased  
+40% over last application cycle, with each applicant submitting to an average of 12 
+programs. 
+
+
+```{r Figures 3 and 4, cache=TRUE, echo=FALSE, message=FALSE, warning=FALSE}
+
+## August_2 
+eras_hist %>% 
+  filter(month == 8) %>% 
+  ggplot(aes(x = `ERAS Year`, y = `# of Applications`)) +
+  geom_bar(
+    stat = 'identity', 
+    fill = c("#cccccc", "#cccccc", "#cccccc","#cccccc", "#cccccc","#4267b1"), 
+    width = 0.7
+  ) + 
+  theme_minimal(base_size = 14, base_family = "Roboto") + 
+  theme(
+    panel.grid.minor = element_blank(), 
+    panel.background = element_rect(
+      fill = "#fffff3", 
+      color = "#fffff3"
+    ), 
+    plot.title = element_text(
+      hjust = 0.5, 
+      family = "Roboto Medium"
+    ),
+    plot.background = element_rect(
+      fill = "#fffff3", 
+      color = "#fffff3"
+    )
+  ) +
+  scale_x_continuous(
+    breaks = 2014:2019, 
+    labels = as.character(2014:2019)
+  ) + 
+  labs(title = "Total Nephrology Applications in August by ERAS Year", 
+       caption = "Source: ERAS, 2014\u20132018",
+       y ="No. of Applications")
+
+## September_2 
+eras_hist %>% 
+  filter(month == 9) %>% 
+  ggplot(aes(x = `ERAS Year`, y = `# of Applications`)) +
+  geom_bar(
+    stat = 'identity', 
+    fill = c("#cccccc", "#cccccc", "#cccccc","#cccccc", "#cccccc","#4267b1"), 
+    width = 0.7
+  ) + 
+  theme_minimal(base_size = 14, base_family = "Roboto") + 
+  theme(
+    panel.grid.minor = element_blank(), 
+    panel.background = element_rect(
+      fill = "#fffff3", 
+      color = "#fffff3"
+    ), 
+    plot.title = element_text(
+      hjust = 0.5, 
+      family = "Roboto Medium"
+    ),
+    plot.background = element_rect(
+      fill = "#fffff3", 
+      color = "#fffff3"
+    )
+  ) +
+  scale_x_continuous(
+    breaks = 2014:2019, 
+    labels = as.character(2014:2019)
+  ) + 
+  labs(title = "Total Nephrology Applications in September by ERAS Year", 
+       caption = "Source: ERAS, 2014\u20132018",
+       y ="No. of Applications")
+
+
+```
+
+
+#### Educational Status 
+ 
+Broken down by educational status, US international medical graduates (US IMGs)
+have offset declines among both USMGs and IMGs over the past 2 months.  
+
+
+```{r Figures 5 and 6, echo=FALSE,  message=FALSE, warning=FALSE, cache=TRUE}
+  
+eras <-  eras %>% 
+  mutate(
+    Label = paste0(edu_status, " ",
+                   as.character(num_candidate))
+  )  
+
+ ## August_3
+eras %>% 
+  filter(month == 8) %>% 
+  ggplot() +
+  geom_line(
+    aes(x = as.factor(ERAS), 
+        y = num_candidate, 
+        group = edu_status, 
+        color = edu_status), 
+    lwd = 1.2) + 
+  geom_point(
+    aes(x = as.factor(ERAS), 
+        y = num_candidate, 
+        color = edu_status), 
+    size = 2) +
+  theme_minimal(base_size = 14, base_family = "Roboto") +
+  scale_color_brewer(palette = "Set1") +
+  xlab("") +
+  ylab("No. of Candidates") +
+  geom_text(
+    data = subset(eras, ERAS == 2018 & month == 8), 
+    aes(
+      x = as.factor(ERAS), 
+      y = num_candidate, 
+      color = edu_status, 
+      label = Label
+    ), 
+    size = 4, 
+    hjust = 1.1, 
+    family = "Roboto"
+  ) +
+  geom_text(
+    data = subset(eras, ERAS == 2019 & month == 8),
+    aes(
+      x = as.factor(ERAS),
+      y = num_candidate, 
+      color = edu_status,
+      label = Label),
+    size = 4, 
+    hjust = -.15, 
+    family = "Roboto"
+  ) +
+  theme(
+    legend.position = "none", 
+    axis.text = element_text(family = "Roboto"),
+    panel.background = element_rect(fill = "#fffff3", color = "#fffff3"),
+    plot.background = element_rect(fill = "#fffff3", color = "#fffff3"), 
+    plot.title = element_text(family = "Roboto Medium", hjust = 0.5)
+  ) +
+  labs(
+    title = "August Candidates by Educational Status \nAY 2018 and AY 2019", 
+    caption = "Source: ERAS, 2014\u20132018") 
+
+## September_3
+eras %>% 
+  filter(month == 9) %>% 
+  ggplot() +
+  geom_line(
+    aes(x = as.factor(ERAS), 
+        y = num_candidate, 
+        group = edu_status, 
+        color = edu_status), 
+    lwd = 1.2) + 
+  geom_point(
+    aes(x = as.factor(ERAS), 
+        y = num_candidate, 
+        color = edu_status), 
+    size = 2) +
+  theme_minimal(base_size = 14, base_family = "Roboto") +
+  scale_color_brewer(palette = "Set1") +
+  xlab("") +
+  ylab("No. of Candidates") +
+  geom_text(
+    data = subset(eras, ERAS == 2018 & month == 9), 
+    aes(
+      x = as.factor(ERAS), 
+      y = num_candidate, 
+      color = edu_status, 
+      label = Label
+    ), 
+    size = 4, 
+    hjust = 1.1, 
+    family = "Roboto"
+  ) +
+  geom_text(
+    data = subset(eras, ERAS == 2019 & month == 9),
+    aes(
+      x = as.factor(ERAS),
+      y = num_candidate, 
+      color = edu_status,
+      label = Label),
+    size = 4, 
+    hjust = -.15, 
+    family = "Roboto"
+  ) +
+  theme(
+    legend.position = "none", 
+    axis.text = element_text(family = "Roboto"),
+    panel.background = element_rect(fill = "#fffff3", color = "#fffff3"),
+    plot.background = element_rect(fill = "#fffff3", color = "#fffff3"), 
+    plot.title = element_text(family = "Roboto Medium", hjust = 0.5)
+  ) +
+  labs(
+    title = "September Candidates by Educational Status \nAY 2018 and AY 2019", 
+    caption = "Source: ERAS, 2014\u20132018") 
+
+   
+```
+
+
+
+### Year over Year---Candidates and Applications
+Total candidates and applications continue to trend higher over AY 2018 application
+cycle (7.8% and 8.7%, respectively). As of September, candidate totals are 
+trending higher than the past 3 application cycles (AY 2016--AY 2018). 
+
+```{r Figures 6 to 8, echo=FALSE, message=FALSE, warning=FALSE, cache=TRUE}
+  
+# Candidates YOY
+eras_hist %>% 
+  filter(
+    month, between(month, 7, 9)
+  ) %>% 
+  group_by(`ERAS Year`) %>% 
+  summarise(
+    Tot_Candidates = sum(`# of Applicants`)
+  ) %>% 
+  mutate(
+    lagged = lag(Tot_Candidates)
+  ) %>% 
+  mutate(
+    Pct_Change = ((Tot_Candidates - lagged) / lagged), 
+    Bar_Cols = if_else(Pct_Change > 0, "Up", "Down")
+  ) %>% 
+  filter(`ERAS Year` != 2014) %>% 
+  ggplot(
+    aes(x = `ERAS Year`, y = Pct_Change, fill = Bar_Cols)
+  ) +
+  geom_bar(stat = "identity", width = .5) +
+  scale_fill_manual(values = c("Up" = "#4267b1", "Down" = "#cccccc")) + 
+  theme_minimal(
+    base_size = 14, 
+    base_family = "Roboto"
+  ) +
+  theme(
+    panel.grid.minor = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.background = element_rect(fill = "#fffff3", color = "#fffff3"), 
+    plot.title = element_text(hjust = 0.5, family = "Roboto Medium"),
+    plot.background = element_rect(fill = "#fffff3", color = "#fffff3"),
+    legend.position = "none"
+  ) +
+  geom_text(
+    aes(
+      label = scales::percent(Pct_Change), 
+      y = (Pct_Change + 0.007 * sign(Pct_Change))),
+    family = "Roboto"
+  ) +
+  scale_y_continuous(labels = scales::percent) +
+  labs(title = "Percent Change Year over Year\u2014Candidates \nJuly\u2013September", 
+       caption = "Source: ERAS, 2014\u20132018",
+       y = "% Change Candidates")
+
+## Applications YOY
+eras_hist %>% 
+  filter(
+    month, between(month, 7, 9)
+  ) %>% 
+  group_by(`ERAS Year`) %>% 
+  summarise(
+    Tot_Candidates = sum(`# of Applications`)
+  ) %>% 
+  mutate(
+    lagged = lag(Tot_Candidates)
+  ) %>% 
+  mutate(
+    Pct_Change = ((Tot_Candidates - lagged) / lagged), 
+    Bar_Cols = if_else(Pct_Change > 0, "Up", "Down")
+  ) %>% 
+  filter(`ERAS Year` != 2014) %>% 
+  ggplot(
+    aes(x = `ERAS Year`, y = Pct_Change, fill = Bar_Cols)
+  ) +
+  geom_bar(stat = "identity", width = .5) +
+  scale_fill_manual(values = c("Up" = "#4267b1", "Down" = "#cccccc")) + 
+  theme_minimal(
+    base_size = 14, 
+    base_family = "Roboto"
+  ) +
+  theme(
+    panel.grid.minor = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.background = element_rect(fill = "#fffff3", color = "#fffff3"), 
+    plot.title = element_text(hjust = 0.5, family = "Roboto Medium"),
+    plot.background = element_rect(fill = "#fffff3", color = "#fffff3"),
+    legend.position = "none"
+  ) +
+  geom_text(
+    aes(
+      label = scales::percent(Pct_Change), 
+      y = (Pct_Change + 0.007 * sign(Pct_Change))),
+    family = "Roboto"
+  ) +
+  scale_y_continuous(labels = scales::percent) +
+  labs(title = "Percent Change Year over Year\u2014Applications \nJuly\u2013September", 
+       caption = "Source: ERAS, 2014\u20132018",
+       y = "% Change Applications")
+
+## Cumulative candidates 
+
+eras_hist %>% 
+  filter(
+    month, 
+    between(month, 7, 11)
+  ) %>% 
+  group_by(`ERAS Year`) %>% 
+  mutate(Run_Tot = cumsum(`# of Applicants`)) %>% 
+  ungroup() %>% 
+  ggplot(aes(x = month, y = Run_Tot)) +
+  geom_line(
+    aes(color = factor(`ERAS Year`)), 
+    lwd = 1.2) + 
+  scale_color_manual(
+    values = c("2014" = "#cccccc", "2015" = "#cccccc", "2016" =  "#cccccc",
+               "2017" = "#cccccc", "2018" = "#cccccc","2019" = "#cc3466")
+  ) +
+  theme_minimal(
+    base_size = 14,
+    base_family = "Roboto") +
+  theme(
+    panel.grid.minor = element_blank(),
+    panel.background = element_rect(
+      fill = "#fffff3", 
+      color = "#fffff3"),
+    plot.background = element_rect(
+      fill = "#fffff3", 
+      color = "#fffff3"),
+    plot.title = element_text(
+      hjust =0.5, 
+      family = "Roboto Medium"),
+    legend.position = "none"
+  ) + 
+  labs(
+    title = "Year over Year Cumulative Candidates \nAY 2014\u2013AY 2019", 
+    y = "Total Cumulative Candidates", 
+    caption = "Source: ERAS, 2014\u20132018",
+    x = ""
+  ) +
+  ylim(225, 550) +
+  annotate("text", 
+           x = 9, 
+           y = 410, 
+           label = "AY 2019", 
+           family = "Roboto", 
+           color = "#010101"
+  ) +
+  scale_x_continuous(labels = month.name[7:11])
+
+
+  
+```
+
+
+#### Educational Status
+
+To date, IMGs have rebounded over last year by 12% and US IMGs are up 28%.
+Yet, the number of US MDs dropped 13% over September of last year (when 91 US MDs
+matched in nephrology), pointing to a lower total for AY 2019 (Figure 9).  
+
+
+```{r Figure 9, echo=FALSE, message=FALSE, warning=FALSE, cache=TRUE}
+  
+## July-September
+eras_july_sept <- eras %>%
+  filter(month, between(month, 7, 9)) %>% 
+  group_by(ERAS, edu_status) %>% 
+  summarise(Tot_Cand = sum(num_candidate)) %>% 
+  mutate(
+    Label = paste0(edu_status, " ", as.character(Tot_Cand))
+  ) 
+
+eras_july_sept %>% 
+  ggplot() +
+  geom_line(
+    aes(x = as.factor(ERAS), 
+        y = Tot_Cand, 
+        group = edu_status, 
+        color = edu_status), 
+    lwd = 1.2) + 
+  geom_point(
+    aes(x = as.factor(ERAS), 
+        y = Tot_Cand, 
+        color = edu_status), 
+    size = 2) +
+  theme_minimal(base_size = 14, base_family = "Roboto") +
+  scale_color_brewer(palette = "Set1") +
+  xlab("") +
+  ylab("No. of Candidates") +
+  geom_text_repel(
+    data = subset(eras_july_sept, ERAS == 2018), 
+    aes(
+      x = as.factor(ERAS), 
+      y = Tot_Cand, 
+      color = edu_status, 
+      label = Label
+    ), 
+    size = 4, 
+    hjust = 1.1, 
+    family = "Roboto",
+    segment.alpha = 0,
+  ) +
+  geom_text_repel(
+    data = subset(eras_july_sept, ERAS == 2019),
+    aes(
+      x = as.factor(ERAS),
+      y = Tot_Cand, 
+      color = edu_status,
+      label = Label),
+    size = 4, 
+    hjust = -.15, 
+    family = "Roboto", 
+    segment.alpha = 0
+  ) +
+  theme(
+    legend.position = "none", 
+    axis.text = element_text(family = "Roboto"),
+    panel.background = element_rect(fill = "#fffff3", color = "#fffff3"),
+    plot.background = element_rect(fill = "#fffff3", color = "#fffff3"), 
+    plot.title = element_text(family = "Roboto Medium", hjust = 0.5)
+  ) +
+  labs(
+    title = "Cumulative Candidates by Educational Status \nAY 2018 and 2019", 
+    caption = "Source: ERAS, 2014\u20132018") 
+
+   
+```
+
+
+### Up Next
+
+The next _Data Brief_ will report preliminary nephrology Match results on 
+*Match Day, Wednesday, November 28*. 
+
+_**Questions? Comments?**_ 
+
+Contact ASN Data Science Officer Kurtis Pivert
+at 202-699-0238 or [kpivert@asn-online.org](mailto:kpivert@asn-online.org).
+
