@@ -1,0 +1,304 @@
+---
+title: "Report on the Survey of 2018 Nephrology Fellows"
+author: "George Washington University Health Workforce Institute"
+date: ""
+output: powerpoint_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+**Leo Quigley, MPH**
+_George Washington University Health Workforce Institute and School of Nursing_
+
+**Edward Salsberg, MPA, FAAN**
+_George Washington University Health Workforce Institute and School of Nursing_
+
+**Ashté Collins, MD**
+_George Washington University School of Medicine_
+
+_The views and findings in this report reflect the work of the GW Health Workforce Institute (GW-HWI) and do not necessarily reflect the views of ASN or GW University. The GW-HWI and ASN welcome comments and feedback on this report._
+
+
+## Percentage of Nephrology Fellows Responding “No Jobs” or “Very Few Jobs”
+
+```{r exhibit-p1, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "04_2018-Nephrology-Fellow-Survey-Figs/exhibit-p1.png"))
+```
+
+
+## Percentage of Nephrology Fellows Having a Difficult Time Finding a Satisfactory Position
+
+```{r exhibit-p2, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "04_2018-Nephrology-Fellow-Survey-Figs/exhibit-p2.png"))
+```
+
+
+## Changing Plans Due to Limited Practice Opportunities
+
+```{r exhibit-p3, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "04_2018-Nephrology-Fellow-Survey-Figs/exhibit-p3.png"))
+```
+
+
+## Would Recommend Nephrology to Medical Students and Residents
+    
+```{r exhibit-p4, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "04_2018-Nephrology-Fellow-Survey-Figs/exhibit-p4.png"))
+```    
+
+
+## Setting of Primary Nephrology Job
+
+```{r exhibit-p5, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "04_2018-Nephrology-Fellow-Survey-Figs/exhibit-p5.png"))
+``` 
+
+## Base Salary by Practice Setting of Primary Nephrology Job
+
+```{r exhibit-p6, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "04_2018-Nephrology-Fellow-Survey-Figs/exhibit-p6.png"))
+```     
+
+
+## Base Salary by Population Density of Primary Nephrology Job Location
+
+```{r exhibit-p7, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "04_2018-Nephrology-Fellow-Survey-Figs/exhibit-p7.png"))
+``` 
+
+## Exhibit 1: Respondents by Fellowship Year
+
+```{r exhibit-1, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "04_2018-Nephrology-Fellow-Survey-Figs/exhibit-1.png"))
+``` 
+
+
+## Exhibit 2: Comparison of 1st- and 2nd-Year Fellow Survey Respondents with ACGME Data
+
+```{r exhibit-2, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "04_2018-Nephrology-Fellow-Survey-Figs/exhibit-2.png"))
+``` 
+
+
+## Exhibit 3: Medical School
+
+```{r exhibit-3, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "04_2018-Nephrology-Fellow-Survey-Figs/exhibit-3.png"))
+``` 
+
+## Exhibit 4: Citizenship Status
+
+```{r exhibit-4, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "04_2018-Nephrology-Fellow-Survey-Figs/exhibit-4.png"))
+``` 
+
+
+## Exhibit 5: Sex of 2018 Respondents
+
+```{r exhibit-5, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "04_2018-Nephrology-Fellow-Survey-Figs/exhibit-5.png"))
+``` 
+
+
+## Exhibit 6: Age of 2018 Respondents
+
+```{r exhibit-6, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "04_2018-Nephrology-Fellow-Survey-Figs/exhibit-6.png"))
+``` 
+
+## Exhibit 7: Race of 2018 Respondents
+
+```{r exhibit-7, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "04_2018-Nephrology-Fellow-Survey-Figs/exhibit-7.png"))
+``` 
+
+
+## Exhibit 8: Ethnicity of 2018 Respondents
+
+```{r exhibit-8, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "04_2018-Nephrology-Fellow-Survey-Figs/exhibit-8.png"))
+``` 
+
+
+## Exhibit 9: Educational Debt
+
+```{r exhibit-9, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "04_2018-Nephrology-Fellow-Survey-Figs/exhibit-9.png"))
+``` 
+
+
+## Exhibit 10: Activity After Completion of Current Training Year
+
+```{r exhibit-10, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "04_2018-Nephrology-Fellow-Survey-Figs/exhibit-10.png"))
+``` 
+
+## Exhibit 11: Type of Continuing Training Pursued by Fellows
+
+```{r exhibit-11, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "04_2018-Nephrology-Fellow-Survey-Figs/exhibit-11.png"))
+``` 
+
+
+## Exhibit 12: Factors Influencing Job Selection
+
+```{r exhibit-12, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "04_2018-Nephrology-Fellow-Survey-Figs/exhibit-12.png"))
+``` 
+
+
+## Exhibit 13: Percentage of Nephrology Fellows Having a Difficult Time Finding a Satisfactory Position
+
+```{r exhibit-13, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "04_2018-Nephrology-Fellow-Survey-Figs/exhibit-13.png"))
+``` 
+
+
+## Exhibit 14: Reasons for Difficulty
+
+```{r exhibit-14, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "04_2018-Nephrology-Fellow-Survey-Figs/exhibit-14.png"))
+``` 
+
+
+## Exhibit 15: Changing Plans Due to Limited Practice Opportunities
+
+```{r exhibit-15, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "04_2018-Nephrology-Fellow-Survey-Figs/exhibit-15.png"))
+```
+
+
+## Exhibit 16: Percentage of Nephrology Fellows Responding “No Jobs” or “Very Few Jobs”
+
+```{r exhibit-16, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "04_2018-Nephrology-Fellow-Survey-Figs/exhibit-16.png"))
+```
+
+
+## Exhibit 17: Setting of Primary Nephrology Job
+
+```{r exhibit-17, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "04_2018-Nephrology-Fellow-Survey-Figs/exhibit-17.png"))
+```
+
+
+## Exhibit 18: Location of Primary Nephrology Job (Demographics)
+
+```{r exhibit-18, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "04_2018-Nephrology-Fellow-Survey-Figs/exhibit-18.png"))
+```
+
+
+## Exhibit 19: Service Obligation
+
+```{r exhibit-19, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "04_2018-Nephrology-Fellow-Survey-Figs/exhibit-19.png"))
+```
+
+
+## Exhibit 20: Reason for Service Obligation
+
+```{r exhibit-20, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "04_2018-Nephrology-Fellow-Survey-Figs/exhibit-20.png"))
+```
+
+
+## Exhibit 21: Interest in Physician National Interest Waiver
+
+```{r exhibit-21, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "04_2018-Nephrology-Fellow-Survey-Figs/exhibit-21.png"))
+```
+
+
+## Exhibit 22: Expected Base Salary by IMG Status and Sex (Mean)
+
+```{r exhibit-22, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "04_2018-Nephrology-Fellow-Survey-Figs/exhibit-22.png"))
+```
+
+
+## Exhibit 23: Distribution of Expected Base Salary for USMGs and IMGs
+
+```{r exhibit-23, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "04_2018-Nephrology-Fellow-Survey-Figs/exhibit-23.png"))
+```
+
+## Exhibit 24: Distribution of Expected Base Salary by Sex
+
+```{r exhibit-24, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "04_2018-Nephrology-Fellow-Survey-Figs/exhibit-24.png"))
+```
+
+
+## Exhibit 25: Distribution of Incentive Income for USMGs and IMGs
+
+```{r exhibit-25, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "04_2018-Nephrology-Fellow-Survey-Figs/exhibit-25.png"))
+```
+
+## Exhibit 26: Distribution of Incentive Income by Sex
+
+```{r exhibit-26, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "04_2018-Nephrology-Fellow-Survey-Figs/exhibit-26.png"))
+```
+
+
+## Exhibit 27: Distribution of Expected Base Salary by Demography
+
+```{r exhibit-27, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "04_2018-Nephrology-Fellow-Survey-Figs/exhibit-27.png"))
+```
+
+## Exhibit 28: Distribution of Expected Base Salary by Setting, IMG Status and Gender
+
+```{r exhibit-28, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "04_2018-Nephrology-Fellow-Survey-Figs/exhibit-28.png"))
+```
+
+
+## Exhibit 29: Distribution of Expected Base Salary by Satisfaction with Salary, IMG Status and Gender
+
+```{r exhibit-29, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "04_2018-Nephrology-Fellow-Survey-Figs/exhibit-29.png"))
+```
+
+
+## Exhibit 30: Incentives Received
+
+```{r exhibit-30, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "04_2018-Nephrology-Fellow-Survey-Figs/exhibit-30.png"))
+```
+
+## Exhibit 31: Primary Job Responsibilities
+
+```{r exhibit-31, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "04_2018-Nephrology-Fellow-Survey-Figs/exhibit-31.png"))
+```
+
+## Exhibit 32: Conditions Fellows Expect to Treat
+
+```{r exhibit-32, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "04_2018-Nephrology-Fellow-Survey-Figs/exhibit-32.png"))
+```
+
+## Exhibit 33: Consideration Given to a Career Outside Nephrology
+
+```{r exhibit-33, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "04_2018-Nephrology-Fellow-Survey-Figs/exhibit-33.png"))
+```
+
+## Exhibit 34: Level of Preparedness for General Nephrology Practice
+
+```{r exhibit-34, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "04_2018-Nephrology-Fellow-Survey-Figs/exhibit-34.png"))
+```
+
+## Exhibit 35: Would Recommend Nephrology to Medical Students and Residents
+
+```{r exhibit-35, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics(here::here("03_reports", "04_2018-Nephrology-Fellow-Survey-Figs/exhibit-35.png"))
+```
+

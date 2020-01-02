@@ -1,0 +1,43 @@
+{{ define "title"}} {{ .Title}} {{end}}
+{{ define "header"}} {{ partial "header" .}} {{end}}
+
+{{ define "main" }}
+
+{{ $subtitle := .Params.subtitle }}
+{{ $author := .Params.author }}
+{{ $word := .Params.word }}
+{{ $excel := .Params.excel }}
+{{ $powerpoint := .Params.powerpoint }}
+{{ $pdf := .Params.pdf }}
+
+<div id="main" class="single-post">
+  <div id="hero" class="wrap">
+    <h1>{{ .Title }}</h1>
+    <hr>
+    {{ if not (or (eq $subtitle "") (eq $author "") (eq .Description "")) }}
+      {{ if not (eq $subtitle "") }}<h2>{{ $subtitle }}</h2>{{end}}
+      {{ if not (eq $author "") }}<h4>{{ $author }}</h4>{{end}}
+      {{ if not (eq .Description "") }}<p>{{ .Description | markdownify }}</p>{{ end }}
+      {{ if not (or (eq $word "") (eq $excel "") (eq $powerpoint "") (eq $pdf "")) }}
+      <hr class="bar-hr">
+      <div class="resource-bar">
+        {{ with $word }}<a href="{{ $word }}"><img src="/images/themes/kube/word.png"></a>{{end}}
+        {{ with $excel }}<a href="{{ $excel }}"><img src="/images/themes/kube/excel.png"></a>{{end}}
+        {{ with $powerpoint }}<a href="{{ $powerpoint }}"><img src="/images/themes/kube/powerpoint.png"></a>{{end}}
+        {{ with $pdf }}<a href="{{ $pdf }}"><img src="/images/themes/kube/pdf.png"></a>{{end}}
+      </div>
+      {{ else }}
+        <hr>
+      {{end}}
+    {{end}}
+  </div>
+  <ul id="posts">
+  
+   {{ .Content }}
+    
+  </ul>
+</div>
+{{ end }} 
+{{ define "footer" }} 
+  {{ partial "footer" . }} 
+{{ end }}

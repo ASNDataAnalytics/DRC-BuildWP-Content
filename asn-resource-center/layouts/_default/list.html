@@ -1,0 +1,23 @@
+{{ define "title"}} {{ .Title}} {{end}}
+{{ define "header"}} {{ partial "header" .}} {{end}}
+
+{{ define "main" }}
+
+<div id="hero" class="wrap">
+  <h1>{{ .Title }}</h1>
+  <hr>
+  {{ if not (eq .Description "") }}
+    {{ if not (eq .Description "") }}<p>{{ .Description }} </p>{{ end }}
+    <hr>
+  {{end}}
+</div>
+<ul id="posts">
+
+ {{ range .Paginator.Pages.ByWeight }} {{ partial "page-summary" . }} {{ end }}
+  <section>{{ partial "pagination" .}}</section>
+</ul>
+
+{{ end }} 
+{{ define "footer" }} 
+  {{ partial "footer" . }} 
+{{ end }}

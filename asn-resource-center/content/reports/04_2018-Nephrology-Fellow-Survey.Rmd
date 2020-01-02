@@ -1,0 +1,1414 @@
+---
+title: "Report on the Survey of 2018 Nephrology Fellows"
+subtitle: "Prepared for The American Society of Nephrology"
+author: "By The George Washington University Health Workforce Institute"
+description: "The 2018 Nephrology Fellow Survey found the job market for new nephrologists has continued a trend of steady improvement and increasing salaries for US medical graduates (USMGs) and international medical graduates (IMGs)."
+image: "/images/04_2018-Nephrology-Fellow-Survey_Image.png"
+word: "/files/04_2018-Nephrology-Fellow-Survey_WORD.docx"
+excel: "/files/04_2018-Nephrology-Fellow-Survey.xlsx"
+powerpoint: "/files/04_2018-Nephrology-Fellow-Survey_PPT.pptx"
+pdf: "/files/04_2018-Nephrology-Fellow-Survey.pdf"
+tags: "featured"
+output: html_document
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+require(here)
+
+```
+
+
+**Leo Quigley, MPH**
+_George Washington University Health Workforce Institute and School of Nursing_
+
+**Edward Salsberg, MPA, FAAN**
+_George Washington University Health Workforce Institute and School of Nursing_
+
+**Ashté Collins, MD**
+_George Washington University School of Medicine_
+
+_The views and findings in this report reflect the work of the GW Health Workforce Institute (GW-HWI) and do not necessarily reflect the views of ASN or GW University. The GW-HWI and ASN welcome comments and feedback on this report._
+
+
+**Suggested Citation:** Quigley L, Salsberg E, Collins A. _Report on the 2018 Survey of Nephrology Fellows._ Washington, DC: American Society of Nephrology; 2018
+
+#### Preface
+
+Physicians in training represent the future practitioners in their field and provide a picture of the future supply. The experience of those completing their training and about to embark on their careers is also an indicator of physician demand in their specialty. For these reasons, the George Washington University Health Workforce Institute (GW-HWI) research team and the American Society of Nephrology (ASN) have conducted an annual online survey of current nephrology fellows and trainees beginning in 2014 to obtain data on demographic and educational background, educational debt, career plans, job search experiences, and factors influencing job opportunities and choices.  
+
+In 2018, the survey tool—slightly modified from 2014 and subsequent years—was distributed to 1329 ASN Fellow/Trainee members (to whom ASN offers free membership) in May and June 2018. Four hundred and seven (407) fellows or trainees provided informed consent and responded to the survey questions for an overall response rate of 30.6% (this analysis excludes pediatric nephrology fellows unless otherwise stated). Among the assumed 844 fellows in their first and second year of Accreditation Council for Graduate Medical Education (ACGME)–accredited training programs, we received responses from 349 fellows (41.4% response rate). (2018 ACGME data was not available at the time this report was written; comparisons are made with 2017 ACGME data instead.) The response rate for second-year fellows was 41.7% (183 of 439) providing a good picture of the job market faced by new nephrologists. (The basic nephrology fellowship is 2 years, but many stay on for an additional year(s) for subspecialty training or research.)  
+
+
+This report presents demographic information for respondents in all years of fellowship and training, as well as job market experiences and fellows’ plans for those completing their second year of fellowship or beyond. It also presents data on job offers accepted by nephrology fellows and their assessments of the overall state of the specialty and job market. For all of the statistical tests presented, we considered probability values <0.05 to be statistically significant.  
+
+#### Key Findings
+
+##### _Overview_
+
+The three overarching themes that emerge from the 2018 survey and analysis of the trends over the past 4 years are similar to those identified in 2017:
+
+* the job market for new nephrologists has continued a trend of steady improvement and increasing salaries for US medical graduates (USMGs) and international medical graduates (IMGs);
+* the job market for USMGs was signifi	better than
+for IMGs, who continue to represent a majority of the trainees; and
+* lifestyle concerns remain important to fellows and may
+be discouraging applicants to the specialty.
+
+##### _An Improving Job Market with Continued Challenge for IMGs_
+
+Responses to a number of questions indicated the importance of lifestyle factors to fellows, 
+both during training and for practice after training.
+
+* Among nephrology fellows who had searched for a job, perceptions of local nephrology job opportunities maintained the improvement of recent years compared to earlier years for both USMGs and IMGs. The percent of USMGs who indicated “no jobs” or “very few jobs” in the national job market dropped from 13.1% in 2014 to 0% in 2018, and from 35.1% to 8.6% for the local job market. The only disappointment was an increase in the number of USMGs who indicated “no jobs” or “very few jobs” in the local job market from the 9.3% of 2017 to 15.1% in 2018, though this was still lower than in all years prior to 2017.
+
+* While the view of the market was far more negative for IMGs than for USMGs, the improvement for IMGs was also impressive with the percentage responding “no jobs” or “very few jobs” dropping from 29.9% in 2014 to 9.8% in 2018 for the national job market, and from 56.3% to 29.6% for the local job market.
+
+##### Percentage of Nephrology Fellows Responding “No Jobs” or “Very Few Jobs”
+
+```{r exhibit-p1, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics("/reports/04_2018-Nephrology-Fellow-Survey-Figs/exhibit-p1.png")
+```
+
+
+* Fewer than two in five respondents (38.0%) who had searched for jobs reported having difficulty finding a satisfactory
+position compared to 45.6% in 2017. There was a statistically significant difference between IMG and USMG fellows’
+reports of difficulty finding a position (p=0.001): 49.4% of IMGs reported having difficulty finding a position they were
+satisfied with, an improvement over the 55.4% of 2017 and the 70.0% of 2016. 21.1% of USMGs reported having
+difficulty compared to 28.8% in 2016.
+
+##### Percentage of Nephrology Fellows Having a Difficult Time Finding a Satisfactory Position
+
+```{r exhibit-p2, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics("/reports/04_2018-Nephrology-Fellow-Survey-Figs/exhibit-p2.png")
+```
+
+* Overall, the percentage of respondents indicating that they had changed their plans because of limited nephrology job
+opportunities continued its decline, from 42.9% in 2015 and 32.7% in 2017 to 28.9% in 2018. While both USMGs and
+IMGs were less likely to report changing their plans in 2017 than in prior years, their likelihood of changing plans was
+significantly different: only 12.3% of USMGs reported that they had to change plans, while 41.0% of IMGs reported
+changing plans (p<0.001). This difference likely reflects more limited job opportunities that meet visa requirements
+allowing IMGs to practice in the US.
+
+##### Changing Plans Due to Limited Practice Opportunities
+
+```{r exhibit-p3, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics("/reports/04_2018-Nephrology-Fellow-Survey-Figs/exhibit-p3.png")
+```
+
+* Fellows’ anticipated salaries in 2018 were higher than
+in previous years; the median anticipated salary for
+all demographic groups (by IMG status and sex) was
+between $180,000 and 
+$189,999, except for male
+IMGs, where the median was between $190,000 and
+$199,999. The mean anticipated salary was 
+$198,000,
+compared to $187,000 in 2017.
+
+* USMGs were more likely than IMGs to report being
+“Very satisfied” with their salary and compensation
+(34.7% vs. 21.3%) but the difference was not
+statistically significant.
+
+* When asked to identify the incentives they had received
+for accepting their primary job offers, respondents were
+most likely to report receiving the following:  
+    + Income guarantees (46.9%)
+    + Support for MOC and CME (40.7%)
+    + Career development opportunities (38.1%)
+    + Relocation allowances (38.1%)
+    + Sign-on bonus (27.4%)
+    
+
+##### Lifestyle Concerns
+
+Responses to a number of questions indicated the importance of lifestyle factors to fellows, both during training and for
+practice after training.  
+
+* Respondents in their second year of fellowship or beyond rated the following factors as “very important” or “important” in their job selection:      
+    + Frequency of overnight calls (94.7% very important or important)
+    + Frequency of weekend duties (93.9%)
+    + Length of each workday (91.7%)
+    + Salary/compensation (90.9%)
+    + Job/practice in desired practice setting (89.8%)
+    + Job/practice in desired location (88.5%)
+
+* This may reflect the nature of much of nephrology practice today and may be of concern to both nephrology fellows
+and residents who do not select the specialty.
+
+* The final section of the report includes comments from fellows regarding why they would or would not recommend
+the specialty. The positive comments highlight the intellectual excitement and attraction of the specialty itself as well
+as long term relationships with patients. The negative comments indicate the challenges that the specialty faces.
+Fellows who would not recommend nephrology to medical students and residents cited the heavy workload, low
+compensation, difficult schedule, undervaluing of the specialty by other specialties, and lack of opportunities that
+support visas for IMGs as reasons for their negative assessments. This was consistent with the 2015, 2016 and 2017
+responses.
+
+#### Other Findings
+ 
+##### Recommending the Specialty
+
+Despite their mixed assessments of the nephrology job market, a majority (78.8%) of fellows indicated they would
+recommend nephrology to current medical students and residents, a notable improvement over previous years.
+However, IMGs were significantly less likely than USMGs to report that they would recommend the specialty to others
+(75.9% vs. 83.7%, respectively).  
+
+##### Would Recommend Nephrology to Medical Students and Residents
+    
+```{r exhibit-p4, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics("/reports/04_2018-Nephrology-Fellow-Survey-Figs/exhibit-p4.png")
+```    
+
+* Fellows who said they would recommend nephrology to medical students and residents cited many of the same factors
+mentioned by 2015, 2016 and 2017 respondents as reasons for their positive assessments: the intellectual challenge/
+interest of the field, variety of activities, and long-term patient relationships.  
+
+##### Next Steps for Fellows Completing Training
+
+* Among respondents in their second year of fellowship or beyond who indicated their plans for the upcoming
+year (n=239), the largest percentage planned to enter clinical nephrology practice (50.6%). One in three (33.4%)
+are continuing their training: 16.7% in their current fellowship and 16.7% in subspecialty training or an additional
+fellowship. Frequently reported areas of continuing training included research, transplant nephrology and critical care.
+* Among the 2nd year respondents, USMGs were more likely to continue current fellowship (20.0% to 6.1%); IMGs were
+more likely to take additional subspecialty training (24.6% IMGs to 13.8% USMGs).
+* It pays to go on for additional training beyond 2 years. Those going into jobs following their 3rd or 4th year of training
+earning on average $211,000 compared to an average of 
+$195,000 for those going into jobs following only two years of
+training.
+
+##### Practice Setting
+
+Among respondents who had already accepted job offers, the largest group (48.3%) reported that they planned to work
+in nephrology group practices. Another 28.4% reported that they planned to work in academic nephrology practices,
+9.5% said they planned to work in hospitals and 6.9% in multispecialty academic practices. Other settings included
+multispecialty group practices (3.4%) and 2-person partnerships (3.4%). No 2018 respondents reported going to work in
+solo practice.
+
+##### Setting of Primary Nephrology Job
+
+```{r exhibit-p5, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics("/reports/04_2018-Nephrology-Fellow-Survey-Figs/exhibit-p5.png")
+``` 
+
+##### Practice in Underserved Areas
+* As in previous years, IMGs appear to be making an important contribution to care in underserved areas with 11 IMGs
+(17.2%) indicating an obligation to work in a federally designated Health Professional Shortage Area (HPSA). This
+apparently reflects the need to practice in an underserved area, such as under the Conrad 30 program, in order to
+remain in the US.
+
+##### The Job Market
+
+* When asked an open-ended question regarding the types of jobs they perceived to be more and less available, newly
+graduating fellows mentioned several types of jobs that were **more easily available** according to their experience:  
+    + Private practice jobs
+    + Jobs in remote, rural or undesirable areas
+    + Jobs in solo or small practices/communities
+    + Jobs in general nephrology rather than transplant nephrology
+
+* They reported several types of jobs that were **less easily available**:  
+    + Academic jobs
+    + Jobs in metro areas or other preferred geographic areas
+    + Jobs that meet visa requirements for IMGs
+
+##### Compensation
+
+As in 2017, there were some statistically significant differences between mean anticipated incomes between different
+practice settings.
+
+##### Base Salary by Practice Setting of Primary Nephrology Job
+
+```{r exhibit-p6, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics("/reports/04_2018-Nephrology-Fellow-Survey-Figs/exhibit-p6.png")
+```     
+
+Salaries differed by population density of the geographical area of practice, with the highest average incomes in rural areas
+($269,300) and small cities 
+($200,700), and lower incomes in suburban 
+($188,900), large city areas other than inner city
+($196,400), and inner city 
+($190,300) areas. The difference between rural salaries and all others was statistically significant
+(p<.001). It appears rural communities need to offer nephrologists considerably more compensation than they can get in
+larger cities and suburban areas in order to recruit them.
+
+##### Base Salary by Population Density of Primary Nephrology Job Location
+
+```{r exhibit-p7, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics("/reports/04_2018-Nephrology-Fellow-Survey-Figs/exhibit-p7.png")
+``` 
+
+##### Job Responsibilities
+
+The vast majority of respondents cited hospital care and outpatient nephrology care among their primary job responsibilities
+(98.3% and 95.7% respectively). Other responsibilities they listed included temporary dialysis catheter placement (31.9%),
+kidney biopsy (31.0%), medical directorship with a dialysis provider (27.6%) and clinical research (21.6%).
+
+#### Overview of Respondents
+
+The 407 respondents to the 2018 Nephrology Fellows Survey included fellows in their first and second year of their ACGME
+training program, as well as third-, fourth-, and fifth-year fellows in subspecialty training or research positions. Of the 407
+respondents, 241 had completed at least 2 years of nephrology training; 183 had searched for a job; and 118 had accepted
+a job offer. Different sections of this report present findings on each of these groups of fellows. (The totals in each data table
+vary depending on the number of respondents who answered the particular question or questions being shown.)
+
+###### Exhibit 1: Respondents by Fellowship Year
+
+```{r exhibit-1, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics("/reports/04_2018-Nephrology-Fellow-Survey-Figs/exhibit-1.png")
+``` 
+
+To assess the representativeness of the survey sample, we compared several demographic and educational characteristics
+of the 349 survey respondents in their first and second years of training to ACGME data on all 844 first- and second
+year- fellows (we used 2017 data as the 2018 ACGME data has not been published at the time of writing this report).
+Respondents in 2018 had very similar characteristics to the 2017 ACGME first- and second-year nephrology fellows,
+although the survey sample included slightly fewer IMGs, males and African Americans and slightly more Hispanic/Latino
+respondents. The percentage of African American survey respondents in their first and second years of training was lower
+in 2018 than in 2017—6.6% vs. 7.7%; the percentage of Hispanic/Latino survey respondents was higher than in 2016
+(10.6% compared to 8.9%).
+
+###### Exhibit 2: Comparison of 1st- and 2nd-Year Fellow Survey Respondents with ACGME Data
+
+```{r exhibit-2, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics("/reports/04_2018-Nephrology-Fellow-Survey-Figs/exhibit-2.png")
+``` 
+
+#### Education, Citizenship Status, and Demographics of Respondents
+
+This section presents data on the educational background, citizenship status, and demographics of all respondents to the 2018 Nephrology Fellow Survey.
+
+##### Location of Medical School
+
+###### Exhibit 3: Medical School
+
+```{r exhibit-3, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics("/reports/04_2018-Nephrology-Fellow-Survey-Figs/exhibit-3.png")
+``` 
+
+As in previous years, most 2018 survey respondents (62.1%) attended medical school outside the United States. These
+IMG respondents reported attending medical school in 50 different countries, the most frequently cited of which were
+India (58 respondents); Pakistan (32 respondents); Dominica (11 respondents); Jordan, Nepal and Syria (9 respondents
+each); China and Egypt (8 respondents each); Grenada and Iraq (7 respondents each); Dominican Republic, Japan and
+Mexico (6 each); and Lebanon and Nigeria (5 each).
+
+###### Exhibit 4: Citizenship Status
+
+```{r exhibit-4, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics("/reports/04_2018-Nephrology-Fellow-Survey-Figs/exhibit-4.png")
+``` 
+
+
+The distribution of 2018 survey respondents’ citizenship status was also similar to that of previous years’ respondents. More than half of 2018 respondents (53.5%) reported that they were US citizens, either native born or naturalized, and 14.3% reported that they were permanent residents of the United States. About 32.2% of the respondents were non- citizen holders of H, J or other visas (a slightly higher percentage than in earlier years).  
+
+As in previous years, we identified a number of respondents who could be considered US IMGs, that is, US citizens who received their medical education outside the US. Native-born US citizen IMGs represented 9.6% of all respondents
+indicating they had received their medical education in another country in 2018 with naturalized U.S. citizen IMGs adding a further 20.3%.  
+
+##### Sex
+
+###### Exhibit 5: Sex of 2018 Respondents
+
+```{r exhibit-5, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics("/reports/04_2018-Nephrology-Fellow-Survey-Figs/exhibit-5.png")
+``` 
+
+
+As in previous years, the majority of 2018 survey respondents (62.8%) were male—a larger percentage than in 2016
+(61.1%). The difference in gender balance between IMGs (66.9% male) and USMGs (55.6% male) was statistically
+significant (p=0.024), unlike in 2016 and 2017 when the difference was not significant.
+
+##### Age
+
+###### Exhibit 6: Age of 2018 Respondents
+
+```{r exhibit-6, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics("/reports/04_2018-Nephrology-Fellow-Survey-Figs/exhibit-6.png")
+``` 
+
+Respondents ranged in age from 27 to 54 years old. As in previous years, the largest age group was 31 to 35 years, which included more than one-half of respondents. Also, as in 2017, IMG respondents were significantly older on average than USMG respondents on average (34.9 years vs. 32.9 years—p<0.001).
+
+##### Race/Ethnicity
+
+###### Exhibit 7: Race of 2018 Respondents
+
+```{r exhibit-7, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics("/reports/04_2018-Nephrology-Fellow-Survey-Figs/exhibit-7.png")
+``` 
+
+When asked to identify their race, the largest group of respondents identified themselves as Asian (40.8%), and the next largest group (36.8% of respondents) identified themselves as white. The distribution of race/ethnicity was significantly different across IMG categories: IMGs were significantly more likely to report being Asian (p<0.05, effect size=0.23) or of “other” race (p<0.01, effect size=0.45) than USMGs, and USMGs were significantly more likely to report being white than IMGs (p<0.01, effect size=0.65). The proportions of respondents who reported that they were black were not significantly different between the USMG and IMG groups (p=.098).
+
+###### Exhibit 8: Ethnicity of 2018 Respondents
+
+```{r exhibit-8, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics("/reports/04_2018-Nephrology-Fellow-Survey-Figs/exhibit-8.png")
+``` 
+
+9.6% of all respondents identified themselves as Hispanic or Latino, more than the 8.2% of 2016. This is more than the 8.7% of ACGME nephrology residents and fellows who are Hispanic/Latino; however, because nephrology is accredited as a two-year program ACGME only capture 1st and 2nd year fellows (ACGME, Annual Resource Data Book, 2016-17). IMG respondents were less likely to identify themselves as Hispanic or Latino than USMG respondents, but the difference was not statistically significant (p=0.684).
+
+##### Educational Debt
+
+###### Exhibit 9: Educational Debt
+
+```{r exhibit-9, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics("/reports/04_2018-Nephrology-Fellow-Survey-Figs/exhibit-9.png")
+``` 
+
+Respondents’ reported levels of educational debt varied from no debt to greater than $300,000. As in previous years, IMGs were much less likely to be in debt than USMGs: 68.4% of IMG respondents reported having no educational debt compared with only 23.1% of USMGs (p<0.001, effect size = 0.84). (Effect sizes are typically classified as 0.2 = low, 0.5
+= medium, 0.8 = large; the measure of effect size used throughout is Cohen’s d.) An additional 17.0% of IMGs reported educational debt levels <$50,000. 
+USMG respondents were more likely than IMGs to report debt levels in every debt tier beyond $50,000. More than 1 in 5 (21.0%) of USMG respondents and 4.5% of IMG respondents reported 
+having >$300,000 of educational debt, compared to 2017 when the comparable figures were 17.2% and 6.5% respectively. IMG respondents had a median educational debt of 
+$0, while USMG respondents had a median educational debt of between
+$150,000 and 
+$174,999, the same as in 2017 but still higher than in any of the previous survey years.
+
+#### Post-Training Plans (2nd-Year and Beyond Fellows Only)
+
+##### Activity After Completion of Current Training Year
+
+###### Exhibit 10: Activity After Completion of Current Training Year
+
+```{r exhibit-10, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics("/reports/04_2018-Nephrology-Fellow-Survey-Figs/exhibit-10.png")
+``` 
+
+Among respondents in their second year of fellowship or beyond who indicated their plans for the upcoming year (n=239),
+the largest percentage planned to enter clinical nephrology practice (50.6%). One in three (33.4%) are continuing their
+training: 16.7% in their current fellowship and 16.7% in subspecialty training or an additional fellowship.  
+
+As seen in Exhibit 11, among the 78 fellows who planned to continue their training (either through additional subspecialty
+training or by continuing in their current fellowships) and gave information about what further training they planned to
+undertake, the largest groups said they planned to pursue training in research (35 respondents), transplant nephrology
+(25 respondents) and critical care (7 respondents). A smaller group (4 respondents) said they planned to pursue training
+in interventional nephrology. As in 2016, other types of training respondents mentioned included clinical nutrition and
+glomerular disease.
+
+###### Exhibit 11: Type of Continuing Training Pursued by Fellows
+
+```{r exhibit-11, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics("/reports/04_2018-Nephrology-Fellow-Survey-Figs/exhibit-11.png")
+``` 
+
+USMGs were significantly more likely than IMGs to
+report that they planned to continue their current
+fellowships (23.5% vs. 12.1%, p<.05, effect size = 0.31)
+while IMGs were more likely than USMGs to be planning
+additional subspecialty training or fellowship (21.5%
+vs. 10.3%, p<.05, effect size=0.30). We found no other
+significant differences in the distribution of anticipated
+activities between USMG and IMG fellows. The patterns
+were similar among 2nd year respondents only, with
+USMGs more likely to be continuing current fellowship
+(20.0% to 6.1%) and IMGs more likely to be taking
+additional subspecialty training (24.6% to 13.8%).  
+
+We found no significant differences in the distribution of
+anticipated activities between male and female fellows.
+Females were more likely than males to be temporarily
+out of medicine (1.43% vs. 0%) but this difference was
+not statistically significant (p=.13).
+
+##### Job Selection
+
+Respondents in their second year of fellowship or
+beyond rated the following factors as very important or
+important in their job selection:  
+
+* Frequency of overnight calls (94.7% very important
+or important)
+* Frequency of weekend duties (93.9%)
+* Length of each workday (91.7%)
+* Salary/compensation (90.9%)
+* Job/practice in in desired practice setting (89.8%)
+* Job/practice in desired location (88.5%)
+
+They rated the following factors as least important:  
+
+* Taxes (52.9%)
+* Cost of malpractice insurance (50.5%)
+* Cost of setting up a medical practice (44.0%)
+* Job/practice meets visa requirements (36.4%)
+* Availability of part-time position (27.4%)
+
+##### Factors Influencing Job Selection
+
+###### Exhibit 12: Factors Influencing Job Selection
+
+```{r exhibit-12, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics("/reports/04_2018-Nephrology-Fellow-Survey-Figs/exhibit-12.png")
+``` 
+
+USMGs and IMGs differed significantly when rating the
+following factors (in order of effect size):  
+
+* Job/practice meets visa requirements (IMGs more likely
+than USMGs to rate as very important, p<0.001, effect
+size = 1.1)
+* Predictable start time (IMGs more likely to rate as very
+important, p<.01, effect size=0.41)
+* Workday length (IMGs more likely to rate as very
+important, p<.01, effect size=0.40)
+* Salary/compensation (IMGs more likely than USMGs to
+rate as very important, p=0.01, effect size=0.37)
+* Climate (USMGs more likely to rate as very important,
+p<.05, effect size=0.35)
+* Part-time availability (USMGs more likely to rate as very
+important, p<.05, effect size=0.33)
+* Parental leave policy (IMGs more likely to rate as very
+important, p<.05, effect size=0.33
+* Weekend duties (IMGs more likely to rate as very
+important, p<.05, effect size=0.28)
+
+USMG and IMG fellows’ ratings of other factors were not
+significantly different. Male and female fellows differed
+significantly when rating the following factor:  
+
+* Parental leave policy (female fellows more likely than
+male fellows to rate as very important, p<0.001, effect
+size=0.69)
+
+Male and female fellows’ ratings of other factors were not
+significantly different.
+
+#### Job Market Experiences and Perceptions
+
+This section reports on the experiences of the 143
+nephrology fellows who had searched for employment. As
+in previous years, the job market was more challenging
+for IMG fellows who were more likely than USMG fellows
+to apply for large numbers of jobs, have difficulty finding
+a satisfactory position, and change plans because of
+limited opportunities. Nevertheless, signs of continued
+improvement in the job market included fewer job
+applications, fewer people receiving no job offers, fewer
+IMGs reporting difficult finding a satisfactory position
+and fewer people reporting lack of jobs in both local
+and national job markets. Although these trends have
+continued for several years now and provide some cause
+for future optimism, there is a continuing sense that many
+fellows are unable to find the kind of jobs they would have
+preferred.  
+
+##### Number of Job Applications
+
+Among fellows who had searched for a job, 67.6%
+reported applying for between 1 and 5 jobs, and 28.2%
+reported that they had applied for at least 6 jobs (including
+9.9% who applied for more than 10 jobs). A few fellows
+(4.2%) reported that they had not applied for any jobs.  
+
+We found a statistically significant difference in the
+number of job applications between IMG and USMG
+fellows (p=0.030): IMGs were more likely than USMGs
+to apply for more than 10 jobs (14.5% of IMGs vs. 1.8%
+of USMGs), and USMGs were more likely than IMGs to
+apply for 1 to 5 jobs (82.5% vs. 57.8%). The percentage
+of USMGs who reported that they applied for 6 or more
+positions continued its steady decline declined from
+43.5% in 2015 and 22.1% in 2017 to 14.1% in 2018. The
+percentage of IMGs who reported applying for 6 or more
+jobs similarly continued its decline from 63.3% in 2015
+and 40.6% in 2017 to 37.4% in 2018.  
+
+We found no statistically significant differences existed in
+the number of job applications between male and female
+fellows (p=0.97).  
+
+##### Number of Job Offers
+
+The majority of nephrology fellows (68.8%) reported
+receiving between 1 and 3 job offers. A small number of
+fellows reported receiving more than 10 job offers (1.4%),
+and 4.3% of fellows reported receiving no job offers. The
+percentage of USMGs who reported receiving no job
+offers (1.8%) was similar to 2017 (1.7%) but lower than in
+2016 (4.0%) and 2015 (3.8%).  
+
+USMGs were more likely to report receiving 1 to 3 job
+offers (80.4% vs. 61.4%), and IMGs were more likely to
+report receiving no job offers (4.8% vs. 1.8%) but also
+more likely to report receiving 4 offers or more (33.7% vs.
+17.9%). The differences were not statistically significant.
+We found no statistically significant differences in the
+number of job offers between male and female fellows
+(p=0.95).  
+
+##### Difficulty Finding a Satisfactory Position
+
+Fewer than half of respondents (38.0%) who had searched
+for jobs reported having difficulty finding a satisfactory
+position (Exhibit 13) compared to 45.6% in 2017. As
+in 2017, we found a statistically significant difference
+between IMG and USMG fellows’ reports of difficulty
+finding a position (p=0.001): 49.4% of IMGs reported
+having difficulty finding a position they were satisfied with,
+an improvement over the 55.4% of 2017 and the 70.0%
+of 2016. 21.1% of USMGs reported having difficulty
+compared to 28.8% in 2016.  
+
+We found no statistically significant difference in reports
+of difficulty finding a position between male and female
+fellows (p=0.81).
+
+###### Exhibit 13: Percentage of Nephrology Fellows Having a Difficult Time Finding a Satisfactory Position
+
+```{r exhibit-13, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics("/reports/04_2018-Nephrology-Fellow-Survey-Figs/exhibit-13.png")
+``` 
+
+##### Reasons for Difficulty
+
+Among the fellows who reported difficulty finding a satisfactory position, the top 3 most frequently cited reasons were
+consistent from 2017 to 2018 though with a change in order (Exhibit 14). The reasons most frequently cited by 2018
+fellows were inadequate salary/compensation (34% vs. 21.9% in 2017), lack of jobs/practice opportunities in desired
+locations (24.5% of those reporting any difficulty vs. 31.5% in 2017) and lack of jobs/practice opportunities that meet
+visa status requirements (22.6% vs. 16.4% in 2017).
+
+###### Exhibit 14: Reasons for Difficulty
+
+```{r exhibit-14, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics("/reports/04_2018-Nephrology-Fellow-Survey-Figs/exhibit-14.png")
+``` 
+
+As in 2017, and as expected, IMGs were statistically significantly more likely than USMGs to cite lack of jobs that meet visa requirements (29.3% vs. 0%, p=0.033, effect size = 0.72). Also, as in 2017 USMGs were significantly more likely than IMGs to cite lack of jobs in desired locations (50.0% vs. 17.1%, p<.05, effect size=.79). IMGs were more likely to cite overall lack of jobs and opportunities (11.1% vs. 0%) but the difference was not statistically significant (p=0.65).  
+
+We found no statistically significant difference in the reasons for difficulty finding a position between male and female fellows (p=0.818 for any difficulty).
+
+##### Changing Plans Due to Limited Practice Opportunities
+
+Overall, the percentage of respondents indicating that they had changed their plans because of limited nephrology job opportunities continued its decline, from 42.9% in 2015 and 32.7% in 2018 to 29.3% in 2018 (Exhibit 15). While both USMGs and IMGs were less likely to report changing their plans in 2018 than in prior years, their likelihood of changing plans was significantly different: only 12.3% of USMGs reported that they had to change plans, while 41.0% of IMGs reported changing plans (p<0.001, effect size=0.66). This difference likely reflects a continuing lack of job opportunities that meet visa requirements while allowing IMGs to practice in their preferred locations or settings.
+
+###### Exhibit 15: Changing Plans Due to Limited Practice Opportunities
+
+```{r exhibit-15, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics("/reports/04_2018-Nephrology-Fellow-Survey-Figs/exhibit-15.png")
+```
+
+We found no statistically significant differences in male and female fellows’ likelihood of changing their plans (p=0.41).
+
+##### Job Market Perceptions
+
+Survey respondents were asked to indicate their
+perceptions of the local job market (within 50 miles of
+where they trained) and the national job market. Response
+options ranged from no jobs to many jobs. Key findings
+include:  
+
+* Perceptions of the local and national job markets have
+continued to improve for both USMGs and IMGs;
+* As in the previous years, the 2018 fellows were
+more likely to indicate that there were few or no job
+opportunities in the local job market compared to the
+national market; and
+* As in previous years, USMGs had a far more favorable
+view of the local and national job markets than IMGs.
+
+##### Local Job Market Perceptions
+
+Among nephrology fellows who had searched for
+jobs, perceptions of local nephrology job opportunities
+continued to improve: while 37.7% reported in 2016
+that there were many or some nephrology practice
+opportunities within 50 miles of their training sites, and
+41.5% did so in 2017, the proportion reporting the same in
+2018 increased to 51.1%.  
+
+We found a statistically significant difference in IMG and
+USMG fellows’ assessments of local nephrology practice
+opportunities with USMGs more likely than IMGs to report
+that there were many or some job opportunities in their
+local area (62.4% vs. 46.1%, p<0.01, effect size=0.60).  
+
+We found no statistically significant differences in local
+job market perceptions between male and female fellows
+(p=0.50).
+
+###### Exhibit 16: Percentage of Nephrology Fellows Responding “No Jobs” or “Very Few Jobs”
+
+```{r exhibit-16, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics("/reports/04_2018-Nephrology-Fellow-Survey-Figs/exhibit-16.png")
+```
+
+##### National Job Market Perceptions
+
+Nephrology fellows continued to perceive national
+nephrology job opportunities much more positively than
+local opportunities: 83.1% reported there were some or
+many nephrology practice opportunities nationally (up from
+69.1% in 2016) compared to 41.5% reporting some or
+many nephrology practice opportunities locally.  
+
+As in 2017 we found a statistically significant difference
+in IMG and USMG fellows’ assessments of national
+nephrology practice opportunities, with USMGs more likely
+than IMGs to report that there were many or some job
+opportunities nationally (92.0% vs. 80.7%, p<0.01, effect
+size=0.62).  
+
+We found no statistically significant difference between
+male and female fellows’ assessments of national
+nephrology practice opportunities (p=0.36).  
+
+##### Types of Jobs Available
+
+When we asked fellows to indicate in an open-ended
+question what types of jobs they perceived to be more and
+less available for newly graduating fellows, they mentioned
+several types of jobs that were more easily available
+according to their experience:  
+
+* Private practice jobs
+* Jobs in remote, rural or undesirable areas
+* Jobs in solo or small practices/communities
+* Jobs in general nephrology rather than transplant
+nephrology
+
+They also mentioned several types of jobs that were less
+easily available according to their experience:  
+
+* Academic jobs
+* Jobs in metro areas or other preferred geographic areas
+* Jobs that meet visa requirements for IMGs
+
+These lists were almost identical to the 2017 lists. As in
+2017, a small number of respondents mentioned limited
+availability of hospital jobs and private practice positions,
+with the problem more acute when combined with one of
+the other categories of shortfall such as urban situation.  
+
+#### Job Offer Characteristics
+
+Among the 118 nephrology fellows who had already accepted job offers, we found the following with respect to their
+salary and compensation expectations.  
+
+##### Practice Setting
+
+Among respondents who had already accepted job offers, the largest group (48.3%) reported that they planned to work
+in nephrology group practices (Exhibit 17). Another 28.4% reported that they planned to work in academic nephrology
+practices, 9.5% said they planned to work in hospitals and 6.9% in multispecialty academic practices. Other settings
+included multispecialty group practices (3.4%) and 2-person partnerships (3.4%). No 2018 respondents reported going
+to work in solo practice.
+
+###### Exhibit 17: Setting of Primary Nephrology Job
+
+```{r exhibit-17, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics("/reports/04_2018-Nephrology-Fellow-Survey-Figs/exhibit-17.png")
+```
+
+None of the differences between USMGs and IMGs in setting distribution reached statistical significance.
+Female fellows were more likely to report that they planned to work in academic nephrology (35.7% vs. 24.3%) and
+multispecialty group practices (9.5% vs. 0%); male fellows were more likely to report that they planned to work in
+nephrology group practices (52.7% vs. 40.5%), 2-person partnerships (4.1% vs. 2.4%) and hospitals (12.2% vs. 4.8%).
+However, the only one of these differences that was statistically significant was the gender difference for working in
+multispecialty group practices (p<.01, effect size=0.53).
+
+##### Location of Practice
+
+###### Exhibit 18: Location of Primary Nephrology Job (Demographics)
+
+```{r exhibit-18, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics("/reports/04_2018-Nephrology-Fellow-Survey-Figs/exhibit-18.png")
+```
+
+Among respondents with job offers, the majority (63.1%) indicated that they planned to work in urban areas (inner city or
+other). Another 17.5% said they planned to work in suburban areas, and 12.3% said they planned to work in small cities.
+Similar to 2017, when 9 fellows (7.8% of respondents) reported intending to work in a rural area, in 2018 there were 8
+fellows (7.0% of respondents) reporting intending to work in a rural area.  
+
+USMGs were more likely to report intending to work in other urban areas (30.6% vs. 23.1%) and suburban areas (18.4%
+vs. 16.9%) while IMGs were more likely to report intending to work in small cities (13.8% vs. 10.2%) and rural areas
+(9.2% vs. 4.1%). USMGs and IMGs were equally likely to report intending to work in inner cities (36.7% vs. 36.9%). Unlike in 2017, none of the differences between USMGs and IMG fellows were statistically significant.  
+
+We found no statistically significant differences between male and female fellows’ anticipated practice locations (p=0.36).
+
+##### Obligations to Practice in Underserved Areas
+
+###### Exhibit 19: Service Obligation
+
+```{r exhibit-19, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics("/reports/04_2018-Nephrology-Fellow-Survey-Figs/exhibit-19.png")
+```
+
+A total of 15 respondents had accepted jobs that came with a service obligation period. IMGs were more likely than
+USMGs to accept a job that entailed a minimum service obligation period (18.8% vs. 6.1%). The difference in the
+distribution of service obligations by IMG status was almost significant (p<0.056).  
+
+There was little difference between females and males in the proportion accepting a minimum service obligation (15.4%
+vs. 12.2%).
+
+###### Exhibit 20: Reason for Service Obligation
+
+```{r exhibit-20, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics("/reports/04_2018-Nephrology-Fellow-Survey-Figs/exhibit-20.png")
+```
+
+Of the 15 service obligation positions reported, 11 (73.3%) were J visa waiver positions, 10 of them under the Conrad
+State 30 program and the other under the Delta Regional Authority’s program. Of these 11 positions, 10 were for
+positions based in Health Professional Shortage Areas (HPSA); the other was for service in a rural area. All of the waiver
+positions were held by IMGs.  
+
+The other four positions were obligations under T32 and TL1 training grants from NIH (one each), one with the U.S. Army
+and the other an unspecified income guarantee program. Three of the four non-waiver positions were held by US-born
+USMGs, with the remaining position held by an IMG who was nevertheless a native-born US citizen.  
+
+All respondents who were not U.S. citizens or permanent residents were asked about their interest in the physician
+National Interest Waiver, which permits those holding temporary worker visas to apply for U.S. permanent residency after
+five years of service in a designated shortage area. More than half (54.5%) expressed interest, with only 15.4% definitely
+not interested.  
+
+We found no statistically significant differences between male and female fellows’ anticipated practice locations (p=0.36).    
+
+###### Exhibit 21: Interest in Physician National Interest Waiver
+
+```{r exhibit-21, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics("/reports/04_2018-Nephrology-Fellow-Survey-Figs/exhibit-21.png")
+```
+
+##### Base Salary/Income
+
+Among the fellows who had accepted job offers, the range
+of expected salaries was from <$80,000 to 
+$329,999.
+More than three out of five (62.0%) anticipated annual
+base salaries between $140,000 and 
+$209,999.  
+
+Male IMGs had the highest median expected base
+salaries of all demographic groups by IMG status and
+gender, in the range $190,000–
+$199,999. Female USMGs
+and IMGs and Male USMGs all had median expected
+base salaries in the range $180,000–
+$189,999.  
+
+Exhibit 22 shows that female USMGs had average
+expected base salaries $22,000 higher than male USMGs
+though the difference was not statistically significant
+(p=0.16) and the median salary was the same for both
+females and males (in the $180,000-
+$189,999 range).
+The higher average salary for females is in line with 2017
+but not with earlier years’ surveys. As in 2017 the lower
+average male USMG salary remained after controlling
+for hours worked. Removing highly paid positions in
+multispecialty group practices (two female USMGs but no
+male USMGs) reduced the salary difference (to $9,000)
+but did not remove it entirely. Now that this apparent
+anomaly has persisted across two years’ of surveys,
+additional research may be warranted to explore this in
+more depth.  
+
+In contrast to the position with USMGs, female IMGs had
+a $15,000 lower average expected base salaries than
+male IMGs (though this difference was not statistically
+significant, p=0.34), and also a lower median income (in
+the $180,000-
+$189,999 range 
+vs. $190,000-
+$199,999
+range for males). IMGs overall had an almost $18,000
+higher average expected base salaries than USMGs,
+a difference that, as in 2017, was almost statistically
+significant in a one-sided t-test (p=.051), and also a
+higher median income (in the $190,000-
+$19,999 range vs.
+$180,000-
+$189,999 range for USMGs).  
+
+(Because survey respondents were only asked to report
+their salaries within $10,000 ranges, the calculation of
+mean values set out in Exhibit 22 relies on the assumption
+that actual salaries were evenly distributed within each
+salary range, which cannot be guaranteed.)  
+
+Somewhat surprising, male USMGs were making
+considerably less than male IMGs and female USMGs
+(male USMGs: $181,000; 
+male IMGs: $211,600; female
+US MGs: $203,800). Given the small sample size in each
+category, it is difficult to identify the key factors leading
+to these differences. In regard to male USMGs and IMGs,
+it appears that male USMGs are more likely to work in
+academia than male IMGs (39.4% vs. 24.4%). Male IMGs
+also report spending more time on patient care relative to
+male USMGs (27.5% work 60 or more hours per week on
+patient care vs. 6.1%) while male USMGs report spending
+more time on teaching and research. Interestingly, IMGs
+report a more difficult time finding a satisfactory position,
+and rate salary as more important than USMGs despite
+having far less debt than IMGs.
+
+###### Exhibit 22: Expected Base Salary by IMG Status and Sex (Mean)
+
+```{r exhibit-22, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics("/reports/04_2018-Nephrology-Fellow-Survey-Figs/exhibit-22.png")
+```
+
+Exhibits 23 and 24 show fellows’ expected base salaries in histogram form. In the histograms IMGs are mostly in higher
+numbers than USMGs above $160,000 and in lower 
+numbers from $100,000 up to 
+$160,000 with the difference in overall
+distribution of expected salaries between IMGs and USMGs just reaching statistical significance (p=0.046, Wilcoxon
+rank-sum test). The difference in the pattern of salaries for male and female fellows was unclear. However, the difference
+was not statistically significant (p=0.11).
+
+###### Exhibit 23: Distribution of Expected Base Salary for USMGs and IMGs
+
+```{r exhibit-23, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics("/reports/04_2018-Nephrology-Fellow-Survey-Figs/exhibit-23.png")
+```
+
+###### Exhibit 24: Distribution of Expected Base Salary by Sex
+
+```{r exhibit-24, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics("/reports/04_2018-Nephrology-Fellow-Survey-Figs/exhibit-24.png")
+```
+
+##### Anticipated Additional Incentive Income
+
+Less than half (41.7%) of fellows who had accepted job offers did not anticipate receiving any additional incentive
+income. Among those expecting to receive incentive income, most reported that they expected to earn less than
+$15,000, although the range of expected incentives 
+extended beyond $30,000 
+for 12.5% of fellows and beyond $60,000
+for 4.0%.  
+
+Exhibits 25 and 26 show fellows’ expected incentive income in histogram form by IMG status and by sex. We found
+no significant differences in mean expected incentive income between IMGs and USMGs (p=0.12) or male and female
+fellows (p=0.27).
+
+###### Exhibit 25: Distribution of Incentive Income for USMGs and IMGs
+
+```{r exhibit-25, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics("/reports/04_2018-Nephrology-Fellow-Survey-Figs/exhibit-25.png")
+```
+
+###### Exhibit 26: Distribution of Incentive Income by Sex
+
+```{r exhibit-26, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics("/reports/04_2018-Nephrology-Fellow-Survey-Figs/exhibit-26.png")
+```
+
+##### Secondary Jobs
+Among the respondents who had accepted nephrology
+jobs, 16 indicated that they planned to take on a second
+nephrology job in addition to their primary job. The
+largest response was for hospital care (6 respondents,
+37.5%). Other types of secondary jobs included medical
+directorships with dialysis providers (5 respondents,
+31.3%), moonlighting in nephrology inpatient units (4
+respondents, 25%), moonlighting in non-nephrology
+inpatient units (4 respondents, 25%), outpatient
+nephrology care (1 respondent, 6.3%) and joint ventures
+with dialysis providers (1 respondent, 6.3%).  
+
+Among fellows who reported their expected income from
+secondary nephrology jobs, three quarters (75%) expected
+to earn less than $30,000 in their secondary jobs. Only 2
+respondents (16.5%) expected to earn more than $50,000
+from secondary nephrology jobs.  
+
+##### Base Salary Comparisons by Practice Demography and Setting
+
+When we compared base salaries between fellows
+planning to work in different practice locations (e.g., inner
+cities, suburban areas) we found the highest average
+incomes in rural areas ($269,300) and small 
+city ($200,700),
+with lower incomes in suburban ($188,900), large city areas
+other than inner city ($196,400), and inner 
+city ($190,300)
+areas (Exhibit 27). The difference between rural salaries
+and all others was statistically significant (p<.001). This
+finding reinforces the 2017 results but stands in contrast to
+2016 when the differences were not statistically significant.
+The only difference between USMGs and IMGs that was
+statistically significant was for small cities, where IMGs
+were earning almost $65,000 more than 
+USMGs ($223,900
+vs. $159,000, p<.01).
+
+###### Exhibit 27: Distribution of Expected Base Salary by Demography
+
+```{r exhibit-27, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics("/reports/04_2018-Nephrology-Fellow-Survey-Figs/exhibit-27.png")
+```
+
+As in 2017 we found differences between mean anticipated incomes between different practice settings: fellows planning
+to work in multispecialty academic nephrology ($167,900), 
+academic nephrology ($179,800) and nephrology group practice
+($197,600) had the lowest mean anticipated incomes, while fellows planning to work in multispecialty group practices
+($285,000, but only three respondents), 
+hospitals ($240,000) and 2-person 
+partnerships ($230,000) had the highest mean
+anticipated incomes (Exhibit 28). The difference between multispecialty group practice mean salary and all others was
+statistically significant (p<0.01), as were the differences between mean salary in academic nephrology positions and
+all others (p<0.05) and hospital positions and all others (p<0.05). The only difference between USMGs and IMGs that
+approached statistical significance was in multispecialty academic practices, where IMGs earned $235,000 compared to
+$170,000 for USMGs (p=.055). No significant differences were found between male and female salaries by practice setting.
+
+###### Exhibit 28: Distribution of Expected Base Salary by Setting, IMG Status and Gender
+
+```{r exhibit-28, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics("/reports/04_2018-Nephrology-Fellow-Survey-Figs/exhibit-28.png")
+```
+
+##### Satisfaction with Salary/Compensation
+
+The majority of fellows who had accepted job offers indicated they were satisfied with their salary and compensation. Some
+27.3% reported being “very satisfied,” (higher than the correspondent figure of 20.4% in 2017 but lower than the 31.6% in
+2016), while 50.9% indicated that they were “somewhat satisfied” with their salary and compensation.  
+
+USMGs were more likely to report being “very satisfied” with their salary and compensation (34.7% vs. 21.3%), while IMGs
+were more likely to report being “somewhat satisfied” (57.4% vs. 42.9%). The differences were not statistically significant
+(p=.30).  
+
+Female fellows were much more likely than males to report being “very satisfied” with their salary and compensation
+(39.5% vs. 20.8% for males), much higher than the 23.3% in 2017 and approaching the corresponding figure of 48.7%
+for females in 2016, while male fellows were more likely to report being “somewhat satisfied” (55.6% vs. 42.1%) and
+“somewhat dissatisfied” (20.8% vs. 13.2%). Again, the differences were not statistically significant (p=0.14).  
+
+Those with higher salaries were generally the most satisfied. The difference in mean salary between the ‘very satisfied’ and
+the ‘somewhat dissatisfied’ groups was around $70,000.
+
+###### Exhibit 29: Distribution of Expected Base Salary by Satisfaction with Salary, IMG Status and Gender
+
+```{r exhibit-29, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics("/reports/04_2018-Nephrology-Fellow-Survey-Figs/exhibit-29.png")
+```
+
+##### Incentives
+
+When asked to identify the incentives they had received for
+accepting their primary job offers, respondents were most
+likely to report receiving the following:  
+
+* Income guarantees (46.9%)
+* Support for MOC and CME (40.7%)
+* Career development opportunities (38.1%)
+* Relocation allowances (38.1%)
+* Sign-on bonus (27.4%)
+
+Educational loan repayment (3.5%) and on-call payments
+(3.5%) were the least frequently reported incentives.
+Another 14.2% of respondents who had accepted jobs
+reported receiving no incentives.  
+
+Not surprisingly, we found statistically significant
+differences between IMG and USMG respondents’ reports
+of receiving H-1 visa sponsorship (20.3% vs. 2.0%,
+p<0.05, effect size=0.47) and J-1 visa waivers (17.2% vs.
+0%, p=.011, effect size=0.50). A statistically significant
+difference was also found between IMGs’ and USMGs’
+reports of receiving a sign-on bonus (21.9% vs. 34.7%,
+p<.05. effect size=0.32), support for maintenance of
+certification and CME (35.9% vs. 46.9%, p<.05, effect
+size=0.28), and career development opportunities (31.3%
+vs. 46.9%, p<.05, effect size=0.36). USMGs were more
+likely than IMGs to report receiving no incentives (20.4%
+vs. 9.4%, p>.05, effect size=0.33).  
+
+We also found large differences between male and female
+respondents’ reported incentives in regard to income
+guarantees (males 59.4% vs. females 30.6%), relocation
+allowances (males 50.0% vs. females 22.4%) and support
+for maintenance of certification and CME (males 51.6% vs.
+females 26.5%) but none reached statistical significance
+(p=.121, .078 and .151 respectively).  
+
+Among respondents who reported receiving incentives
+with their primary job offers, more than two-thirds (69.0%)
+reported that they were “important” or “very important” in
+their decision to accept the job. We found a statistically
+significant difference between IMGs’ and USMGs’ ratings
+of the importance of the incentives they had received with
+USMGs more likely than IMGs to rate the incentives they
+had received as “important” or “very important” (79.3% vs.
+53.8%, p<0.01, effect size=0.5).  
+
+We found no statistically significant differences between
+male and female respondents’ ratings of the importance of
+the incentives they had received (p=0.46).
+
+###### Exhibit 30: Incentives Received
+
+```{r exhibit-30, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics("/reports/04_2018-Nephrology-Fellow-Survey-Figs/exhibit-30.png")
+```
+
+###### Exhibit 31: Primary Job Responsibilities
+
+```{r exhibit-31, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics("/reports/04_2018-Nephrology-Fellow-Survey-Figs/exhibit-31.png")
+```
+
+The vast majority of respondents cited hospital care and outpatient nephrology care among their primary job responsibilities
+(98.3% and 95.7% respectively). Other responsibilities they listed included temporary dialysis catheter placement (31.9%),
+kidney biopsy (31.0%), medical directorship with a dialysis provider (27.6%) and clinical research (21.6%).
+
+##### Conditions Fellows Expect to Treat
+
+When asked to identify the top 3 conditions they expected to treat in their practice (both primary and secondary
+jobs), respondents who had accepted job offers most frequently cited ESRD (89.5%), CKD (86.8%), AKI (65.8%), and
+hypertension (36.0%)—the same conditions as in 2015, 2016 and 2017. The least frequently expected conditions were GN
+and nephrolithiasis (7.0% each), cystic kidney diseases (3.5%), and kidney cancer (2.6%)— the last two being the same
+conditions cited in 2016.
+
+###### Exhibit 32: Conditions Fellows Expect to Treat
+
+```{r exhibit-32, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics("/reports/04_2018-Nephrology-Fellow-Survey-Figs/exhibit-32.png")
+```
+
+Among dialysis modalities (N=114), respondents who had accepted job offers were most likely to expect to work with
+in-center hemodialysis (100%), followed by home peritoneal dialysis (71.1%), and home hemodialysis (44.7%). A much
+smaller group (14.0%) said they anticipated working with nocturnal in-center hemodialysis.
+
+###### Exhibit 33: Consideration Given to a Career Outside Nephrology
+
+```{r exhibit-33, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics("/reports/04_2018-Nephrology-Fellow-Survey-Figs/exhibit-33.png")
+```
+
+The majority of respondents (64.5%) had seriously considered another specialty before deciding to pursue nephrology. In
+the 171 written responses, the most frequently mentioned alternative specialties were pulmonary and critical care (30.4%
+of 191 total specialty mentions), cardiology (25.1%) and hematology/oncology (10.5%). Gastroenterology, endocrinology,
+infectious diseases, hospital medicine and rheumatology (in decreasing order of frequency) were also mentioned. IMGs
+were significantly less likely than USMGs to have considered another specialty before deciding on nephrology (41.4% vs.
+25.5%, p<.01, effect size=0.33 ).
+
+###### Exhibit 34: Level of Preparedness for General Nephrology Practice
+
+
+```{r exhibit-34, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics("/reports/04_2018-Nephrology-Fellow-Survey-Figs/exhibit-34.png")
+```
+
+The vast majority of respondents (94.6%) in their second year and beyond rated their level of preparedness for general
+nephrology practice as “fully prepared” or “moderately prepared”, though less than half felt “fully prepared”. While only
+5.3% felt either “minimally prepared” or “not prepared”, this is still of concern. More IMGs than USMGs felt “fully prepared”
+(50.7% vs. 44.0%) but the difference was not significant.
+
+#### Would Fellows Recommend Nephrology?
+
+Despite their mixed assessments of the nephrology job market, a majority (78.8%) of fellows indicated they would
+recommend nephrology to current medical students and residents, rather higher than the 71.8% in 2016. However, IMGs
+were less likely than USMGs to report that they would recommend the specialty to others (75.9% vs. 83.7%, respectively,
+not significant, p=.075). We found no statistically significant difference between male and female fellows’ likelihood of
+recommending nephrology (p=0.76).
+
+###### Exhibit 35: Would Recommend Nephrology to Medical Students and Residents
+
+```{r exhibit-35, echo=FALSE, fig.cap="", out.width = '100%'}
+knitr::include_graphics("/reports/04_2018-Nephrology-Fellow-Survey-Figs/exhibit-35.png")
+```
+
+Fellows who said they would recommend nephrology to
+medical students and residents cited many of the same
+factors mentioned by previous years’ respondents as
+reasons for their positive assessments: the intellectual
+challenge/interest of the field, variety of activities, and
+long-term patient relationships. Many expressed optimism
+about an improving job market.  
+
+Fellows who said they **would recommend nephrology**
+to medical students and residents made the following
+comments to support their assessments:  
+
+* A thought-provoking field with lots of unknowns in
+the field that are currently being investigated with new
+information and new treatments coming to light
+* Because of the diversity of the field and so many
+different options after completing the basic training such
+as interventional nephrology, transplant nephrology
+* Fascinating pathology, varied job, high patient need.
+Vulnerable patient population in need of good,
+humanistic doctors. Huge opportunities for research
+and academic careers. Ability to sub-sub-specialize
+* Great opportunities and clinical need for patient care
+and research. Practice, though challenging, is enriching
+* I love nephrology. The job market is now better. It is
+an intellectually challenging field and needs a good
+understanding of basic pathophysiology
+* I love what I do. There is always a beauty part behind
+the problems
+* I still love Nephrology, despite what all the naysayers
+say. I know the economics are changing, and the
+practice is not what it used to be. Maybe this is my
+naivete speaking, because I have yet to enter the ‘real
+world’ of practice. Maybe my opinions will change after
+a few years. But I see on a daily basis the difference
+I make in my patient’s lives on both the inpatient and
+outpatient side of things. I feel that I have a unique
+understanding of pathophysiology and can contribute
+meaningfully to the care of those who just need
+medication adjustments as well as those who need
+advanced CKD care and renal replacement therapy
+planning. I think part of my security comes from the fact
+that in the future, I see many job opportunities available,
+and I am relatively flexible in terms of geographic
+location. Others who want to restrict to a certain
+geographic location may not feel as secure, and may
+resort to hospitalist work, which is sad because it is a
+loss to the nephrology workforce. I do see a big future
+for Nephrology and nephrologists in the era of valuebased
+healthcare, where preventive approaches can be
+quantified and followed.
+* I think it is a great field and requires a lot of cerebral
+work. Even though my fellowship is rigorous I enjoy
+coming to work every day. We need more nephrologist
+and to inspire more physicians to go into this field.
+* I think nephrology is a fascinating field that needs more
+smart young doctors to join it! Given the downtrend in
+applicants this is the perfect time to get into the field
+because more and more jobs will be available.
+* I think one has to have an interest in nephrology to go
+into it. If the med student/resident is suitable I would
+recommend going into it. Job opportunity-wise, I think
+the job market is changing. Fewer people entering
+nephrology and more retiring will create a gap in the job
+market and raise salaries in the long term. I see some
+quiet desperation in my local market for nephrologists
+because so few fellows are coming out of local training
+programs.
+* I think that though it is a subspecialty it is deeply
+connected to many of the other subspecialties and
+allows me to practice and exercise knowledge in
+general internal medicine while also being a consultant.
+It is also deeply satisfying and also fun to solve
+electrolyte issues as well as navigate AKI and CKD.
+* I was interested in nephrology due to my passion that
+was obtained through my mentors. I would recommend
+it for the people who have passion. Salary is only least
+important for me.
+* I would recommend it with the caveat that they should
+only go into if they really love the subject. If you want
+a specialty that is 9-5 and makes a lot of money,
+Nephrology is not it. If you want a specialty with lots of
+patient education and prolonged continuity of care, this
+field is perfect.
+* Intellectually challenging and stimulating. Very busy
+work hours during 1st year fellowship and not good
+lifestyle as a fellow due to high workload. But looking
+forward to a better quality of life after fellowship as a
+nephrologist in academic medicine
+* Interesting field; can be well compensated in proper
+setting, good lifestyle, great continuity of care, able to
+treat the entire patient rather than a single organ system
+* It is a beautiful subspecialty where you learn and
+understand the very complex physiology and
+mechanisms of the human body. You also become
+very attached to the patients. The only thing that would
+make this job perfect is if compensation is related to the
+number of hours and effort you spend or the patients.
+* It is a time-consuming, difficult, but incredibly rewarding
+field that has numerous opportunities for personal growth, skill development, and leadership.
+* It is a very fulfilling discipline in which not only you
+utilize your brain on a daily basis but also form lifelong
+relationships with your patients.
+* It is a wonderful specialty with wonderful learning
+opportunities and the ability to establish longitudinal
+patient relationships.
+* It makes you engaged in medicine all the time.
+Interesting research areas covers wide range of areas.
+Busy but as long as trying to find balance between life
+and work, it will be all right
+* It’s a nice field if you like physiology, pharmacy and
+pathology. More importantly it’s a good field for critical
+thinking and analysis.
+* It’s a wonderful field with a lot of intellectual interest.
+I recognize that job opportunities may be scarce
+and become scarcer given some of the workforce
+predictions but I believe that for trainees from wellregarded
+programs there will continue to be excellent
+opportunities
+* It’s an interesting field that’s really exciting. It’s internal
+medicine on steroids. Involves the basic sciences and
+clinical practice
+* It’s an interesting specialty deeply rooted in internal
+medicine and human physiology. Plus, there are
+no functional symptoms pertaining to Nephrology
+specifically!
+* Most nephrology groups are looking for people and
+the number of patients will continue to grow. There is
+variability not found in other subspecialties such as ICU,
+inpatient floor, dialysis unit, clinic and this helps keep
+things interesting.
+* Most powerful specialty, that keep you up to date in
+most of Medicine aspects. Also, Nephrology needs
+smart people that they like to think and like challenging
+cases.
+* Nephrology cannot die. It is a field for never-ending
+cognitive thirst. There is no other specialty that can
+widen intellectual horizons as my field. I cannot think of
+any other field.
+* Nephrology is an awesome specialty and you get to see
+patients with many different pathophysiologies and you
+develop long-lasting relationships with many of these
+patients.
+* Nephrology is an intellectual specialty with a good
+amount of general medicine. There is also a good mix of
+inpatient and outpatient practice.
+* Nephrology is the last resorts for all other medical
+services in helping stabilize the Acid-Base, HTN,
+electrolytes and volume status of the patient.
+Nephrology takes care not only of the kidney, but of the
+whole human organs and systems. I am very glad that I
+chose this amazing subspecialty.
+* Nephrology is very interesting and professionally
+satisfying subject. For outsiders it may all be about
+dialysis but the diagnoses can be challenging and
+fun. Fluid and electrolyte management can get very
+interesting and satisfying. Nephrology is one of the very
+few specialties where one will be practicing internal
+medicine with a touch of salt
+* Nephrology is very interesting branch and I love it and it
+incorporates and touches almost all branch of medicine
+and keep me updated as an internist!
+* Nephrology remains the go-to specialty for medical
+students who are fascinated by physiology.
+* The field will always be attractive to those who
+enjoy thinking critically about their patients. With the
+expected physician deficit in the next decade, the low
+compensation (frequently cited by current medicine
+residents as the biggest detraction to the subspecialty)
+will likely increase under regular economic supply/
+demand pressures.
+* The practice of nephrology is cerebral, not procedural.
+Nephrology is challenging, but always engaging.
+* The practice of nephrology remains one of the most
+intellectually stimulating fields, and has rewarding
+interactions with patients, families, and other
+physicians.
+* There is high demand for private practitioners as well as
+physician-scientists in Nephrology. I would encourage
+physicians who want to be leaders in their field to
+pursue Nephrology - there are opportunities open to
+do so in public policy, research, and clinical practice.
+Furthermore, Nephrologists have the opportunity to
+teach their patients and other providers about kidney
+disease, which is one of the most poorly understood
+diseases in Medicine.
+* They truly need to like nephrology in order to enjoy
+the training mostly because of the work load and later
+the compensation. But if someone genuinely likes
+nephrology I would encourage pursuit if said resident/
+student is considering it as a specialty. Better job
+availability and overall pay here in the southwest is still
+good, I think.
+* Very rewarding field of medicine. You have the
+opportunity maintain relationships with panel of
+patients for many years. There are many opportunities
+for graduating fellows, but you have to choose the
+opportunity that suits your needs.
+
+Fellows who said they would not recommend
+nephrology to medical students and residents also cited
+many of the same factors as previous years: the heavy
+workload, low compensation, difficult schedule relative to
+hospital medicine and other specialties, undervaluing of
+the specialty by other specialties, and lack of opportunities
+that support visas.  
+
+Fellows who said they **would not recommend nephrology**
+to medical students and residents made the following
+comments to support their assessments:  
+
+* As such Nephrology fellowship is very interesting and
+wonderful, but life after fellowship is not promising. Lack
+of job opportunities, long working hours at multiple sites
+with very poor compensation. Jobs have very bad call
+schedules (1:2 or 1:3), remote locations and poor quality
+of life.
+* For American graduates with undergraduate and
+medical school loans it’s hard to recommend a
+challenging subspecialty where it’s difficult to pay off
+loans.
+* Honestly, lifestyle and reimbursement is very important
+to me. At the current rate, of the jobs I have seen or
+Interviewed for, the lifestyle is poor where the work
+schedule is hectic, unpredictable, involves covering
+multiple facilities, and there is poor compensation
+for the amount of work being done. Both hospitalist
+and primary care have better reimbursements and a
+better work schedule. I do love Nephrology and May
+practice some Nephrology in the future, but I doubt I
+will be solely a nephrologist. I will likely go into primary
+care or hospitalist as my main focus, and only practice
+Nephrology on the side. It is very discouraging for
+someone to put in 2 extra years of training and have a
+poorer lifestyle and poor reimbursements. Therefore,
+I would not recommend this field to other students or
+residents unless this changes. It’s a waste of 2 years is
+you can’t get a job that is better then being an internist.
+The whole point of fellowship is to advance your career
+in a field that you like, and do make a decent living
+out of doing the subspecialty you chose. I feel the job
+satisfaction is lacking in Nephrology, more than other
+subspecialties.
+* I love nephrology but the lifestyle is terrible. Long hours,
+lots of call, small salary, not a lot of jobs, etc.
+* I think that the level of mental work, emotional
+support for dialysis patients, and overall workload in
+nephrology is not reflected in the average financial
+compensation for nephrologists. Unless you already
+like nephrology, e.g. you would be happy practicing
+nephrology regardless of the paycheck relative to other
+subspecialties, I do not recommend doing it.
+* Lack of good jobs with good work/life balance is not
+present in nephrology. Getting paid below hospitalist
+salary on graduation is a depressing factor.
+* Lack of respect from other specialties.
+* Meager pay for really really hard work. I like nephrology
+but not worth wasting time for 2 years and then involve
+in taking care of serious sick patients and paid less.I
+have to travel approx 1-2 hrs across 2-3 hospitals just
+to see more patients and earn more but the same as
+hospitalist who works half days, earns more, and more
+importantly saves a lot of time. Not worth the time and
+effort.
+* Nephrology fellowship is one of the busiest fellowships
+with huge patients load, complexity and severity of the
+cases, despite of that at the end of it there is limited job
+opportunities and very low payment, compared to doing
+no fellowship at all, hospitalist job has more flexibility
+and better compensation
+* Nephrology training is very tough and the compensation
+is not worth your efforts unless you are really interested
+in Nephrology. Nephrology compensation is a joke,
+you are compared to Rheumatology and Endocrine,
+how many of the rheumatologists are taking night and
+weekend call, for that matter they don’t even come to
+hospital
+* Not enough respect to the amount of work we do, we
+ought to be treated more appropriately rather than
+getting the page ‘Come dialyze’
+* Not worth the time for the compensation and call/work
+responsibilities.
+* Physicians with long term visa requirement (especially
+from India, China, ...) have 1/4th of jobs compared
+to other physicians. Most of the jobs in rural areas.
+Metropolitan jobs don’t pay well. Group practices don’t
+offer partnership that easy. Considering all of these
+would highly recommend hospitalist.
+* The amount of work nephrologist and the patient
+population does not correlate with compensation. Most
+of us graduate with too much student loans and do not 
+see an incentive of making less and getting overworked. Right hospitalist Job is default to all young graduating
+physician.
+* The students and residents should rotate in nephrology
+consult services and may need to observe some
+outpatient practices including dialysis units so that it
+helps them decide their future career.
+* Too much work, too little pay, unrealistic expectations,
+too many fellowship positions for too few jobs.
+* Unless he / she really wants to learn and understand
+renal pathophysiology , there are no lucrative jobs out
+there. Low salary and high workload
+* Very demanding field in terms of knowledge, very few
+jobs, bad salaries, bad life style, waste of time, as a
+hospitalist u make almost double and have 2 weeks off
+a month and u sleep at night
+* Quality of life is terrible as a fellow and seems to be
+poor in practice when compared to other specialties like
+rheumatology
+* Very stressful, fellowship is horribly busy. didn’t sleep
+good for months. not much money after graduation.
+hospitalist friends are making double.

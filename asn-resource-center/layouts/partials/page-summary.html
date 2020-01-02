@@ -1,0 +1,45 @@
+{{ if .Params.productID }}
+
+<li itemscope itemtype="http://schema.org/CreativeWork" data-productid="{{.Params.productID}}">
+    <div class="row">
+      {{ if .Params.image }}
+      <div class="col col-3">
+        <img src="{{ .Params.image }}" />
+      </div>
+      {{ end}}
+      <div class="col col-9">
+      <h2 class="title">
+          <a href="" ng-click="onProductClick('{{.Params.productID}}')" itemprop="headline">{{ .Title }}</a> 
+      </h2> <small style="color:red">Premium</small>
+      {{ if .Description }}
+      <p itemprop="about">{{ .Description }}</p>
+      {{ end }}
+      
+      <button ng-click="onProductClick('{{.Params.productID}}')">Buy</button>
+      </div>
+    </div>
+    <hr>
+</li>
+
+{{ else }}
+
+<li itemscope itemtype="http://schema.org/CreativeWork" {{ if .Params.productID }} data-productid="{{.Params.productID}}" {{ end }}>
+    <div class="row">
+      {{ if .Params.image }}
+      <div class="col col-3">
+        <img src="{{ .Params.image }}" />
+      </div>
+      {{ end}}
+      <div class="col col-9">
+      <h2 class="title">
+          <a href="{{ .Permalink }}" itemprop="headline">{{ .Title }}</a>
+      </h2>
+      {{ if .Description }}
+      <p itemprop="about">{{ .Description }}</p>
+      {{ end }}
+      </div>
+    </div>
+    <hr>
+</li>
+
+{{end}}

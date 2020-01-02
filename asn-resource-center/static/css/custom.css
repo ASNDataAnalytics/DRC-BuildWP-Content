@@ -1,0 +1,334 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Fonts
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+# Footer
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Fonts
+--------------------------------------------------------------*/
+@font-face {
+    font-family: 'League-Spartan-Bold';
+    src: url('../font/LeagueSpartan-Bold.woff2') format('woff2'),
+         url('../font/LeagueSpartan-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../font/Roboto-Bold.woff2') format('woff2'),
+         url('../font/Roboto-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('../font/Roboto-Medium.woff2') format('woff2'),
+         url('../font/Roboto-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../font/Roboto-Regular.woff2') format('woff2'),
+         url('../font/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+h1 {
+  font-size: 72px;
+  line-height: 86px;
+  font-family: 'League-Spartan-Bold';
+}
+
+h2 {
+  font-size: 45px;
+  line-height: 48px;
+  font-family: 'Roboto-Medium';
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-size: 45px;
+  line-height: 54px;
+  font-family: 'Roboto-Medium';
+}
+
+h4 {
+  font-size: 34px;
+  line-height: 41px;
+  font-family: 'Roboto-Regular';
+}
+
+h5 {
+  font-size: 24px;
+  line-height: 29px;
+  font-family: 'Roboto-Bold';
+}
+
+h6 {
+  font-size: 20px;
+  line-height: 25px;
+  font-family: 'Roboto-Regular';
+}
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+body {
+	background: #FFFEF4;
+	font-size: 15px;
+	line-height:22px;
+  font-family: 'Roboto-Regular';
+}
+
+.darkgray, body {
+    color: #231F20;
+}
+
+header {
+  box-shadow: 0 11px 21px 0px rgba(51, 51, 51, 0.15);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: initial;
+  text-decoration: underline;
+}
+
+hr {
+  border-bottom: 1px solid #CCCCCB;
+  margin-top: 38px;
+}
+
+#main {
+  max-width: 1140px;
+}
+
+.row .col {
+  padding: 0 1.2%;
+}
+
+ol, ol ol, ol ul, ul, ul ol, ul ul {
+  margin: 0 0 30px 24px;
+}
+
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+#top {
+  height: 75px;
+}
+
+@media (max-width: 768px) {
+  #top {
+    height: auto;
+  }
+}
+
+#top #top-nav-main {
+  border-left: none;
+  padding-left: 56px;
+}
+
+#top #top-nav-main li {
+  margin-right: 46px;
+}
+
+#top #top-nav-main a {
+  font-size: 20px;
+  line-height: 24px;
+  font-family: 'Roboto-Medium';
+}
+
+/*--------------------------------------------------------------
+# Home Page
+--------------------------------------------------------------*/
+#hero {
+  padding-top: 27px;
+  padding-bottom: 23px;
+}
+
+#hero h1 {
+    font-size: 72px;
+    line-height: 72px;
+    text-transform: uppercase;
+    max-width: none;
+    font-weight: normal;
+    margin-bottom: 57px;
+}
+
+#hero p {
+    color: #231F20;
+    max-width: 990px;
+    padding-top: 0;
+    margin-top: 37px;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: left;
+}
+
+#hero h2 {
+    margin-top: 37px;
+    margin-bottom: 2px;
+}
+
+#hero h2,
+#hero h4 {
+  max-width: 790px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#hero p:before {
+    display: none;
+}
+
+#featured-posts .col {
+  padding-bottom: 32px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #CCCCCB;
+}
+
+#featured-posts .col:nth-last-child(-n+3) {
+  border-bottom: none;
+  margin-bottom: 7px;
+}
+
+#featured-posts li {
+  list-style-type: none;
+}
+
+#featured-posts li img {
+  width: 100%;
+  margin-bottom: 17px;
+}
+
+/*--------------------------------------------------------------
+# Posts
+--------------------------------------------------------------*/
+#hero h2 {
+    margin-top: 37px;
+    margin-bottom: 2px;
+}
+
+#hero h2,
+#hero h4 {
+  text-align: left;
+  max-width: 790px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.resource-bar {
+  background: #EBE9E9;
+  float: right;
+  padding: 10px 18px;
+  margin-bottom: 36px;
+}
+
+.resource-bar a {
+  display: block;
+  float: left;
+  margin-right: 24px;
+}
+
+.resource-bar a:last-child {
+  margin-right: 0;
+}
+
+.resource-bar img {
+  max-height: 45px;
+  display: block;
+}
+
+.bar-hr {
+  margin-bottom: 0;
+}
+
+.single-post #posts {
+    margin-top: 2px;
+    margin-bottom: 104px;
+}
+
+#posts {
+  max-width: 990px;
+  text-align: left;
+  clear: both;
+}
+
+#posts h2 {
+  font-size: 45px;
+  line-height: 48px;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.single-post #posts h2 {
+  margin: 36px 0 6px;
+}
+
+#posts h2 a {
+  color: #231F20;
+}
+
+#posts li {
+  margin-bottom: 10px;
+}
+
+.pagination a, .pagination span {
+  line-height: 20px;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  margin: 50px 0 0;
+  border: none;
+  background: #CCCCCC;
+  color: #231F20;
+  font-size: 14px;
+  padding: 12px 0 2px;
+}
+
+#footer .row {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+#footer p,
+#footer a {
+  color: #231F20;
+  margin: 15px 0 0 0;
+  display: inline-block;
+}
